@@ -3,6 +3,9 @@
     <AppNavbar />
     <main class="flex-grow pt-20"> <!-- Padding top for fixed navbar -->
       <slot />
+      <div class="container mx-auto px-6 mt-16 mb-12">
+        <NewsletterSignup />
+      </div>
     </main>
     <footer class="bg-primary-dark text-white py-12">
       <div class="container mx-auto px-6 text-center">
