@@ -95,6 +95,6 @@ useHead({
 const services = [
   { title: 'Korekcijska Očala', desc: 'Široka izbira okvirjev priznanih blagovnih znamk prilagojena vašemu obrazu.' },
   { title: 'Kontaktne Leče', desc: 'Svetovanje in uvajanje v nošenje kontaktnih leč vseh vrst.' },
-  { title: 'Okulistični Pregledi', desc: 'Natančni pregledi vida s sodobno opremo za optimalno korekcijo.' }
+  { title: 'Pregledi Vida', desc: 'Natančni pregledi vida s sodobno opremo za optimalno korekcijo.' }
 ]
 </script>

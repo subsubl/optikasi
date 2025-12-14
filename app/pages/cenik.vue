@@ -54,7 +54,7 @@
 useHead({
   title: 'Cenik - OptikaSI',
   meta: [
-    { name: 'description', content: 'Cenik okulističnih pregledov in popravil očal v OptikaSI.' }
+    { name: 'description', content: 'Cenik pregledov vida in popravil očal v OptikaSI.' }
   ]
 })
 
