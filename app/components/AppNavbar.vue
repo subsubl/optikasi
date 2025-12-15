@@ -46,10 +46,10 @@
 const isOpen = ref(false)
 const links = [
   { name: 'Domov', path: '/' },
+  { name: 'O Nas', path: '/o-nas' },
   { name: 'Storitve', path: '/storitve' },
   { name: 'Cenik', path: '/cenik' },
   { name: 'Znamke', path: '/znamke' },
   { name: 'Trgovina', path: '/trgovina' },
-  { name: 'Naroči Leče', path: '/narocilo-lec' },
 ]
 </script>
