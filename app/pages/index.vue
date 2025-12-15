@@ -38,7 +38,7 @@
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Zakaj OptikaSI?</span>
+            <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Zakaj Studio Optika SI?</span>
             <h2 class="text-4xl font-serif mb-6 text-white">Prostor, namenjen samo vam</h2>
             <p class="text-cream opacity-90 leading-relaxed mb-6">
               V hitrem tempu sodobnega življenja si vzamemo čas. Pri nas ni čakalnih vrst in hitenja. 

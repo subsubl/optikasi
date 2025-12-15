@@ -39,7 +39,7 @@
               </li>
               <li class="flex items-start space-x-3">
                 <span class="text-accent text-xl">✓</span>
-                <span class="text-gray-600"><strong>Polarizirajuča stekla</strong> za jasen vid brez odsevov</span>
+                <span class="text-gray-600"><strong>Polarizirana stekla</strong> za jasen vid brez odsevov</span>
               </li>
             </ul>
           </div>

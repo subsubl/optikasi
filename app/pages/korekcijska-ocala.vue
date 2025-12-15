@@ -143,14 +143,14 @@
         <div class="grid md:grid-cols-4 gap-6 text-center">
           <div class="p-6 border border-gray-100">
             <h4 class="font-medium text-primary-dark mb-2">Acetat</h4>
-            <p class="text-gray-500 text-xs">Bold, barviti okvirji</p>
+            <p class="text-gray-500 text-xs">Izraziti, barviti okvirji</p>
           </div>
           <div class="p-6 border border-gray-100">
             <h4 class="font-medium text-primary-dark mb-2">Titan</h4>
             <p class="text-gray-500 text-xs">Ultralahki in vzdržljivi</p>
           </div>
           <div class="p-6 border border-gray-100">
-            <h4 class="font-medium text-primary-dark mb-2">Rimless</h4>
+            <h4 class="font-medium text-primary-dark mb-2">Brez Okvirja</h4>
             <p class="text-gray-500 text-xs">Minimalistična eleganca</p>
           </div>
           <div class="p-6 border border-gray-100">

@@ -124,7 +124,7 @@ const products = [
   {
     id: 'vintage-round-gold',
     name: 'Vintage Okrogla - Zlata',
-    description: 'Klasična okrogla oblika iz 60-ih let. Pravo zlato prevleka.',
+    description: 'Klasična okrogla oblika iz 60-ih let. Pozlačeno s pravim zlatom.',
     price: 145.00,
     category: 'vintage'
   },
@@ -138,7 +138,7 @@ const products = [
   {
     id: 'vintage-cat-eye',
     name: 'Vintage Cat-Eye - Črna',
-    description: 'Ikonična ženska oblika iz 50-ih let. Acetat okvir.',
+    description: 'Ikonična ženska oblika iz 50-ih let. Okvir iz acetata.',
     price: 125.00,
     category: 'vintage'
   },

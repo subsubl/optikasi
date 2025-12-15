@@ -108,7 +108,7 @@
                 <h2 class="text-2xl font-serif text-primary-dark mb-3">Prilagajanje Okvirjev</h2>
                 <p class="text-gray-600 leading-relaxed">
                   Tudi najboljša stekla ne pomagajo, če okvir ne sedi pravilno. Brezplačno 
-                  prilagodimo vse okvirje kupljene pri nas — ter tudi tiste, kupljene drugje. 
+                  prilagodimo vse okvirje, kupljene pri nas — ter tudi tiste, kupljene drugje. 
                   Udobje je ključ do dolgotrajnega nošenja.
                 </p>
               </div>

@@ -21,14 +21,14 @@
           <p>
             <span class="text-accent font-bold">Pozornost in čas bosta namenjena le vam.</span> 
             V sproščenem vzdušju in brez časovnih pritiskov je zagotovljena obravnava, ki bo 
-            zagotovila maksimalno ustreznost izbire očal in njihove nadaljne uporabe.
+            zagotovila maksimalno ustreznost izbire očal in njihove nadaljnje uporabe.
           </p>
           <p>
             Naš cilj je preprost: združiti optične in fizikalne lastnosti očal z vašimi 
             željami in videzom. Vsak par očal je unikaten — tako kot vi.
           </p>
           <p>
-            Z pozitivnimi ocenami na Googlu smo 
+            S pozitivnimi ocenami na Googlu smo 
             dokazali, da naša filozofija deluje. Naše stranke se vračajo in nas priporočajo naprej.
           </p>
         </div>
