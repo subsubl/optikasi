@@ -15,35 +15,22 @@
 
     <!-- Philosophy -->
     <section class="py-24 bg-cream">
-      <div class="container mx-auto px-6 max-w-4xl">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 class="text-3xl font-serif text-primary-dark mb-6">Zakaj Naročanje na Termin?</h2>
-            <div class="space-y-6 text-gray-600 leading-relaxed">
-              <p>
-                <span class="text-accent font-bold">Pozornost in čas bosta namenjena le vam.</span> 
-                V sproščenem vzdušju in brez časovnih pritiskov je zagotovljena obravnava, ki bo 
-                zagotovila maksimalno ustreznost izbire očal in njihove nadaljne uporabe.
-              </p>
-              <p>
-                Naš cilj je preprost: združiti optične in fizikalne lastnosti očal z vašimi 
-                željami in videzom. Vsak par očal je unikaten — tako kot vi.
-              </p>
-              <p>
-                Z več kot <span class="font-bold">5.000 pozitivnimi ocenami</span> na Googlu smo 
-                dokazali, da naša filozofija deluje. Naše stranke se vračajo in nas priporočajo naprej.
-              </p>
-            </div>
-          </div>
-          <div class="bg-white p-8 shadow-sm border border-gray-100">
-            <div class="text-center">
-              <span class="text-6xl font-serif text-accent block mb-2">5.0</span>
-              <div class="flex justify-center text-accent text-xl mb-2">
-                ★★★★★
-              </div>
-              <p class="text-gray-500 text-sm">na podlagi 5.012 mnenj na Googlu</p>
-            </div>
-          </div>
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-serif text-primary-dark mb-6 text-center">Zakaj Naročanje na Termin?</h2>
+        <div class="space-y-6 text-gray-600 leading-relaxed text-center">
+          <p>
+            <span class="text-accent font-bold">Pozornost in čas bosta namenjena le vam.</span> 
+            V sproščenem vzdušju in brez časovnih pritiskov je zagotovljena obravnava, ki bo 
+            zagotovila maksimalno ustreznost izbire očal in njihove nadaljne uporabe.
+          </p>
+          <p>
+            Naš cilj je preprost: združiti optične in fizikalne lastnosti očal z vašimi 
+            željami in videzom. Vsak par očal je unikaten — tako kot vi.
+          </p>
+          <p>
+            Z pozitivnimi ocenami na Googlu smo 
+            dokazali, da naša filozofija deluje. Naše stranke se vračajo in nas priporočajo naprej.
+          </p>
         </div>
       </div>
     </section>
@@ -104,7 +91,7 @@
               "Prvič sem bila pri njih in sem navdušena. Brez naglice, brez 
               pritiska. Končno sem dobila očala, ki mi res ustrezajo."
             </p>
-            <p class="text-white font-medium text-sm">— Peter T.</p>
+            <p class="text-white font-medium text-sm">— Petra T.</p>
           </div>
 
           <!-- Review 3 -->

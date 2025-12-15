@@ -60,6 +60,22 @@
         </div>
       </div>
     </div>
+
+    <!-- Naroči Leče Section -->
+    <section class="mt-20 py-16 bg-primary-dark text-center">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-serif text-white mb-4">Potrebujete Kontaktne Leče?</h2>
+        <p class="text-gray-300 mb-8">
+          Hitro in enostavno naročite vaše kontaktne leče brez čakanja v vrsti.
+        </p>
+        <NuxtLink 
+          to="/narocilo-lec" 
+          class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors"
+        >
+          Naroči Leče
+        </NuxtLink>
+      </div>
+    </section>
     
     <!-- Snipcart Hidden Settings -->
     <div id="snipcart" data-api-key="ST_NDlkZjE5YjctZWM2Yi00MTQyLTg0ZWItM2U1ZTM0ZGU4Yjg3NjM5MDEzNTMxNjM0OTkwOTgz" hidden></div>
