@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   site: {
-    url: 'https://subsubl.github.io/optikasi',
+    url: 'https://optikasi.si',
     name: 'OptikaSI'
   },
   app: {

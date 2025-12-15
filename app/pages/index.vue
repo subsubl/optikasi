@@ -81,6 +81,9 @@
         </div>
       </div>
     </section>
+
+    <!-- New Arrivals -->
+    <NewArrivals />
   </div>
 </template>
 

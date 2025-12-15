@@ -1,0 +1,87 @@
+[
+    {
+        "slug": "ray-ban",
+        "name": "Ray-Ban",
+        "tagline": "Ikona stila od 1937",
+        "description": "Ray-Ban že skoraj stoletje postavlja standarde v svetu očal. Od legendarne Aviator oblike, ki je nastala za ameriške pilote, do kultnih Wayfarer očal, ki so postala simbol buntovništva in mode. Pri OptikaSI ponujamo široko izbiro originalnih Ray-Ban okvirjev za korekcijska in sončna očala.",
+        "keywords": [
+            "ray-ban očala",
+            "ray-ban ljubljana",
+            "ray-ban wayfarer",
+            "ray-ban aviator"
+        ],
+        "featured": [
+            "rb-aviator-gold"
+        ]
+    },
+    {
+        "slug": "gucci",
+        "name": "Gucci",
+        "tagline": "Italijanska eleganca in drznost",
+        "description": "Gucci očala združujejo italijansko obrtništvo z drznimi dizajnerskimi rešitvami. Prepoznavni logotip GG, živahne barve in luksuzni materiali ustvarjajo kose, ki so resnična modna izjava. V naši kolekciji najdete tako klasične kot avantgardne modele.",
+        "keywords": [
+            "gucci očala",
+            "gucci ljubljana",
+            "gucci sončna očala"
+        ],
+        "featured": [
+            "gucci-gg1234"
+        ]
+    },
+    {
+        "slug": "tom-ford",
+        "name": "Tom Ford",
+        "tagline": "Sofisticirana senzualnost",
+        "description": "Tom Ford predstavlja vrhunec sodobnega luksuza. Njegova kolekcija očal odraža filmsko eleganco in brezčasni šarm. Vsak okvir je zasnovan z občutkom za proporcije in materiale, ki poudarjajo obraz nosilca.",
+        "keywords": [
+            "tom ford očala",
+            "tom ford ljubljana",
+            "tom ford optika"
+        ],
+        "featured": [
+            "tf-henry"
+        ]
+    },
+    {
+        "slug": "oakley",
+        "name": "Oakley",
+        "tagline": "Tehnologija za vrhunske dosežke",
+        "description": "Oakley je sinonim za športno optiko naj višjega razreda. Revolucionarne tehnologije leč, vzdržljivi materiali in ergonomska oblika zagotavljajo popolno izkušnjo za aktivne posameznike. Od kolesarjenja do golfa – Oakley naredi razliko.",
+        "keywords": [
+            "oakley očala",
+            "oakley ljubljana",
+            "športna očala"
+        ],
+        "featured": [
+            "oakley-sutro"
+        ]
+    },
+    {
+        "slug": "persol",
+        "name": "Persol",
+        "tagline": "Italijanska tradicija od 1917",
+        "description": "Persol je ena najstarejših znamk očal na svetu. Patentirani mechiconski tečaj (Meflecto) zagotavlja udobje, ikonična oblika 649 pa je postala simbol italijanskega stila. Idealna izbira za ljubitelje klasike z značajem.",
+        "keywords": [
+            "persol očala",
+            "persol ljubljana",
+            "persol 649"
+        ],
+        "featured": [
+            "persol-649"
+        ]
+    },
+    {
+        "slug": "lindberg",
+        "name": "Lindberg",
+        "tagline": "Danska popolnost brez kompromisov",
+        "description": "Lindberg je znan po minimalističnem dizajnu in izjemni lahkotnosti. Očala brez vijakov, iz titana in roževine, so ročno sestavljena na Danskem. Za tiste, ki cenijo diskrentno eleganco in tehnično dovršenost.",
+        "keywords": [
+            "lindberg očala",
+            "lindberg ljubljana",
+            "titanska očala"
+        ],
+        "featured": [
+            "lindberg-air-rim"
+        ]
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "rb-aviator-gold",
+        "brand": "Ray-Ban",
+        "name": "Aviator Classic",
+        "description": "Legendarni pilotski stil v zlati barvi.",
+        "price": 189.00,
+        "isNew": true
+    },
+    {
+        "id": "gucci-gg1234",
+        "brand": "Gucci",
+        "name": "GG Square",
+        "description": "Drzna kvadratna oblika s prepoznavnim logotipom.",
+        "price": 320.00,
+        "isNew": true
+    },
+    {
+        "id": "oakley-sutro",
+        "brand": "Oakley",
+        "name": "Sutro Lite",
+        "description": "Športna očala za aktivne posameznike.",
+        "price": 175.00,
+        "isNew": true
+    },
+    {
+        "id": "tf-henry",
+        "brand": "Tom Ford",
+        "name": "Henry",
+        "description": "Elegantna okrogla oblika v mat črni.",
+        "price": 380.00,
+        "isNew": true
+    },
+    {
+        "id": "persol-649",
+        "brand": "Persol",
+        "name": "PO649",
+        "description": "Italijanska klasika iz 60-ih let.",
+        "price": 220.00,
+        "isNew": true
+    },
+    {
+        "id": "lindberg-air-rim",
+        "brand": "Lindberg",
+        "name": "Air Titanium Rim",
+        "description": "Ultralahka danska mojstrovina brez vijakov.",
+        "price": 650.00,
+        "isNew": true
+    }
+]
