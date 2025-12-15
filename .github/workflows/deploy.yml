@@ -33,6 +33,8 @@ jobs:
 
       - name: Static HTML export with Nuxt
         run: npx nuxi generate
+        env:
+          NUXT_APP_BASE_URL: /optikasi/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

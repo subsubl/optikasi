@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         { src: 'https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js', async: true }
       ]
     },
-    baseURL: '/optikasi/'
+    // Use '/' for optikasi.si, '/optikasi/' for GitHub Pages
+    baseURL: process.env.NUXT_APP_BASE_URL || '/'
   }
 })
