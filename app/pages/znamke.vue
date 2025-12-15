@@ -22,9 +22,7 @@ useHead({
     { name: 'description', content: 'Ponujamo vrhunske okvirje priznanih znamk: Ray-Ban, Oakley, Gucci, Tom Ford, Lindberg in druge. Na voljo korekcijska in sončna očala.' }
   ]
 })
-</script>
 
-<script setup>
 const brands = [
   'Ray-Ban', 'Gucci', 'Prada', 'Tom Ford', 
   'Dolce & Gabbana', 'Persol', 'Oakley', 'Versace',

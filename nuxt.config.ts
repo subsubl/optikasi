@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+  robots: {
+    robotsTxt: false
+  },
   site: {
     url: 'https://optikasi.si',
     name: 'OptikaSI'
