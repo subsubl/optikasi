@@ -50,6 +50,7 @@ const links = [
   { name: 'Storitve', path: '/storitve' },
   { name: 'Korekcijska Očala', path: '/korekcijska-ocala' },
   { name: 'Sončna Očala', path: '/soncna-ocala' },
+  { name: 'Športna Očala', path: '/sportna-ocala' },
   { name: 'Znamke', path: '/znamke' },
   { name: 'Trgovina', path: '/trgovina' },
 ]
