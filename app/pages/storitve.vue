@@ -119,6 +119,20 @@
       </div>
     </section>
 
+    <!-- Cenik Link -->
+    <section class="py-12 bg-cream text-center">
+      <div class="container mx-auto px-6">
+        <p class="text-gray-600 mb-4">Zanima vas cenik naših storitev?</p>
+        <NuxtLink 
+          to="/cenik" 
+          class="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors"
+        >
+          <span class="uppercase text-sm tracking-widest font-medium">Oglejte si Cenik</span>
+          <span>→</span>
+        </NuxtLink>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="py-20 bg-primary-dark text-center">
       <div class="container mx-auto px-6 max-w-3xl">
