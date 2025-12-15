@@ -94,6 +94,41 @@
       </div>
     </section>
 
+    <!-- Workplace & Safety Glasses -->
+    <section class="py-24 bg-primary-dark text-white">
+      <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-3xl font-serif mb-6">Zaščitna Očala z Dioptrijo</h2>
+        <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
+          V sodelovanju z vodilnimi proizvajalci, kot je Uvex (preko Alcom), nudimo vrhunska delovna 
+          zaščitna očala. Zagotovite si popolno zaščito oči pred delci, kemikalijami in prahom, 
+          hkrati pa ohranite oster vid na vse razdalje.
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <div class="bg-white/10 p-6 backdrop-blur border border-white/20">
+            <h3 class="font-serif text-xl mb-3">Industrija</h3>
+            <p class="text-gray-400 text-sm">
+              Certificirana zaščita za delo v proizvodnji. Odpornost na udarce in kemikalije 
+              po standardu EN 166.
+            </p>
+          </div>
+          <div class="bg-white/10 p-6 backdrop-blur border border-white/20">
+            <h3 class="font-serif text-xl mb-3">Udobje in Vid</h3>
+            <p class="text-gray-400 text-sm">
+              Safety RX stekla omogočajo udobno nošenje skozi celoten delovnik brez 
+              utrujenosti oči.
+            </p>
+          </div>
+          <div class="bg-white/10 p-6 backdrop-blur border border-white/20">
+            <h3 class="font-serif text-xl mb-3">Vse Dioptrije</h3>
+            <p class="text-gray-400 text-sm">
+              Na voljo z enostavnimi (monofokalnimi) ali progresivnimi stekli, prilagojenimi 
+              vašemu delovnemu mestu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- For Everyone -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-5xl">
