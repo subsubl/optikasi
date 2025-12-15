@@ -26,8 +26,8 @@ export default {
                 }
             },
             fontFamily: {
-                serif: ['Playfair Display', 'serif'],
-                sans: ['Lato', 'sans-serif'],
+                serif: ['Cormorant Garamond', 'serif'],
+                sans: ['Source Sans 3', 'sans-serif'],
             },
             container: {
                 center: true,
