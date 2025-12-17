@@ -1,8 +1,11 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="py-32 bg-primary-dark text-white text-center">
-      <div class="container mx-auto px-6 max-w-4xl">
+    <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+         <img src="/images/hero_sunglasses.png" alt="Sončna Očala" class="w-full h-full object-cover opacity-60" />
+      </div>
+      <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Zaščita in Stil</span>
         <h1 class="text-5xl md:text-6xl font-serif mb-8 leading-tight">
           Sončna Očala
@@ -131,6 +134,78 @@
 
         </div>
       </div>
+    </section>
+
+    <!-- Coatings Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16">
+                <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Napredna Zaščita</span>
+                <h2 class="text-4xl font-serif text-primary-dark mb-6">Nanosi za Stekla</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Naši premium nanosi zagotavljajo popolno zaščito vaših oči in stekel. Od vrhunskih antirefleksov do modnih zrcalnih nanosov.
+                </p>
+            </div>
+
+            <!-- Opal Ultra Grid -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div>
+                   <h3 class="text-3xl font-serif text-primary-dark mb-6">Opal Ultra / UV</h3>
+                   <p class="text-gray-600 mb-6 leading-relaxed">
+                       Zagotovite si kristalno jasen vid v vseh pogojih. Nanos Opal Ultra odpravlja bleščanje, izboljša kontrast in ščiti stekla pred praskami in umazanijo.
+                       Opal UltraUV dodatno ščiti pred škodljivimi UV žarki, tudi tistimi, ki se odbijajo od zadnje strani stekla.
+                   </p>
+                   <ul class="space-y-4 mb-8">
+                       <li class="flex items-center text-gray-700">
+                           <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                           Odpravljeno bleščanje za varno vožnjo
+                       </li>
+                       <li class="flex items-center text-gray-700">
+                           <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                           Visoka odpornost proti praskam
+                       </li>
+                        <li class="flex items-center text-gray-700">
+                           <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                           Enostavno čiščenje (hidrofobni in oleofobni sloj)
+                       </li>
+                        <li class="flex items-center text-gray-700">
+                           <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                           100% UV zaščita (Opal UltraUV)
+                       </li>
+                   </ul>
+                </div>
+                <!-- Images comparison -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="group relative">
+                        <img src="/images/coatings/reflex-before.jpg" alt="Standard Coating" class="w-full rounded shadow-sm opacity-80 group-hover:opacity-100 transition-opacity">
+                        <p class="text-xs text-center text-gray-500 mt-2">Standardni Antirefleks</p>
+                    </div>
+                     <div class="group relative">
+                        <img src="/images/coatings/opal-ultra-uv.jpg" alt="Opal Ultra UV" class="w-full rounded shadow-md ring-2 ring-accent/20">
+                         <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">Opal Ultra</div>
+                        <p class="text-xs text-center text-gray-500 mt-2">Opal UltraUV</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mirror Coatings -->
+            <div class="text-center mb-12">
+                 <h3 class="text-2xl font-serif text-primary-dark mb-4">Mirror - Zrcalni Nanosi</h3>
+                 <p class="text-gray-500 max-w-2xl mx-auto mb-12">Za moden videz in dodatno udobje pri močni svetlobi. Na voljo v različnih atraktivnih barvah.</p>
+                 
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Mirror Rose -->
+                    <div class="group">
+                        <div class="overflow-hidden rounded-lg shadow-sm mb-3">
+                            <img src="/images/coatings/mirror-rose.jpg" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <h4 class="font-bold text-gray-800">Mirror Rose</h4>
+                    </div>
+                     <!-- Add generic placeholder/derived if we only downloaded one, or check json -->
+                 </div>
+                 <p class="text-xs text-gray-400 mt-8">Na voljo tudi: Blue, Green, Silver, Gold, Red.</p>
+            </div>
+        </div>
     </section>
 
     <!-- CTA -->

@@ -25,7 +25,7 @@
           stekli izboljšajo kontrast, globinsko zaznavo in s tem vašo reakcijsko dobo.
         </p>
         <p class="text-gray-600 leading-relaxed text-lg">
-          V sodelovanju s podjetjem <strong>Alcom</strong> in blagovno znamko <strong>Uvex</strong> vam nudimo 
+          V sodelovanju z blagovno znamko <strong>Uvex</strong> vam nudimo 
           individualno prilagojena športna dioptrijska očala, ki sledijo ukrivljenosti okvirja in 
           zagotavljajo široko vidno polje brez popačevanj.
         </p>
