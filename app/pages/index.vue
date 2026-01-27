@@ -62,9 +62,8 @@
               Dogovorite se za obisk →
             </NuxtLink>
           </div>
-          <div class="relative h-96 bg-gray-800 border border-gray-700 flex items-center justify-center">
-             <!-- Placeholder for interior shot -->
-             <p class="text-gray-500 uppercase tracking-widest text-sm">Prostor Butične Optike</p>
+          <div class="relative h-96 border border-gray-700">
+             <img src="/images/shop/studio-optika-si.png" alt="Prostor Butične Optike" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
