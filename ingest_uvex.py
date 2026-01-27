@@ -4,6 +4,7 @@ import re
 import json
 import urllib.request
 import ssl
+import concurrent.futures
 
 # Bypass SSL check
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -79,14 +80,9 @@ for col in columns:
     filename = f"uvex-{sku}.jpg"
     local_path = os.path.join(output_dir, filename)
     
-    # Download
-    print(f"Downloading {src} -> {filename}")
-    try:
-        urllib.request.urlretrieve(src, local_path)
-    except Exception as e:
-        print(f"Error downloading {src}: {e}")
-
+    # Add to download tasks
     products.append({
+        "_download_task": (src, local_path),
         "id": sku,
         "name": name,
         "description": "Športna dioptrijska očala Uvex. Nelomljiv okvir, vrhunska zaščita.",
@@ -94,6 +90,22 @@ for col in columns:
         "category": "sport",
         "image": f"/images/shop/sport/{filename}"
     })
+
+# Parallel Download
+def download_image(task):
+    src, local_path = task
+    filename = os.path.basename(local_path)
+    print(f"Downloading {src} -> {filename}")
+    try:
+        urllib.request.urlretrieve(src, local_path)
+    except Exception as e:
+        print(f"Error downloading {src}: {e}")
+
+download_tasks = [p.pop("_download_task") for p in products]
+
+print(f"Downloading {len(download_tasks)} images in parallel...")
+with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+    executor.map(download_image, download_tasks)
 
 print(f"Extracted {len(products)} products.")
 with open('uvex_products.json', 'w', encoding='utf-8') as f:
