@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="/images/sport/hero-general.jpg" alt="Športna Očala" class="w-full h-full object-cover" />
+        <img src="/optikasi/images/sport/hero-general.jpg" alt="Športna Očala" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black/40"></div>
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
@@ -41,7 +41,7 @@
           <!-- Cycling -->
           <div class="group">
             <div class="relative h-80 overflow-hidden mb-6 rounded-lg">
-              <img src="/images/sport/hero-cycling.jpg" alt="Kolesarska Očala" 
+              <img src="/optikasi/images/sport/hero-cycling.jpg" alt="Kolesarska Očala"
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                 <h3 class="text-3xl font-serif text-white">Kolesarstvo</h3>
@@ -57,7 +57,7 @@
           <!-- Winter Sports -->
           <div class="group">
             <div class="relative h-80 overflow-hidden mb-6 rounded-lg">
-              <img src="/images/sport/hero-winter.jpg" alt="Zimska Očala" 
+              <img src="/optikasi/images/sport/hero-winter.jpg" alt="Zimska Očala"
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                 <h3 class="text-3xl font-serif text-white">Zimski Športi</h3>
@@ -125,14 +125,14 @@
               </ul>
             </div>
             <div class="order-1 md:order-2 rounded-lg overflow-hidden border border-white/10">
-              <img src="/images/sport/tech-variomatic.jpg" alt="Variomatic Tehnologija" class="w-full" />
+              <img src="/optikasi/images/sport/tech-variomatic.jpg" alt="Variomatic Tehnologija" class="w-full" />
             </div>
           </div>
 
           <!-- Colorvision -->
           <div class="grid md:grid-cols-2 gap-12 items-center">
              <div class="rounded-lg overflow-hidden border border-white/10">
-              <img src="/images/sport/tech-colorvision.jpg" alt="Colorvision Tehnologija" class="w-full" />
+              <img src="/optikasi/images/sport/tech-colorvision.jpg" alt="Colorvision Tehnologija" class="w-full" />
             </div>
             <div>
               <h3 class="text-2xl font-serif text-accent mb-4">Uvex Colorvision®</h3>
@@ -161,7 +161,7 @@
               </p>
             </div>
             <div class="order-1 md:order-2 rounded-lg overflow-hidden border border-white/10">
-              <img src="/images/sport/tech-supravision.jpg" alt="Supravision Tehnologija" class="w-full" />
+              <img src="/optikasi/images/sport/tech-supravision.jpg" alt="Supravision Tehnologija" class="w-full" />
             </div>
           </div>
         </div>
