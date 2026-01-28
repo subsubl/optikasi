@@ -2,7 +2,7 @@
   <div>
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img src="/images/hero_services.png" alt="Naše Storitve" class="w-full h-full object-cover opacity-60" />
+         <img src="/optikasi/images/hero_services.png" alt="Naše Storitve" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">OptikaSI</span>

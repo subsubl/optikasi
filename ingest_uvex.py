@@ -9,7 +9,7 @@ import concurrent.futures
 # Bypass SSL check
 ssl._create_default_https_context = ssl._create_unverified_context
 
-output_dir = "d:/optikasi/public/images/shop/sport"
+output_dir = "public/images/shop/sport"
 os.makedirs(output_dir, exist_ok=True)
 
 with open('alcom_source.html', 'r', encoding='utf-8') as f:
@@ -88,7 +88,7 @@ for col in columns:
         "description": "Športna dioptrijska očala Uvex. Nelomljiv okvir, vrhunska zaščita.",
         "price": 0,
         "category": "sport",
-        "image": f"/images/shop/sport/{filename}"
+        "image": f"/optikasi/images/shop/sport/{filename}"
     })
 
 # Parallel Download
