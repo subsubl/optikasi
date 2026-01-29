@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img src="/optikasi/images/hero_eyeglasses.png" alt="Korekcijska Očala" class="w-full h-full object-cover opacity-60" />
+         <img :src="'/optikasi/images/hero_eyeglasses.png'" alt="Korekcijska Očala" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Jasno Videnje za Vsak Dan</span>
@@ -255,7 +255,7 @@
         <!-- Features Grid -->
         <div class="grid md:grid-cols-2 gap-8 items-center mb-24">
             <div class="relative h-96 group overflow-hidden">
-                <img src="/optikasi/images/fashion/swarovski/Glasses-Swarovski2.jpg" alt="Anything that shines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img :src="'/optikasi/images/fashion/swarovski/Glasses-Swarovski2.jpg'" alt="Anything that shines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Vse kar sije</h3>
@@ -264,7 +264,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/optikasi/images/fashion/swarovski/Glasses-Swarovski1.jpg" alt="Brilliant prestige" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img :src="'/optikasi/images/fashion/swarovski/Glasses-Swarovski1.jpg'" alt="Brilliant prestige" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Briljantni Prestiž</h3>
@@ -273,7 +273,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/optikasi/images/fashion/swarovski/Glasses-Swarovski3.jpg" alt="Diamond look" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img :src="'/optikasi/images/fashion/swarovski/Glasses-Swarovski3.jpg'" alt="Diamond look" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Diamantni Videz</h3>
@@ -282,7 +282,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/optikasi/images/fashion/swarovski/Glasses-Swarovski4.jpg" alt="Perfection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img :src="'/optikasi/images/fashion/swarovski/Glasses-Swarovski4.jpg'" alt="Perfection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Predani Popolnosti</h3>
@@ -299,61 +299,61 @@
                 <!-- Crystals -->
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_001.jpg" class="w-16 h-16 object-contain" alt="Clear White">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_001.jpg'" class="w-16 h-16 object-contain" alt="Clear White">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Clear White</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_277.jpg" class="w-16 h-16 object-contain" alt="Purple Velvet">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_277.jpg'" class="w-16 h-16 object-contain" alt="Purple Velvet">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Purple Velvet</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_206.jpg" class="w-16 h-16 object-contain" alt="Sapphire">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_206.jpg'" class="w-16 h-16 object-contain" alt="Sapphire">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Sapphire</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_243.jpg" class="w-16 h-16 object-contain" alt="Capri Blue">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_243.jpg'" class="w-16 h-16 object-contain" alt="Capri Blue">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Capri Blue</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_205.jpg" class="w-16 h-16 object-contain" alt="Emerald">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_205.jpg'" class="w-16 h-16 object-contain" alt="Emerald">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Emerald</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_291.jpg" class="w-16 h-16 object-contain" alt="Fern Green">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_291.jpg'" class="w-16 h-16 object-contain" alt="Fern Green">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Fern Green</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_226.jpg" class="w-16 h-16 object-contain" alt="Light Topaz">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_226.jpg'" class="w-16 h-16 object-contain" alt="Light Topaz">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Light Topaz</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_259.jpg" class="w-16 h-16 object-contain" alt="Tangerine">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_259.jpg'" class="w-16 h-16 object-contain" alt="Tangerine">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Tangerine</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_502.jpg" class="w-16 h-16 object-contain" alt="Fuchsia">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_502.jpg'" class="w-16 h-16 object-contain" alt="Fuchsia">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Fuchsia</p>
                 </div>
                 <div class="text-center group">
                     <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-sm flex items-center justify-center mb-3 group-hover:scale-110 transition-transform border border-gray-50">
-                        <img src="/optikasi/images/fashion/swarovski/alcom_swarovski_227.jpg" class="w-16 h-16 object-contain" alt="Light Siam">
+                        <img :src="'/optikasi/images/fashion/swarovski/alcom_swarovski_227.jpg'" class="w-16 h-16 object-contain" alt="Light Siam">
                     </div>
                     <p class="text-xs text-gray-500 font-medium">Light Siam</p>
                 </div>
@@ -407,11 +407,11 @@
                 <!-- Images comparison -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="group relative">
-                        <img src="/optikasi/images/coatings/reflex-before.jpg" alt="Standard Coating" class="w-full rounded shadow-sm opacity-80 group-hover:opacity-100 transition-opacity">
+                        <img :src="'/optikasi/images/coatings/reflex-before.jpg'" alt="Standard Coating" class="w-full rounded shadow-sm opacity-80 group-hover:opacity-100 transition-opacity">
                         <p class="text-xs text-center text-gray-500 mt-2">Standardni Antirefleks</p>
                     </div>
                      <div class="group relative">
-                        <img src="/optikasi/images/coatings/opal-ultra-uv.jpg" alt="Opal Ultra UV" class="w-full rounded shadow-md ring-2 ring-accent/20">
+                        <img :src="'/optikasi/images/coatings/opal-ultra-uv.jpg'" alt="Opal Ultra UV" class="w-full rounded shadow-md ring-2 ring-accent/20">
                          <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">Opal Ultra</div>
                         <p class="text-xs text-center text-gray-500 mt-2">Opal UltraUV</p>
                     </div>
@@ -427,7 +427,7 @@
                     <!-- Mirror Rose -->
                     <div class="group">
                         <div class="overflow-hidden rounded-lg shadow-sm mb-3">
-                            <img src="/optikasi/images/coatings/mirror-rose.jpg" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img :src="'/optikasi/images/coatings/mirror-rose.jpg'" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <h4 class="font-bold text-gray-800">Mirror Rose</h4>
                     </div>

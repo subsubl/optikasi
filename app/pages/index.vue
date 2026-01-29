@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="relative h-[80vh] flex items-center justify-center bg-primary-dark overflow-hidden">
-      <img src="/optikasi/images/hero_eyeglasses.png" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover" />
+      <img :src="'/optikasi/images/hero_eyeglasses.png'" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-br from-primary-dark to-black opacity-80" />
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
          <h1 class="font-serif text-5xl md:text-7xl text-white mb-6 tracking-wide leading-tight">
@@ -63,7 +63,7 @@
             </NuxtLink>
           </div>
           <div class="relative h-96 border border-gray-700">
-             <img src="/optikasi/images/shop/studio-optika-si.png" alt="Prostor Butične Optike" class="w-full h-full object-cover" />
+             <img :src="'/optikasi/images/shop/studio-optika-si.png'" alt="Prostor Butične Optike" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
