@@ -5,3 +5,7 @@
 ## 2025-05-27 - Interaction Feedback
 **Learning:** Using `window.alert()` for form submission success is disruptive and looks unprofessional.
 **Action:** Implement inline success messages and button loading states (text change + disabled) for smoother interaction.
+
+## 2025-05-27 - Keyboard Accessible Dropdowns
+**Learning:** Hover-only dropdowns are inaccessible to keyboard users. Tailwind's `group-hover` should almost always be paired with `group-focus-within`.
+**Action:** Automatically add `group-focus-within` variants whenever `group-hover` is used for visibility toggling.
