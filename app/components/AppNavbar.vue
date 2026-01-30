@@ -1,41 +1,45 @@
 <template>
   <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
-    <div class="container mx-auto px-6 h-20 flex items-center justify-between gap-8 whitespace-nowrap">
+    <div class="container mx-auto px-6 h-20 flex items-center justify-between gap-8 whitespace-nowrap relative">
       <!-- Logo -->
-      <NuxtLink to="/" class="text-2xl font-serif font-bold text-primary-dark tracking-widest">
+      <NuxtLink to="/" class="text-2xl font-serif font-bold text-primary-dark tracking-widest z-50 relative">
         OPTIKASI
       </NuxtLink>
 
-      <!-- Mobile Menu Button -->
-      <button @click="isOpen = !isOpen" class="md:hidden text-primary-dark focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <!-- Desktop Links -->
-      <div class="hidden md:flex space-x-4 items-center">
+      <!-- Desktop Links (Centered) -->
+      <div class="hidden lg:flex space-x-8 items-center absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div v-for="link in links" :key="link.path" class="relative group h-20 flex items-center">
           <NuxtLink :to="link.path" 
             class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent transition-colors font-medium h-full flex items-center">
             {{ link.name }}
           </NuxtLink>
            <!-- Dropdown -->
-            <div v-if="link.children" class="absolute left-0 top-full w-72 bg-white shadow-lg py-2 border-t-2 border-primary opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+            <div v-if="link.children" class="absolute left-1/2 -translate-x-1/2 top-full w-72 bg-white shadow-lg py-2 border-t-2 border-primary opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
                 <NuxtLink v-for="child in link.children" :key="child.path" :to="child.path" class="block px-6 py-3 text-xs text-gray-600 hover:text-primary hover:bg-gray-50 uppercase tracking-wider border-b border-gray-50 last:border-0 text-left">
                     {{ child.name }}
                 </NuxtLink>
             </div>
         </div>
-        <NuxtLink to="/kontakt" class="bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest ml-4">
+      </div>
+
+      <!-- Right Side Actions -->
+      <div class="flex items-center gap-4 z-50 relative">
+         <NuxtLink to="/kontakt" class="hidden lg:block bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest">
           Naročite se
         </NuxtLink>
+
+        <!-- Mobile Menu Button -->
+        <button @click="isOpen = !isOpen" class="lg:hidden text-primary-dark focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div v-show="isOpen" class="md:hidden bg-white border-t max-h-[80vh] overflow-y-auto">
+    <div v-show="isOpen" class="lg:hidden bg-white border-t max-h-[80vh] overflow-y-auto">
       <div class="flex flex-col p-4 space-y-4">
         <template v-for="link in links" :key="link.path">
            <div class="flex flex-col">
@@ -85,5 +89,6 @@ const links = [
   },
   { name: 'Znamke', path: '/znamke' },
   { name: 'Trgovina', path: '/trgovina' },
+  { name: 'Cenik', path: '/cenik' },
 ]
 </script>
