@@ -60,9 +60,7 @@ useHead({
 
 const exams = [
   { name: 'Osnovni pregled vida', price: '35,00 €', note: 'Najnižja cena v Ljubljani! Brezplačno ob nakupu.' },
-  { name: 'Specialistični pregled vida', price: '75,00 €', note: 'Celovit pregled, merjenje očesnega pritiska, pregled ozadja.' },
-  { name: 'Pregled za kontaktne leče', price: '40,00 €', note: 'Vključuje uvajanje, testne leče in kontrolo.' },
-  { name: 'Kontrolni pregled za leče', price: '15,00 €', note: 'Redna letna kontrola dioptrije.' },
+
   { name: 'Pregled za vozniški izpit', price: '40,00 €', note: 'Izdaja zdravniškega potrdila.' },
   { name: 'Svetovanje pri izbiri okvirja', price: 'Brezplačno', note: 'Strokovna pomoč stilista.' }
 ]

@@ -67,12 +67,12 @@ const links = [
 
 
   { name: 'Storitve', path: '/storitve' },
-  { name: 'Korekcijska Očala', path: '/korekcijska-ocala' },
-  { name: 'Sončna Očala', path: '/soncna-ocala' },
-  { name: 'Športna Očala', path: '/sportna-ocala' },
-  { name: 'Očala za Vožnjo', path: '/ocala-za-voznjo' },
+  { name: 'Korekcija', path: '/korekcijska-ocala' },
+  { name: 'Sonce', path: '/soncna-ocala' },
+  { name: 'Šport', path: '/sportna-ocala' },
+  { name: 'Vožnja', path: '/ocala-za-voznjo' },
   { 
-      name: 'Varnostna Očala', 
+      name: 'Varnost', 
       path: '/varnostna-ocala',
       children: [
           { name: 'Industrija in rudarstvo', path: '/varnostna-ocala/industrija-in-rudarstvo' },
