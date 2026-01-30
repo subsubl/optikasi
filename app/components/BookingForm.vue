@@ -28,8 +28,8 @@
       <!-- Weekdays -->
       <div class="flex flex-wrap gap-3 mb-4">
         <label v-for="day in days" :key="day" class="cursor-pointer">
-          <input type="checkbox" :value="day" v-model="form.preferredDays" class="hidden peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light transition-all select-none">
+          <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
             {{ day }}
           </span>
         </label>
@@ -38,8 +38,8 @@
       <!-- Time Slots -->
       <div class="flex flex-wrap gap-3">
         <label v-for="slot in slots" :key="slot" class="cursor-pointer">
-          <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="hidden peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent transition-all select-none">
+          <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
             {{ slot }}
           </span>
         </label>
