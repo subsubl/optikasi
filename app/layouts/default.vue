@@ -23,6 +23,5 @@
         <p class="text-xs text-gray-400">&copy; {{ new Date().getFullYear() }} OptikaSI. Vse pravice pridržane.</p>
       </div>
     </footer>
-    <MobileStickyCTA />
   </div>
 </template>

@@ -14,9 +14,15 @@
           :key="frame.id" 
           class="flex-shrink-0 w-72 snap-start bg-cream p-6 border border-gray-100 hover:border-accent transition-colors group"
         >
-          <!-- Image Placeholder -->
-          <div class="h-48 bg-gray-100 mb-4 flex items-center justify-center text-gray-300 group-hover:bg-gray-50 transition-colors">
-            <span class="text-xs uppercase tracking-widest">{{ frame.brand }}</span>
+          <!-- Product Image -->
+          <div class="h-48 bg-gray-100 mb-4 flex items-center justify-center overflow-hidden group-hover:bg-gray-50 transition-colors">
+            <img 
+              v-if="frame.image" 
+              :src="frame.image" 
+              :alt="frame.name" 
+              class="w-full h-full object-contain p-2"
+            />
+            <span v-else class="text-xs uppercase tracking-widest text-gray-300">{{ frame.brand }}</span>
           </div>
 
           <span class="text-xs text-accent uppercase tracking-widest block mb-1">{{ frame.brand }}</span>

@@ -2,7 +2,6 @@
 from bs4 import BeautifulSoup
 import json
 import re
-import uuid
 
 with open('alcom_source.html', 'r', encoding='utf-8') as f:
     html = f.read()
@@ -48,12 +47,7 @@ for col in columns:
                 sku = match.group(1)
             else:
                 # Fallback, try to infer from image filename or just use random
-                filename = src.split('/')[-1]
-                filename_match = re.search(r'(\d+)', filename)
-                if filename_match:
-                    sku = filename_match.group(1)
-                else:
-                    sku = str(uuid.uuid4())[:8]
+                pass
 
         if '2025/03' in src: # Filter only new collection if possible
             products.append({

@@ -15,7 +15,6 @@
           v-model="email"
           type="email" 
           placeholder="Vaš e-naslov"
-          aria-label="Vaš e-naslov"
           required
           class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
         >

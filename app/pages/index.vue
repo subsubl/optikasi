@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="relative h-[80vh] flex items-center justify-center bg-primary-dark overflow-hidden">
-      <img :src="'/optikasi/images/hero_eyeglasses.png'" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover" />
+      <!-- Placeholder for Hero Image (Using gradient for now) -->
       <div class="absolute inset-0 bg-gradient-to-br from-primary-dark to-black opacity-80" />
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
          <h1 class="font-serif text-5xl md:text-7xl text-white mb-6 tracking-wide leading-tight">
@@ -11,7 +11,7 @@
         <p class="text-cream text-lg md:text-xl tracking-widest font-light mb-10 max-w-2xl mx-auto">
           Strokovno svetovanje in individualni pristop za popoln pogled in videz.
         </p>
-        <NuxtLink to="/kontakt" class="inline-block bg-accent text-primary-dark font-bold hover:bg-white hover:text-primary-dark px-10 py-4 uppercase tracking-[0.2em] transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+        <NuxtLink to="/kontakt" class="inline-block border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-[0.2em] transition-all duration-300">
           Rezervirajte Termin
         </NuxtLink>
       </div>
@@ -62,8 +62,10 @@
               Dogovorite se za obisk →
             </NuxtLink>
           </div>
-          <div class="relative h-96 border border-gray-700">
-             <img :src="'/optikasi/images/shop/studio-optika-si.png'" alt="Prostor Butične Optike" class="w-full h-full object-cover" />
+          <div class="relative h-96 bg-gray-800 border border-gray-700 rounded-lg shadow-md overflow-hidden">
+             <!-- Placeholder for interior shot -->
+             <!-- <p class="text-gray-500 uppercase tracking-widest text-sm">Prostor Butične Optike</p> -->
+             <img src="/images/shop/studio-optika-si.png" alt="Studio Optika Si Interior" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -83,24 +85,6 @@
 
     <!-- New Arrivals -->
     <NewArrivals />
-
-    <!-- Testimonials -->
-    <ClientTestimonials />
-
-    <!-- Direct Booking Section -->
-    <section class="py-24 bg-white relative overflow-hidden">
-      <div class="absolute inset-0 bg-cream opacity-50 transform -skew-y-3 origin-bottom-right scale-110"></div>
-      <div class="container mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 shadow-2xl border-t-4 border-accent">
-          <div class="text-center mb-10">
-            <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Rezervacija</span>
-            <h2 class="text-3xl md:text-4xl text-primary-dark mb-4 font-serif">Naročite se na Pregled</h2>
-            <p class="text-gray-500">Izpolnite spodnji obrazec in potrdili bomo vaš termin v najkrajšem možnem času.</p>
-          </div>
-          <BookingForm />
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -114,7 +98,7 @@ useHead({
 
 const services = [
   { title: 'Korekcijska Očala', desc: 'Široka izbira okvirjev priznanih blagovnih znamk prilagojena vašemu obrazu.' },
-  { title: 'Kontaktne Leče', desc: 'Svetovanje in uvajanje v nošenje kontaktnih leč vseh vrst.' },
+  { title: 'Kontaktne Leče', desc: 'Svetovanje o nošenju vseh vrst kontaktnih leč.' },
   { title: 'Pregledi Vida', desc: 'Natančni pregledi vida s sodobno opremo za optimalno korekcijo.' }
 ]
 </script>

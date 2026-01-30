@@ -2,7 +2,7 @@
   <div>
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img :src="'/optikasi/images/hero_services.png'" alt="Naše Storitve" class="w-full h-full object-cover opacity-60" />
+         <img src="/images/hero_services.png" alt="Naše Storitve" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">OptikaSI</span>
@@ -29,6 +29,45 @@
             Naš cilj je preprost: združiti vrhunske optične lastnosti z vašim osebnim stilom. 
             Vsak obraz je edinstven — in takšna morajo biti tudi očala.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="text-center mb-16">
+          <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Kako Poteka</span>
+          <h2 class="text-4xl font-serif text-primary-dark">Vaša Pot do Popolnih Očal</h2>
+        </div>
+        
+        <!-- Desktop Timeline -->
+        <div class="hidden md:flex items-start justify-between relative">
+          <!-- Connecting Line -->
+          <div class="absolute top-8 left-0 right-0 h-0.5 bg-gray-200 z-0"></div>
+          
+          <div v-for="(step, index) in processSteps" :key="index" class="flex flex-col items-center text-center relative z-10 flex-1">
+            <div class="w-16 h-16 rounded-full bg-primary-dark text-white flex items-center justify-center text-2xl mb-4 shadow-lg">
+              {{ step.icon }}
+            </div>
+            <span class="text-xs text-accent font-bold uppercase tracking-widest mb-2">{{ step.step }}</span>
+            <h3 class="font-serif text-lg text-primary-dark mb-2">{{ step.title }}</h3>
+            <p class="text-gray-500 text-sm leading-relaxed max-w-[180px]">{{ step.desc }}</p>
+          </div>
+        </div>
+
+        <!-- Mobile Timeline -->
+        <div class="md:hidden space-y-8">
+          <div v-for="(step, index) in processSteps" :key="index" class="flex items-start space-x-4">
+            <div class="w-12 h-12 rounded-full bg-primary-dark text-white flex items-center justify-center text-xl flex-shrink-0 shadow-lg">
+              {{ step.icon }}
+            </div>
+            <div>
+              <span class="text-xs text-accent font-bold uppercase tracking-widest">{{ step.step }}</span>
+              <h3 class="font-serif text-lg text-primary-dark">{{ step.title }}</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">{{ step.desc }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -142,35 +181,24 @@
           <h2 class="text-3xl font-serif">Kaj Pravijo Naši Kupci</h2>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Review 1 -->
-          <div class="bg-white/5 backdrop-blur p-8 border border-white/10 rounded-sm">
-            <div class="flex text-accent mb-4">★★★★★</div>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
-              "Odlična optika! Res si vzamejo čas za stranko. Prijazno osebje, 
-              strokovno svetovanje. Priporočam vsem!"
-            </p>
-            <p class="text-white font-bold text-sm uppercase tracking-wider">— Maja K.</p>
-          </div>
-
-          <!-- Review 2 -->
-          <div class="bg-white/5 backdrop-blur p-8 border border-white/10 rounded-sm">
-            <div class="flex text-accent mb-4">★★★★★</div>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
-              "Prvič sem bila pri njih in sem navdušena. Brez naglice, brez 
-              pritiska. Končno sem dobila očala, ki mi res ustrezajo."
-            </p>
-            <p class="text-white font-bold text-sm uppercase tracking-wider">— Petra T.</p>
-          </div>
-
-          <!-- Review 3 -->
-          <div class="bg-white/5 backdrop-blur p-8 border border-white/10 rounded-sm">
-            <div class="flex text-accent mb-4">★★★★★</div>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
-              "Super izkušnja! Izbira okvirjev je ogromna, cene pa poštene. 
-              Vsekakor se bom vrnila tudi za sončna očala."
-            </p>
-            <p class="text-white font-bold text-sm uppercase tracking-wider">— Ana M.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-for="(review, index) in testimonials" :key="index" class="bg-white/5 backdrop-blur p-8 border border-white/10 rounded-sm hover:-translate-y-1 transition-transform duration-300 h-full flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <div class="flex text-accent text-sm">★★★★★</div>
+                <span class="text-xs text-gray-400 font-mono">{{ review.date }}</span>
+              </div>
+              <p class="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                "{{ review.text }}"
+              </p>
+            </div>
+            <div>
+              <p class="text-white font-bold text-sm uppercase tracking-wider mb-1">— {{ review.name }}</p>
+              <div class="text-xs text-gray-500 uppercase tracking-widest flex items-center space-x-2">
+                <img v-if="review.source === 'Google'" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="h-3 opacity-50 grayscale" />
+                <span v-else>{{ review.source }}</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -202,6 +230,34 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center mb-16">
+          <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Pogosta Vprašanja</span>
+          <h2 class="text-4xl font-serif text-primary-dark">Imate Vprašanja?</h2>
+        </div>
+        
+        <div class="space-y-4">
+          <div v-for="(faq, index) in faqs" :key="index" class="border border-gray-200 rounded-lg overflow-hidden">
+            <button 
+              @click="faq.open = !faq.open"
+              class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+            >
+              <span class="font-serif text-lg text-primary-dark">{{ faq.question }}</span>
+              <span class="text-accent text-xl transition-transform duration-300" :class="{ 'rotate-45': faq.open }">+</span>
+            </button>
+            <div 
+              v-show="faq.open"
+              class="px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-100"
+            >
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="py-24 bg-white text-center">
       <div class="container mx-auto px-6 max-w-3xl">
@@ -229,4 +285,114 @@ useHead({
     { name: 'keywords', content: 'optika ljubljana, o nas, storitve, mnenja, servis očal' }
   ]
 })
+
+const testimonials = [
+  {
+    name: 'Petra',
+    date: '13. 6. 2024',
+    source: 'Google',
+    text: 'Najboljsa optika dalec naokoli ker: - sta Simona in Matic super profesionalna - znata svetovat in vedno ponudita okvirje, ki stranki dejansko pasejo k obrazu - izbira okvirjev je ogroooomna, vsak bo nasel nekaj zase - ocala res dobis v najkrajsem moznem casu (mene ta del se vedno, po vec kot 10 letih, prav preseneti, ker sta res hitra) - ze ko vstopis se res vidi, da svoje poslanstvo delata s srcem: skrbita za nas najboljsi vid in sik izgled s top ocali ❤ Studio Optika Si vedno priporocim vsakemu, ker nikoli ne razocara. Kar tako naprej 😎'
+  },
+  {
+    name: 'neznan',
+    date: '5. 6. 2024',
+    source: 'Google',
+    text: 'Sem redna stranka lastnice Optike Si že več kot desetletje. Zmeraj sem zadovoljna z njeno strokovnostjo, iskrenostjo in srčnostjo. Zelo dobro svetujejo pri izbiri okvirja očal glede na karektaristike obraza. So zelo hitri, natančni in delo opravijo z nasmehom. Pri njih se vedno počutiš dobrodošlega. Za piko na i pa je še cena zelo prijazna žepu. 🙂 Še se vrnemo ❤️'
+  },
+  {
+    name: 'neznan',
+    date: '2. 6. 2024',
+    source: 'Google',
+    text: 'Velika izbira okvirjev,strokovni nasveti in cenovno dostopno. Simona in Matic vedno pripravljena priskociti na pomoč.'
+  },
+  {
+    name: 'neznan',
+    date: '1. 6. 2024',
+    source: 'Google',
+    text: 'Super optika z ocali, izjemno navdusena od natancnosti pregleda do prilagoditev… zelo vesela!😍'
+  },
+  {
+    name: 'neznan',
+    date: '1. 6. 2024',
+    source: 'Google',
+    text: 'Super optika, ki jo odlikuje strokovnost, izjemna prijaznost, velika izbira očal, oseben pristop in posluh za stranke☺️ vedno se ti posvetijo, si vzamejo čas zate in zagotovijo kvalitetno storitev😁 učki zadovoljni!❤️😎🤓'
+  },
+  {
+    name: 'neznan',
+    date: '1. 6. 2024',
+    source: 'Google',
+    text: 'super optika!'
+  },
+  {
+    name: 'neznan',
+    date: '1. 6. 2024',
+    source: 'Google',
+    text: 'Meni najljubsa optika v mestu, zelo prijazno in domače osebje, ki vedno poskrbi da imam ocala kakrsna si zelim! Ogromna izbira ocal in res domače sproščeno okolje! Se vedno vrnem z nasmeškom 🫶🏼 optika SI super SI!!!'
+  },
+  {
+    name: 'neznan',
+    date: '1. 6. 2024',
+    source: 'Google',
+    text: 'Najboljša Optika! 😍 Oseben pristop, prijaznost na vrhuncu, prilagodljivost in občutek za ljudi!! ❤️'
+  },
+  {
+    name: 'Maja K.',
+    date: '',
+    source: '',
+    text: 'Odlična optika! Res si vzamejo čas za stranko. Prijazno osebje, strokovno svetovanje. Priporočam vsem!'
+  },
+  {
+    name: 'Petra T.',
+    date: '',
+    source: '',
+    text: 'Prvič sem bila pri njih in sem navdušena. Brez naglice, brez pritiska. Končno sem dobila očala, ki mi res ustrezajo.'
+  },
+  {
+    name: 'Ana M.',
+    date: '',
+    source: '',
+    text: 'Super izkušnja! Izbira okvirjev je ogromna, cene pa poštene. Vsekakor se bom vrnila tudi za sončna očala.'
+  }
+]
+
+const processSteps = [
+  { step: 'Korak 1', icon: '📅', title: 'Rezervacija', desc: 'Pokličite ali sporočite za termin, ki vam ustreza.' },
+  { step: 'Korak 2', icon: '👁️', title: 'Pregled', desc: 'Natančen pregled vida s sodobno opremo.' },
+  { step: 'Korak 3', icon: '👓', title: 'Izbira', desc: 'Skupaj izberemo popoln okvir za vaš obraz.' },
+  { step: 'Korak 4', icon: '🔧', title: 'Prilagoditev', desc: 'Očala prilagodimo za maksimalno udobje.' },
+  { step: 'Korak 5', icon: '✨', title: 'Prevzem', desc: 'Vaša nova očala so pripravljena!' }
+]
+
+const faqs = reactive([
+  { 
+    question: 'Koliko časa traja pregled vida?', 
+    answer: 'Pregled vida pri nas traja približno 30-45 minut. Vzamemo si čas za natančne meritve in pogovor o vaših potrebah.',
+    open: false 
+  },
+  { 
+    question: 'Ali sprejemate naročilnico od drugega optika?', 
+    answer: 'Da, seveda. Če imate veljavno naročilnico od očesnega zdravnika ali drugega optika, jo z veseljem upoštevamo pri izdelavi očal.',
+    open: false 
+  },
+  { 
+    question: 'Kakšna je garancija na očala?', 
+    answer: 'Na vsa očala nudimo 2-letno garancijo za napake materiala in izdelave. Brezplačno prilagodimo očala tudi po nakupu.',
+    open: false 
+  },
+  { 
+    question: 'Kako hitro lahko dobim očala?', 
+    answer: 'Standardna očala so pripravljena v 3-5 delovnih dneh. Za nujne primere nudimo tudi hitrejšo izdelavo.',
+    open: false 
+  },
+  { 
+    question: 'Ali nudite popravila za očala kupljena drugje?', 
+    answer: 'Da, opravljamo servis in popravila za vsa očala, ne glede na to, kje so bila kupljena. Večino manjših popravil opravimo takoj.',
+    open: false 
+  },
+  { 
+    question: 'Kakšni so načini plačila?', 
+    answer: 'Sprejemamo gotovino, vse glavne kreditne kartice in plačilo na obroke. Za večje nakupe je možen tudi dogovor o obročnem plačilu.',
+    open: false 
+  }
+])
 </script>

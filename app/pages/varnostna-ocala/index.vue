@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[50vh] min-h-[400px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img :src="'/optikasi/images/safety/industrija-in-rudarstvo_header_varilec-header-1.jpg'" alt="Varnostna Očala" class="w-full h-full object-cover opacity-50" />
+        <img src="/images/safety/industrija-in-rudarstvo_header_varilec-header-1.jpg" alt="Varnostna Očala" class="w-full h-full object-cover opacity-50" />
       </div>
       <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 class="text-5xl md:text-7xl font-serif mb-6">Varnostna Očala</h1>

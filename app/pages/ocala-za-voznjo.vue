@@ -5,7 +5,7 @@
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <!-- Using one of the ingested images as hero foundation, with overlay -->
-        <img :src="'/optikasi/images/driving/drive_car.png'" alt="Očala za vožnjo" class="w-full h-full object-cover blur-[2px]" />
+        <img src="/images/driving/drive_car.png" alt="Očala za vožnjo" class="w-full h-full object-cover blur-[2px]" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
@@ -38,7 +38,7 @@
           <!-- Oblačno -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img :src="'/optikasi/images/driving/drive_cloudy.png'" alt="Oblačno vreme"
+              <img src="/images/driving/drive_cloudy.png" alt="Oblačno vreme" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Oblačno Vreme</h3>
@@ -53,7 +53,7 @@
           <!-- Avto -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img :src="'/optikasi/images/driving/drive_car.png'" alt="Svetloba v avtu"
+              <img src="/images/driving/drive_car.png" alt="Svetloba v avtu" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Svetloba v Avtu</h3>
@@ -68,7 +68,7 @@
           <!-- Prostem -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img :src="'/optikasi/images/driving/drive_outdoor.png'" alt="Močna svetloba"
+              <img src="/images/driving/drive_outdoor.png" alt="Močna svetloba" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Na Prostem</h3>

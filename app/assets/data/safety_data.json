@@ -1,7 +1,7 @@
 {
   "industrija-in-rudarstvo": {
     "title": "Industrija in rudarstvo",
-    "header_image": "/optikasi/images/safety/industrija-in-rudarstvo_header_varilec-header-1.jpg",
+    "header_image": "/images/safety/industrija-in-rudarstvo_header_varilec-header-1.jpg",
     "intro": [
       "Najpogostejše nevarnosti v proizvodnji:",
       "Nevarnost mehanskih poškodb",
@@ -12,7 +12,7 @@
       {
         "name": "uvex RX cd 5518 – moder",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109234.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109234.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -24,7 +24,7 @@
       {
         "name": "uvex RX cd 5518 – rdeč",
         "sku": "6109.230",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109230-1.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109230-1.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -36,7 +36,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6109.249",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109249.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastičen okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -49,7 +49,7 @@
       {
         "name": "uvex RX bc 5111",
         "sku": "6109.116",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109116.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109116.jpg",
         "features": [
           "okvir z retro dizajnom in dvojnim mostičkom",
           "prosojen stranski ščit",
@@ -62,7 +62,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6109.257",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109257.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -78,7 +78,7 @@
       {
         "name": "uvex RX cd 5505 – brez tesnila",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109208.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109208.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -94,7 +94,7 @@
       {
         "name": "uvex RX cd 5512 – oliven set",
         "sku": "6109.220+6118.004",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109220set.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109220set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -112,7 +112,7 @@
       {
         "name": "uvex RX cd 5522",
         "sku": "6109.250",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109250.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109250.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -126,7 +126,7 @@
       {
         "name": "uvex RX cf 9501 – goggles",
         "sku": "6109.501",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109501.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109501.jpg",
         "features": [
           "zaščitna očala z receptnimi dioptrijskimi stekli",
           "popolnoma zaprta za najvišjo varnost",
@@ -141,7 +141,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109209.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -157,7 +157,7 @@
       {
         "name": "uvex RX bc 5502",
         "sku": "6108.215",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6108215.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6108215.jpg",
         "features": [
           "tesno prilegajoč plastični okvir s prosojnim stranskim ščitom z vključeno zaščito za obrvi",
           "posebna oblika okvirja z zaščito pred delci s spodnje strani",
@@ -169,7 +169,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6109.249",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109249.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastičen okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -182,7 +182,7 @@
       {
         "name": "uvex RX cd 5526 – črn",
         "sku": "6109.260",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109260.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109260.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -197,7 +197,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6109.257",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109257.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -213,7 +213,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -231,7 +231,7 @@
       {
         "name": "uvex RX cd 5505 – moder",
         "sku": "6109.225",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109225.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109225.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -243,7 +243,7 @@
       {
         "name": "uvex RX cd 5505 – rdeč",
         "sku": "6109.226",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109226.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109226.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -255,7 +255,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109209.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -271,7 +271,7 @@
       {
         "name": "uvex RX bc 5506",
         "sku": "6109.210",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109210.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109210.jpg",
         "features": [
           "udoben plastičen okvir",
           "stranski ščiti in integrirana zaščita obrvi",
@@ -282,7 +282,7 @@
       {
         "name": "uvex RX cd 5512 – oliven set",
         "sku": "6109.220+6118.004",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109220set.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109220set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -300,7 +300,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -318,7 +318,7 @@
       {
         "name": "uvex RX cd 5505 – flip up – varjenje",
         "sku": "6109.218",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109218.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109218.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "napredna tehnologija v sivi barvi zatemnjenih stekel, ki nudijo zaščito pred UV in IR sevanjem in hkrati omogočajo optimalno zaznavanje barv",
@@ -333,7 +333,7 @@
       {
         "name": "uvex RX cd 5505 – didymium",
         "sku": "6109.238",
-        "image": "/optikasi/images/safety/industrija-in-rudarstvo_prod_6109238.jpg",
+        "image": "/images/safety/industrija-in-rudarstvo_prod_6109238.jpg",
         "features": [
           "flip-up očala z brezdioptrijskimi didymium stekli",
           "didymium stekla so posebni filtri z visoko absorpcijo pri 589nm",
@@ -349,7 +349,7 @@
   },
   "farmacija-in-biotehnologija": {
     "title": "Farmacija in biotehnologija",
-    "header_image": "/optikasi/images/safety/farmacija-in-biotehnologija_header_labor-header.jpg",
+    "header_image": "/images/safety/farmacija-in-biotehnologija_header_labor-header.jpg",
     "intro": [
       "Poudarek na inovacijah in kakovosti",
       "Delo na področju raziskav, razvoja in proizvodnje zdravil v farmacevtskih in biotehnoloških podjetjih zahteva najvišje standarde zanesljive zaščitne opreme — navsezadnje so zaposleni pri svojem delu izpostavljeni kemičnim in biološkim tveganjem ter različnim telesnim in duševnim obremenitvam.",
@@ -361,7 +361,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109209.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -377,7 +377,7 @@
       {
         "name": "uvex RX bc 5502",
         "sku": "6108.215",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6108215.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6108215.jpg",
         "features": [
           "tesno prilegajoč plastični okvir s prosojnim stranskim ščitom z vključeno zaščito za obrvi",
           "posebna oblika okvirja z zaščito pred delci s spodnje strani",
@@ -389,7 +389,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6108.249",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109249.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -402,7 +402,7 @@
       {
         "name": "uvex RX cd 5526 – črn",
         "sku": "6108.260",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109260.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109260.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -417,7 +417,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6108.257",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109257.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -433,7 +433,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109250-sealed.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -451,7 +451,7 @@
       {
         "name": "uvex RX cd 5518 – moder",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109234.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109234.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -464,7 +464,7 @@
       {
         "name": "uvex RX cd 5518 – rdeč",
         "sku": "6109.230",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109230-1.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109230-1.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -477,7 +477,7 @@
       {
         "name": "uvex RX cd 5512 – oranžen",
         "sku": "6109.217",
-        "image": "/optikasi/images/safety/farmacija-in-biotehnologija_prod_6109217.jpg",
+        "image": "/images/safety/farmacija-in-biotehnologija_prod_6109217.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 6",
           "integriran stranski ščit in zaščita obrvi anatomsko oblikovan mehek nosnik za dobro prileganje",
@@ -493,7 +493,7 @@
   },
   "obrtna-delavnica": {
     "title": "Obrt in Delavnica",
-    "header_image": "/optikasi/images/safety/obrtna-delavnica_header_dekle-header.jpg",
+    "header_image": "/images/safety/obrtna-delavnica_header_dekle-header.jpg",
     "intro": [
       "Pri izbiri dioptrijskih zaščitnih očal za delo v delavnici je nujno upoštevati naslednje dejavnike:",
       "Najpogostejše nevarnosti v delavnici:",
@@ -505,7 +505,7 @@
       {
         "name": "uvex RX bc 5111",
         "sku": "6109.116",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109116.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109116.jpg",
         "features": [
           "okvir z retro dizajnom in dvojnim mostičkom",
           "prosojen stranski ščit",
@@ -518,7 +518,7 @@
       {
         "name": "uvex RX bc 5103",
         "sku": "6109.104/105",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109104.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109104.jpg",
         "features": [
           "klasičen kovinski okvir z dvojnim mostičkom",
           "kovinski zračen stranski ščit",
@@ -531,7 +531,7 @@
       {
         "name": "uvex RX bc 5108",
         "sku": "6109.113",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109113.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109113.jpg",
         "features": [
           "ozek, izrazitejši kovinski okvir",
           "prosojen stranski ščit",
@@ -545,7 +545,7 @@
       {
         "name": "uvex RX cd 5518 – moder",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109234.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109234.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -557,7 +557,7 @@
       {
         "name": "uvex RX cd 5518 – rdeč",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109230-1.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109230-1.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -569,7 +569,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109249.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -582,7 +582,7 @@
       {
         "name": "uvex RX cd 5505 – moder",
         "sku": "6109.225",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109225.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109225.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -594,7 +594,7 @@
       {
         "name": "uvex RX cd 5505 – rdeč",
         "sku": "6109.226",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109226.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109226.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -606,7 +606,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109209.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -622,7 +622,7 @@
       {
         "name": "uvex RX cd 5526 – črn",
         "sku": "6109.260",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109260.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109260.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -637,7 +637,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6109.257",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109257.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -653,7 +653,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/obrtna-delavnica_prod_6109250-sealed.jpg",
+        "image": "/images/safety/obrtna-delavnica_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -672,7 +672,7 @@
   },
   "gozdarstvo": {
     "title": "Gozdarstvo in kmetijstvo",
-    "header_image": "/optikasi/images/safety/gozdarstvo_header_Copy-of-gozdar2-1.jpg",
+    "header_image": "/images/safety/gozdarstvo_header_Copy-of-gozdar2-1.jpg",
     "intro": [
       "Najpogostejše nevarnosti v gozdarstvu in kmetijstvu:",
       "Nevarnost mehanskih poškodb",
@@ -684,7 +684,7 @@
       {
         "name": "uvex RX cd 5512 – oliven set",
         "sku": "6109.220+6118.004",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109220set.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109220set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -702,7 +702,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -720,7 +720,7 @@
       {
         "name": "uvex RX cf 9501 – goggles",
         "sku": "6109.501",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109501.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109501.jpg",
         "features": [
           "zaščitna očala z receptnimi dioptrijskimi stekli",
           "popolnoma zaprta za najvišjo varnost",
@@ -735,7 +735,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109209.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -751,7 +751,7 @@
       {
         "name": "uvex RX bc 5502",
         "sku": "6108.215",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6108215.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6108215.jpg",
         "features": [
           "tesno prilegajoč plastični okvir s prosojnim stranskim ščitom z vključeno zaščito za obrvi",
           "posebna oblika okvirja z zaščito pred delci s spodnje strani",
@@ -763,7 +763,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6109.249",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109249.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -776,7 +776,7 @@
       {
         "name": "uvex RX cd 5512 – oranžen set",
         "sku": "6109.221+6118.005",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109221-set.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109221-set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -794,7 +794,7 @@
       {
         "name": "uvex RX cd 5510 – svetlo siva",
         "sku": "6109.216",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109216.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109216.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 6",
           "integriran stranski ščit in zaščita obrvi anatomsko oblikovan mehek nosnik za dobro prileganje",
@@ -808,7 +808,7 @@
       {
         "name": "uvex RX cd 5512 – oranžen",
         "sku": "6109.217",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109217.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109217.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 6",
           "integriran stranski ščit in zaščita obrvi anatomsko oblikovan mehek nosnik za dobro prileganje",
@@ -822,7 +822,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109209.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -838,7 +838,7 @@
       {
         "name": "uvex RX bc 5502",
         "sku": "6108.215",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6108215.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6108215.jpg",
         "features": [
           "tesno prilegajoč se plastični okvirprosojen stranski ščit z vključeno zaščito obrvi",
           "posebna oblika okvirja z zaščito pred delci s spodnje strani",
@@ -850,7 +850,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6108.249",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109249.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -863,7 +863,7 @@
       {
         "name": "uvex RX cd 5526 – črn",
         "sku": "6108.260",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109260.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109260.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -878,7 +878,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6108.257",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109257.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -894,7 +894,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/gozdarstvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/gozdarstvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -913,7 +913,7 @@
   },
   "gradbenistvo": {
     "title": "Gradbeništvo in zunanja dela",
-    "header_image": "/optikasi/images/safety/gradbenistvo_header_gradbenik-header.jpg",
+    "header_image": "/images/safety/gradbenistvo_header_gradbenik-header.jpg",
     "intro": [
       "Pri izbiri primernih dioptrijskih zaščitnih očal za delo v gradbeništvu in zunanja dela so najbolj pomembni:",
       "Najpogostejše nevarnosti:",
@@ -925,7 +925,7 @@
       {
         "name": "uvex RX cd 5518 – moder",
         "sku": "6109.234",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109234.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109234.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -937,7 +937,7 @@
       {
         "name": "uvex RX cd 5518 – rdeč",
         "sku": "6109.230",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109230-1.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109230-1.jpg",
         "features": [
           "športna oblika okvirja: atraktiven in obstojen",
           "brez kovinskih delov",
@@ -949,7 +949,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6109.249",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109249.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -962,7 +962,7 @@
       {
         "name": "uvex RX cd 5526 – črn",
         "sku": "6109.260",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109260.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109260.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -977,7 +977,7 @@
       {
         "name": "uvex RX cd 5521 – planet",
         "sku": "6109.257",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109257.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109257.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "okvir je pretežno izdelan iz visokokakovostnega bio materiala",
@@ -993,7 +993,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -1011,7 +1011,7 @@
       {
         "name": "uvex RX cd 5512 – oliven set",
         "sku": "6109.220+6118.004",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109220set.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109220set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -1029,7 +1029,7 @@
       {
         "name": "uvex RX cd 5522",
         "sku": "6109.250",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109250.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109250.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -1043,7 +1043,7 @@
       {
         "name": "uvex RX cf 9501 – goggles",
         "sku": "6109.501",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109501.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109501.jpg",
         "features": [
           "zaščitna očala z receptnimi dioptrijskimi stekli",
           "popolnoma zaprta za najvišjo varnost",
@@ -1058,7 +1058,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109209.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -1074,7 +1074,7 @@
       {
         "name": "uvex RX bc 5502",
         "sku": "6108.215",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6108215.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6108215.jpg",
         "features": [
           "tesno prilegajoč plastični okvir s prosojnim stranskim ščitom z vključeno zaščito za obrvi",
           "posebna oblika okvirja z zaščito pred delci s spodnje strani",
@@ -1086,7 +1086,7 @@
       {
         "name": "uvex RX cd 5521",
         "sku": "6108.249",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109249.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109249.jpg",
         "features": [
           "sodoben, tesno prilegajoč plastični okvir",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -1099,7 +1099,7 @@
       {
         "name": "uvex RX cd 5505 – moder",
         "sku": "6108.225",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109225.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109225.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -1111,7 +1111,7 @@
       {
         "name": "uvex RX cd 5505 – rdeč",
         "sku": "6108.226",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109226.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109226.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "integriran stranski ščit in zaščita obrvi",
@@ -1123,7 +1123,7 @@
       {
         "name": "uvex RX cd 5505 – s tesnilom",
         "sku": "6109.208/209",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109209.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109209.jpg",
         "features": [
           "tesno prilegajoč plastični okvir",
           "integriran stranski ščit in zaščita obrvi za zelo tesno prileganje",
@@ -1139,7 +1139,7 @@
       {
         "name": "uvex RX bc 5506",
         "sku": "6109.210",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109210.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109210.jpg",
         "features": [
           "udoben plastičen okvir",
           "stranski ščiti in integrirana zaščita obrvi",
@@ -1150,7 +1150,7 @@
       {
         "name": "uvex RX cd 5512 – oliven set",
         "sku": "6109.220+6118.004",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109220set.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109220set.jpg",
         "features": [
           "plastični okvir v športni ukrivljeni obliki z bazo 8",
           "na voljo uvex set za tesno prileganje (naglavni trak in anatomska pena)",
@@ -1168,7 +1168,7 @@
       {
         "name": "uvex RX cd 5522 s tesnilnim setom",
         "sku": "6109.250+6118.012",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109250-sealed.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109250-sealed.jpg",
         "features": [
           "sodoben plastičen okvir v robustni izvedbi",
           "prosojna barva okvirja za neovirano vidno polje",
@@ -1186,7 +1186,7 @@
       {
         "name": "uvex RX cd 5505 – flip up – varjenje",
         "sku": "6109.218",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109218.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109218.jpg",
         "features": [
           "tesno prilegajoč se plastični okvir",
           "napredna tehnologija v sivi barvi zatemnjenih stekel, ki nudijo zaščito pred UV in IR sevanjem in hkrati omogočajo optimalno zaznavanje barv",
@@ -1201,7 +1201,7 @@
       {
         "name": "uvex RX cd 5505 – didymium",
         "sku": "6109.238",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_6109238.jpg",
+        "image": "/images/safety/gradbenistvo_prod_6109238.jpg",
         "features": [
           "flip-up očala z brezdioptrijskimi didymium stekli",
           "didymium stekla so posebni filtri z visoko absorpcijo pri 589nm",
@@ -1216,7 +1216,7 @@
       {
         "name": "Funkcionalni\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tFunkcionalni\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tVedno omogočeni",
         "sku": "",
-        "image": "/optikasi/images/safety/gradbenistvo_prod_csm_schutzbrille-mit-sehstaerke-dunkel-getoent-toenung-grau-75-prozent_d0d2700ff2-1024x683.jpg",
+        "image": "/images/safety/gradbenistvo_prod_csm_schutzbrille-mit-sehstaerke-dunkel-getoent-toenung-grau-75-prozent_d0d2700ff2-1024x683.jpg",
         "features": [
           "OptikaSI",
           "Vojkova cesta 58",
@@ -1235,7 +1235,7 @@
   },
   "pisarne": {
     "title": "IT in Pisarne",
-    "header_image": "/optikasi/images/safety/pisarne_header_pisarna-header.jpg",
+    "header_image": "/images/safety/pisarne_header_pisarna-header.jpg",
     "intro": [
       "Očala uvex VDU za delo z računalnikom in zasloni",
       "Delo za zaslonom je naporno za oči. Pri delu z računalnikom morajo oči nenehno prilagajati pogled – bodisi na enega ali več zaslonov, okolico ali sodelavce v bližini. To ni naporno le za oči, temveč povzroča tudi napetost v vratu in ramenih. Posebna računalniška očala uvex, zasnovana za delo z zasloni, lahko pomagajo ublažiti tovrstne obremenitve ter zmanjšajo tveganje za težave z vidom pri delu z računalnikom.",
@@ -1247,7 +1247,7 @@
       {
         "name": "Funkcionalni\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tFunkcionalni\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tVedno omogočeni",
         "sku": "",
-        "image": "/optikasi/images/safety/pisarne_prod_vdu2.jpg",
+        "image": "/images/safety/pisarne_prod_vdu2.jpg",
         "features": [
           "stekla se manj rosijo",
           "odsevi od površin so bistveno zmanjšani",

@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img :src="'/optikasi/images/hero_sunglasses.png'" alt="Sončna Očala" class="w-full h-full object-cover opacity-60" />
+         <img src="/images/hero_sunglasses.png" alt="Sončna Očala" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Zaščita in Stil</span>
@@ -177,11 +177,11 @@
                 <!-- Images comparison -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="group relative">
-                        <img :src="'/optikasi/images/coatings/reflex-before.jpg'" alt="Standard Coating" class="w-full rounded shadow-sm opacity-80 group-hover:opacity-100 transition-opacity">
+                        <img src="/images/coatings/reflex-before.jpg" alt="Standard Coating" class="w-full rounded shadow-sm opacity-80 group-hover:opacity-100 transition-opacity">
                         <p class="text-xs text-center text-gray-500 mt-2">Standardni Antirefleks</p>
                     </div>
                      <div class="group relative">
-                        <img :src="'/optikasi/images/coatings/opal-ultra-uv.jpg'" alt="Opal Ultra UV" class="w-full rounded shadow-md ring-2 ring-accent/20">
+                        <img src="/images/coatings/opal-ultra-uv.jpg" alt="Opal Ultra UV" class="w-full rounded shadow-md ring-2 ring-accent/20">
                          <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">Opal Ultra</div>
                         <p class="text-xs text-center text-gray-500 mt-2">Opal UltraUV</p>
                     </div>
@@ -197,7 +197,7 @@
                     <!-- Mirror Rose -->
                     <div class="group">
                         <div class="overflow-hidden rounded-lg shadow-sm mb-3">
-                            <img :src="'/optikasi/images/coatings/mirror-rose.jpg'" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="/images/coatings/mirror-rose.jpg" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <h4 class="font-bold text-gray-800">Mirror Rose</h4>
                     </div>

@@ -6,7 +6,7 @@
     </div>
 
     <!-- Vintage Collection -->
-    <div class="mb-20">
+    <div class="mb-20" v-if="vintageProducts.length">
       <h2 class="text-2xl font-serif text-primary-dark mb-8 text-center">
         <span class="text-accent">✦</span> Vintage Kolekcija <span class="text-accent">✦</span>
       </h2>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Accessories -->
-    <div>
+    <div v-if="accessoryProducts.length">
       <h2 class="text-2xl font-serif text-primary-dark mb-8 text-center">Dodatki</h2>
       <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
         <div v-for="product in accessoryProducts" :key="product.id" class="bg-white p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
@@ -114,7 +114,8 @@ useHead({
 })
 
 const products = [
-  // Accessories
+  // Accessories - Hidden
+  /*
   {
     id: 'clean-kit-premium',
     name: 'Premium Čistilni Set',
@@ -143,7 +144,7 @@ const products = [
     price: 35.00,
     category: 'accessories'
   },
-  // Vintage Collection
+  // Vintage Collection - Hidden
   {
     id: 'vintage-round-gold',
     name: 'Vintage Okrogla - Zlata',
@@ -172,6 +173,7 @@ const products = [
     price: 155.00,
     category: 'vintage'
   },
+  */
   // Sport Collection
   {
     "id": "sport-0",
