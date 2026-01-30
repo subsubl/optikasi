@@ -3,6 +3,22 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+
+  // Configure Vite to handle public folder images with base URL
+  vite: {
+    build: {
+      rollupOptions: {
+        // Externalize paths that start with the base URL to prevent resolution errors
+        external: (id) => {
+          // Match paths like /optikasi/images/... during production build
+          if (id.startsWith('/optikasi/')) {
+            return true
+          }
+          return false
+        }
+      }
+    }
+  },
   robots: {
     robotsTxt: false
   },
