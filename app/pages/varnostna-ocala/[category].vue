@@ -29,7 +29,7 @@
         <h2 class="text-3xl md:text-4xl font-serif text-center mb-16 text-gray-900">Priporočeni Okvirji</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(product, idx) in pageData.products" :key="idx" class="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <div v-for="product in pageData.products" :key="product.name" class="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-video mb-6 bg-gray-100 rounded-sm overflow-hidden flex items-center justify-center p-4">
               <img :src="product.image" :alt="product.name" class="w-full h-full object-contain mix-blend-multiply" />
             </div>
@@ -69,7 +69,26 @@ const route = useRoute()
 const category = route.params.category
 
 const pageData = computed(() => {
-  return safetyDataRaw[category]
+  const data = safetyDataRaw[category]
+  if (!data) return null
+
+  // Deduplicate products based on name to avoid duplicate keys and unnecessary rendering
+  const uniqueProducts = []
+  const seenNames = new Set()
+
+  if (data.products) {
+    for (const product of data.products) {
+      if (!seenNames.has(product.name)) {
+        seenNames.add(product.name)
+        uniqueProducts.push(product)
+      }
+    }
+  }
+
+  return {
+    ...data,
+    products: uniqueProducts
+  }
 })
 
 const isHeader = (text) => {
