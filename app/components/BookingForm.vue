@@ -8,23 +8,23 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
-        <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek</label>
-        <input v-model="form.name" type="text" name="name" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="Janez Novak" />
+        <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek</label>
+        <input id="name" v-model="form.name" type="text" name="name" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="Janez Novak" />
       </div>
       <div class="space-y-2">
-        <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov</label>
-        <input v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
+        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov</label>
+        <input id="email" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
       </div>
     </div>
 
     <div class="space-y-2">
-      <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
-      <input v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
+      <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
+      <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
     </div>
 
     <div class="space-y-4 pt-4">
       <label class="text-xs uppercase tracking-widest text-gray-500 font-bold block">Želeni Termini (Izberite več možnosti)</label>
-      
+
       <!-- Weekdays -->
       <div class="flex flex-wrap gap-3 mb-4">
         <label v-for="day in days" :key="day" class="cursor-pointer">
@@ -47,20 +47,20 @@
     </div>
 
     <div class="space-y-2">
-      <label class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm"></textarea>
+      <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
+      <textarea id="message" v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm"></textarea>
     </div>
 
     <!-- Status Messages -->
-    <div v-if="submitStatus === 'success'" class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded">
+    <div v-if="submitStatus === 'success'" role="alert" aria-live="polite" class="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded">
       ✓ Hvala za vaše povpraševanje! Kontaktirali vas bomo v najkrajšem možnem času.
     </div>
-    <div v-if="submitStatus === 'error'" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
+    <div v-if="submitStatus === 'error'" role="alert" aria-live="polite" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
       ✗ Prišlo je do napake. Prosimo, poskusite znova ali nas kontaktirajte na info@optikasi.si
     </div>
 
-    <button 
-      type="submit" 
+    <button
+      type="submit"
       :disabled="isSubmitting"
       class="w-full bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
     >
