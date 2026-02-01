@@ -6,18 +6,18 @@
     </div>
 
     <form @submit.prevent="submitOrder" class="bg-white p-8 md:p-12 shadow-sm border border-gray-100 space-y-8">
-      
+
       <!-- Personal Details -->
       <div>
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Osebni Podatki</h3>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex flex-col">
-            <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek</label>
-            <input v-model="form.name" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent">
+            <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek</label>
+            <input id="name" v-model="form.name" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
           <div class="flex flex-col">
-            <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov</label>
-            <input v-model="form.email" type="email" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent">
+            <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov</label>
+            <input id="email" v-model="form.email" type="email" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
         </div>
       </div>
@@ -27,8 +27,8 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Podatki o Lečah</h3>
         <div class="space-y-6">
           <div class="flex flex-col">
-            <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Leč (npr. Acuvue Oasys)</label>
-            <input v-model="form.brand" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent">
+            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Leč (npr. Acuvue Oasys)</label>
+            <input id="brand" v-model="form.brand" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
@@ -36,9 +36,9 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
               <div class="space-y-3">
-                <input v-model="form.os.power" placeholder="Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm">
-                <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm">
-                <input v-model="form.os.axis" placeholder="Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm">
+                <input v-model="form.os.power" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.os.axis" placeholder="Os (AX)" aria-label="Levo oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
               </div>
             </div>
 
@@ -46,16 +46,16 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
               <div class="space-y-3">
-                <input v-model="form.od.power" placeholder="Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm">
-                <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm">
-                <input v-model="form.od.axis" placeholder="Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm">
+                <input v-model="form.od.power" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.od.axis" placeholder="Os (AX)" aria-label="Desno oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
               </div>
             </div>
           </div>
-          
+
            <div class="flex flex-col">
-            <label class="text-xs uppercase tracking-widest text-gray-500 mb-2">Količina (škatlice)</label>
-            <select v-model="form.quantity" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent">
+            <label for="quantity" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Količina (škatlice)</label>
+            <select id="quantity" v-model="form.quantity" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
               <option>1 par / škatlica</option>
               <option>2 para / škatlici</option>
               <option>3 pari / škatlice (Zaloga za 3 mesece)</option>
@@ -65,11 +65,18 @@
         </div>
       </div>
 
-      <button type="submit" class="w-full bg-primary-dark text-white py-4 uppercase tracking-[0.2em] hover:bg-accent transition-colors">
-        Oddaj Naročilo
+      <button
+        type="submit"
+        :disabled="isSubmitting"
+        class="w-full bg-primary-dark text-white py-4 uppercase tracking-[0.2em] hover:bg-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        <span v-if="isSubmitting">Oddajam...</span>
+        <span v-else>Oddaj Naročilo</span>
       </button>
-      
-      <p v-if="success" class="text-center text-green-600 mt-4">Naročilo uspešno oddano! Poslali vam bomo predračun.</p>
+
+      <p v-if="success" role="alert" aria-live="polite" class="text-center text-green-600 mt-4 transition-all duration-300 ease-in-out">
+        Naročilo uspešno oddano! Poslali vam bomo predračun.
+      </p>
 
     </form>
   </div>
@@ -93,11 +100,24 @@ const form = reactive({
 })
 
 const success = ref(false)
+const isSubmitting = ref(false)
 
 const submitOrder = () => {
-  // Logic to process order (e.g. send email via Server API)
-  console.log('Order:', form)
-  success.value = true
-  // Reset form logic would go here
+  if (isSubmitting.value) return
+
+  isSubmitting.value = true
+  success.value = false
+
+  // Simulate API call
+  setTimeout(() => {
+    console.log('Order:', form)
+    success.value = true
+    isSubmitting.value = false
+
+    // Optional: Reset form after success
+    // form.name = ''
+    // form.email = ''
+    // ...
+  }, 1000)
 }
 </script>
