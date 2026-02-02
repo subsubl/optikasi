@@ -279,10 +279,10 @@
 
 <script setup>
 useHead({
-  title: 'O Nas in Storitve - OptikaSI',
+  title: 'Storitve Optike | Pregled Vida & Svetovanje Ljubljana | Optika Si',
   meta: [
-    { name: 'description', content: 'Spoznajte OptikoSI. Butični pristop, strokovna izbira očal in vrhunski servis. Preverite naše storitve in mnenja zadovoljnih strank.' },
-    { name: 'keywords', content: 'optika ljubljana, o nas, storitve, mnenja, servis očal' }
+    { name: 'description', content: 'Storitve butične optike: 1-na-1 pregled vida, servis očal, svetovanje stilista in unikatna vintage kolekcija. Odkrijte oseben pristop v Ljubljani.' },
+    { name: 'keywords', content: 'optika ljubljana, o nas, storitve, mnenja, servis očal, pregled vida cena' }
   ]
 })
 

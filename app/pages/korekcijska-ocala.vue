@@ -462,10 +462,10 @@
 
 <script setup>
 useHead({
-  title: 'Korekcijska Očala - Okvirji in Stekla',
+  title: 'Korekcijska Očala Ljubljana | Progresivna & Dioptrijska Očala | Optika Si',
   meta: [
-    { name: 'description', content: 'Korekcijska očala v Ljubljani za ženske, moške in otoke. Progresivna, računalniška in monofokalna stekla. Dizajnerski okvirji.' },
-    { name: 'keywords', content: 'korekcijska očala ljubljana, progresivna očala, dioptrijska očala, otroška očala, moška očala, ženska očala' }
+    { name: 'description', content: 'Široka izbira korekcijskih očal v Ljubljani. Specializirani za zahtevne recepte, progresivna stekla in zaščitna očala z dioptrijo (Uvex). Najboljše cene.' },
+    { name: 'keywords', content: 'korekcijska očala ljubljana, progresivna očala, dioptrijska očala, otroška očala, moška očala, ženska očala, uvex zaščitna očala' }
   ]
 })
 </script>

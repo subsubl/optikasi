@@ -71,6 +71,50 @@
       </div>
     </section>
 
+    <!-- USP Comparison Table -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-serif text-primary-dark mb-4">Drugačna izkušnja pregleda</h2>
+          <p class="text-gray-500">Zakaj izbrati butični pristop 1-na-1?</p>
+        </div>
+        
+        <div class="overflow-x-auto border border-gray-100 shadow-sm rounded-lg">
+          <table class="w-full text-left">
+            <thead>
+              <tr class="bg-cream">
+                <th class="p-6 font-serif text-lg text-primary-dark border-b border-gray-100">Lastnost</th>
+                <th class="p-6 font-serif text-lg text-primary-dark border-b border-gray-100 bg-accent/5">Studio Optika Si</th>
+                <th class="p-6 font-serif text-lg text-gray-400 border-b border-gray-100">Veliki centri</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-50">
+              <tr>
+                <td class="p-6 font-medium">Čas za stranko</td>
+                <td class="p-6 bg-accent/5 font-bold text-primary-dark">60 minut (brez hitenja)</td>
+                <td class="p-6 text-gray-500 text-sm">15 - 20 minut</td>
+              </tr>
+              <tr>
+                <td class="p-6 font-medium">Zasebnost</td>
+                <td class="p-6 bg-accent/5 font-bold text-primary-dark">Popolna (vrata so zaprta za vas)</td>
+                <td class="p-6 text-gray-500 text-sm">Vrvež drugih kupcev</td>
+              </tr>
+              <tr>
+                <td class="p-6 font-medium">Svetovanje</td>
+                <td class="p-6 bg-accent/5 font-bold text-primary-dark">Individualno (stilist + optometrist)</td>
+                <td class="p-6 text-gray-500 text-sm">Standardna prodaja</td>
+              </tr>
+              <tr>
+                <td class="p-6 font-medium">Cena</td>
+                <td class="p-6 bg-accent/5 font-bold text-accent">Najnižja v Ljubljani</td>
+                <td class="p-6 text-gray-500 text-sm">Višja (visoki stroški najema)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Grid -->
     <section id="services" class="py-24 bg-cream">
       <div class="container mx-auto px-6">
@@ -90,9 +134,10 @@
 
 <script setup>
 useHead({
-  title: 'OptikaSI - Butična optika v Ljubljani',
+  title: 'Optika Ljubljana | Najcenejši Pregled Vida & Očala | Studio Optika Si',
   meta: [
-    { name: 'description', content: 'Strokovno svetovanje in individualni pristop. Optika po vaši meri v Ljubljani na Vojkovi cesti 58.' }
+    { name: 'description', content: 'Butična optika v Ljubljani z najboljšimi cenami. Individualni 1-na-1 pregledi vida (1 ura), brez čakanja in hitenja. Rezervirajte svoj termin na Vojkovi 58.' },
+    { name: 'keywords', content: 'optika ljubljana, pregled vida ljubljana, optometrist ljubljana, najcenejša očala ljubljana, sončna očala ljubljana, uvex očala' }
   ]
 })
 

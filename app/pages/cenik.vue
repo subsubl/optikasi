@@ -52,9 +52,9 @@
 
 <script setup>
 useHead({
-  title: 'Cenik - OptikaSI',
+  title: 'Cenik Storitev | Najcenejši Pregled Vida v Ljubljani | Optika Si',
   meta: [
-    { name: 'description', content: 'Cenik pregledov vida in popravil očal v OptikaSI.' }
+    { name: 'description', content: 'Preverite naš cenik storitev. Ponujamo najnižjo ceno za osnovni pregled vida v Ljubljani (35€) in brezplačno svetovanje ob nakupu očal.' }
   ]
 })
 

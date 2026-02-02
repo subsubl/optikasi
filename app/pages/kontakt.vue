@@ -1,3 +1,12 @@
+<script setup>
+useHead({
+  title: 'Kontakt & Rezervacija Termina | Optika Ljubljana Bežigrad',
+  meta: [
+    { name: 'description', content: 'Obiščite nas na Vojkovi 58 v Ljubljani. Rezervirajte svoj termin za 1-na-1 pregled vida in osebno svetovanje pri izbiri očal.' }
+  ]
+})
+</script>
+
 <template>
   <div class="py-24 container mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-16">
