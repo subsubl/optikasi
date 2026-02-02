@@ -10,11 +10,12 @@
       <div class="hidden lg:flex space-x-8 items-center absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div v-for="link in links" :key="link.path" class="relative group h-20 flex items-center">
           <NuxtLink :to="link.path" 
+            :aria-haspopup="link.children ? 'true' : undefined"
             class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent transition-colors font-medium h-full flex items-center">
             {{ link.name }}
           </NuxtLink>
            <!-- Dropdown -->
-            <div v-if="link.children" class="absolute left-1/2 -translate-x-1/2 top-full w-72 bg-white shadow-lg py-2 border-t-2 border-primary opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
+            <div v-if="link.children" class="absolute left-1/2 -translate-x-1/2 top-full w-72 bg-white shadow-lg py-2 border-t-2 border-primary opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 transform origin-top-left z-50">
                 <NuxtLink v-for="child in link.children" :key="child.path" :to="child.path" class="block px-6 py-3 text-xs text-gray-600 hover:text-primary hover:bg-gray-50 uppercase tracking-wider border-b border-gray-50 last:border-0 text-left">
                     {{ child.name }}
                 </NuxtLink>
@@ -29,7 +30,12 @@
         </NuxtLink>
 
         <!-- Mobile Menu Button -->
-        <button @click="isOpen = !isOpen" class="lg:hidden text-primary-dark focus:outline-none">
+        <button
+          @click="isOpen = !isOpen"
+          class="lg:hidden text-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          :aria-expanded="isOpen"
+          :aria-label="isOpen ? 'Zapri glavni meni' : 'Odpri glavni meni'"
+        >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
