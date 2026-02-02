@@ -96,5 +96,6 @@ const links = [
   { name: 'Znamke', path: '/znamke' },
   { name: 'Trgovina', path: '/trgovina' },
   { name: 'Cenik', path: '/cenik' },
+  { name: 'Blog', path: '/blog' },
 ]
 </script>
