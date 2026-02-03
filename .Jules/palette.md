@@ -13,3 +13,7 @@
 ## 2026-02-02 - Mobile Toggle Accessibility
 **Learning:** Icon-only toggles (like hamburger menus) require explicit `aria-label` and `aria-expanded` states to be usable by screen readers.
 **Action:** Ensure all toggle buttons have dynamic ARIA attributes and visible focus rings (`focus-visible`).
+
+## 2026-02-03 - Async Interaction Patterns
+**Learning:** Simple forms often lack loading states, leaving users unsure if their action registered.
+**Action:** Always implement `isLoading` state, disable inputs/buttons during submission, and provide textual feedback on the button.
