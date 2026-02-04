@@ -17,3 +17,7 @@
 ## 2026-02-03 - Async Interaction Patterns
 **Learning:** Simple forms often lack loading states, leaving users unsure if their action registered.
 **Action:** Always implement `isLoading` state, disable inputs/buttons during submission, and provide textual feedback on the button.
+
+## 2026-10-24 - Input Labeling
+**Learning:** Inputs relying solely on placeholders for identification are inaccessible to screen readers.
+**Action:** Always include an `aria-label` matching the placeholder if a visible `<label>` is not design-compliant.
