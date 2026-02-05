@@ -11,21 +11,24 @@
       </p>
 
       <form @submit.prevent="subscribe" class="flex flex-col sm:flex-row gap-4">
-        <input 
+        <input
           v-model="email"
-          type="email" 
+          type="email"
           placeholder="Vaš e-naslov"
+          aria-label="Vaš e-naslov"
           required
-          class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus:border-accent transition-colors"
+          :disabled="isLoading"
+          class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:border-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-        <button 
-          type="submit" 
-          class="bg-accent text-white px-8 py-3 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-primary-dark transition-all duration-300"
+        <button
+          type="submit"
+          :disabled="isLoading"
+          class="bg-accent text-white px-8 py-3 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-primary-dark transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed"
         >
-          Prijavi se
+          {{ isLoading ? 'Prijavljanje...' : 'Prijavi se' }}
         </button>
       </form>
-      <p v-if="success" class="text-accent text-xs mt-4 tracking-wide">Hvala za prijavo! Dobrodošli v klubu.</p>
+      <p v-if="success" role="status" class="text-accent text-xs mt-4 tracking-wide">Hvala za prijavo! Dobrodošli v klubu.</p>
     </div>
   </div>
 </template>
@@ -33,12 +36,20 @@
 <script setup>
 const email = ref('')
 const success = ref(false)
+const isLoading = ref(false)
 
 const subscribe = () => {
-  // Logic to send to API will go here
+  if (isLoading.value) return
+
+  isLoading.value = true
   console.log('Subscribing:', email.value)
-  success.value = true
-  email.value = ''
-  setTimeout(() => success.value = false, 5000)
+
+  // Simulate API call
+  setTimeout(() => {
+    success.value = true
+    email.value = ''
+    isLoading.value = false
+    setTimeout(() => success.value = false, 5000)
+  }, 1000)
 }
 </script>
