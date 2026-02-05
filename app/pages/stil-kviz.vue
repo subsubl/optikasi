@@ -25,8 +25,9 @@
             v-for="shape in faceShapes" 
             :key="shape.id"
             @click="selectFaceShape(shape.id)"
+            :aria-pressed="form.faceShape === shape.id"
             :class="[
-              'p-6 border text-center transition-all',
+              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
               form.faceShape === shape.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
@@ -44,8 +45,9 @@
             v-for="style in styles" 
             :key="style.id"
             @click="selectStyle(style.id)"
+            :aria-pressed="form.style === style.id"
             :class="[
-              'p-6 border text-left transition-all flex items-center space-x-4',
+              'p-6 border text-left transition-all duration-300 flex items-center space-x-4 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
               form.style === style.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
@@ -66,8 +68,9 @@
             v-for="budget in budgets" 
             :key="budget.id"
             @click="selectBudget(budget.id)"
+            :aria-pressed="form.budget === budget.id"
             :class="[
-              'p-6 border text-center transition-all',
+              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
               form.budget === budget.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
@@ -92,7 +95,7 @@
 
       <!-- Navigation -->
       <div v-if="step < 4" class="flex justify-between mt-12">
-        <button v-if="step > 1" @click="step--" class="text-gray-500 hover:text-primary transition-colors">
+        <button v-if="step > 1" @click="step--" class="text-gray-500 hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm px-2">
           ← Nazaj
         </button>
         <div v-else></div>
