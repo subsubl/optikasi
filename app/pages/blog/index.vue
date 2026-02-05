@@ -35,6 +35,13 @@ useHead({
 
 const posts = [
   {
+    title: 'Kako izbrati prava očala za vašo obliko obraza?',
+    slug: '/blog/izbira-ocala-oblika-obraza',
+    category: 'Svetovanje',
+    excerpt: 'Izbira popolnih očal je kombinacija umetnosti in znanosti. Spoznajte, kateri okvirji najbolje pristajajo vašemu obrazu in kako poudariti svoje najlepše poteze.',
+    image: '/images/fashion/swarovski/Glasses-Swarovski2.jpg'
+  },
+  {
     title: 'Zakaj je 1-na-1 pregled vida ključen?',
     slug: '/blog/zakaj-1-na-1',
     category: 'Svetovanje',

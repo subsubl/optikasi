@@ -1,10 +1,10 @@
 <template>
   <div class="py-24 container mx-auto px-6">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <h1 class="text-4xl text-primary-dark mb-6">Cenik Storitev</h1>
+      <h1 class="text-4xl font-serif text-primary-dark mb-6">Cenik Storitev - Optika Ljubljana</h1>
       <p class="text-gray-600 leading-relaxed">
-        Transparentne cene za vrhunske storitev. Pri OptikaSI verjamemo v poštenost in kakovost brez skritih stroškov.
-        Ob nakupu korekcijskih očal so osnovni pregledi vida <span class="text-accent font-bold">brezplačni</span>.
+        Transparentne cene za vrhunske storitve. Pri OptikaSI verjamemo v poštenost in kakovost brez skritih stroškov.
+        Ob nakupu korekcijskih očal so osnovni pregledi vida <span class="text-accent font-bold">brezplačni</span>. Zagotovite si <strong>najcenejši pregled vida v Ljubljani</strong> z vrhunsko obravnavo.
       </p>
     </div>
 
@@ -12,7 +12,7 @@
       
       <!-- Examinations -->
       <div class="bg-white p-8 shadow-sm border border-gray-100">
-        <h2 class="text-2xl font-serif text-primary-dark mb-8 border-b border-gray-100 pb-4">Pregledi in Svetovanje</h2>
+        <h2 class="text-2xl font-serif text-primary-dark mb-8 border-b border-gray-100 pb-4">Cena pregleda vida in svetovanja</h2>
         <div class="space-y-6">
           <div v-for="(item, index) in exams" :key="index" class="flex justify-between items-baseline group">
             <div class="flex-grow">
@@ -43,7 +43,7 @@
     </div>
     
     <div class="text-center mt-16">
-       <p class="text-xs text-gray-400 uppercase tracking-widest mb-4">Cene vključujejo DDV. Veljavnost cenika od 1. 1. 2025.</p>
+       <p class="text-xs text-gray-400 uppercase tracking-widest mb-4">Cene vključujejo DDV. Veljavnost cenika od 1. 1. 2026.</p>
        <NuxtLink to="/kontakt" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1">Naročite se na pregled &rarr;</NuxtLink>
     </div>
 
@@ -54,15 +54,15 @@
 useHead({
   title: 'Cenik Storitev | Najcenejši Pregled Vida v Ljubljani | Optika Si',
   meta: [
-    { name: 'description', content: 'Preverite naš cenik storitev. Ponujamo najnižjo ceno za osnovni pregled vida v Ljubljani (35€) in brezplačno svetovanje ob nakupu očal.' }
+    { name: 'description', content: 'Preverite naš cenik. Najugodnejša cena pregleda vida v Ljubljani (35€) in brezplačno svetovanje ob nakupu očal. Transparentne cene servisa in popravil.' },
+    { name: 'keywords', content: 'cena pregleda vida, najcenejši pregled vida ljubljana, cenik optika, servis očal cena, optika ljubljana' }
   ]
 })
 
 const exams = [
-  { name: 'Osnovni pregled vida', price: '35,00 €', note: 'Najnižja cena v Ljubljani! Brezplačno ob nakupu.' },
-
-  { name: 'Pregled za vozniški izpit', price: '40,00 €', note: 'Izdaja zdravniškega potrdila.' },
-  { name: 'Svetovanje pri izbiri okvirja', price: 'Brezplačno', note: 'Strokovna pomoč stilista.' }
+  { name: 'Osnovni pregled vida', price: '35,00 €', note: 'Najnižja cena v Ljubljani! Brezplačno ob nakupu očal.' },
+  { name: 'Pregled za vozniški izpit', price: '40,00 €', note: 'Izdaja zdravniškega potrdila za CPP.' },
+  { name: 'Svetovanje pri izbiri okvirja', price: 'Brezplačno', note: 'Strokovna pomoč stilista in optometrista.' }
 ]
 
 const repairs = [

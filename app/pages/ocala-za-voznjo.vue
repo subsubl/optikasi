@@ -1,18 +1,17 @@
-
 <template>
   <div>
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <!-- Using one of the ingested images as hero foundation, with overlay -->
-        <img src="/images/driving/drive_car.png" alt="Očala za vožnjo" class="w-full h-full object-cover blur-[2px]" />
+        <img src="/images/driving/drive_car.png" alt="Očala za vožnjo Ljubljana" class="w-full h-full object-cover blur-[2px]" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
-        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Varnost na Cesti</span>
+        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Varnost na Cesti - Optika Ljubljana</span>
         <h1 class="text-5xl md:text-7xl font-serif mb-6">Očala za Vožnjo</h1>
         <p class="text-xl md:text-2xl font-light opacity-90 max-w-2xl mx-auto">
-          Drivewear: Ena stekla za vse svetlobne pogoje. Popoln vid v vsakem trenutku.
+          Drivewear: Ena stekla za vse svetlobne pogoje. Popoln vid v vsakem trenutku vašega potovanja.
         </p>
       </div>
     </section>
@@ -20,11 +19,11 @@
     <!-- Intro -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-3xl font-serif text-primary-dark mb-8">STEKLA DRIVEWEARZA VARNEJŠO VOŽNJO</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-8">Stekla Drivewear za varnejšo vožnjo</h2>
         <p class="text-gray-600 leading-relaxed text-lg mb-8">
-          Med vožnjo imamo vozniki različne zahteve. Potrebujemo širok, nemoten vid na daljavo ter dober vid na bližino. 
+          Med vožnjo imamo vozniki različne zahteve. Potrebujemo širok, nemoten vid na daljavo ter dober vid na bližino za armaturno ploščo. 
           Prav tako želimo odličen vid v različnih svetlobnih pogojih, kot so sonce, megla, dež. 
-          Vse to vam omogočimo z izborom polariziranih stekel Drivewear.
+          Vse to vam omogočimo z izborom polariziranih stekel Drivewear v naši <strong>optiki v Ljubljani</strong>.
         </p>
       </div>
     </section>
@@ -38,7 +37,7 @@
           <!-- Oblačno -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img src="/images/driving/drive_cloudy.png" alt="Oblačno vreme" 
+              <img src="/images/driving/drive_cloudy.png" alt="Očala za vožnjo v oblačnem vremenu" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Oblačno Vreme</h3>
@@ -53,7 +52,7 @@
           <!-- Avto -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img src="/images/driving/drive_car.png" alt="Svetloba v avtu" 
+              <img src="/images/driving/drive_car.png" alt="Očala za vožnjo v avtu" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Svetloba v Avtu</h3>
@@ -68,7 +67,7 @@
           <!-- Prostem -->
           <div class="group bg-white p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-all">
             <div class="relative h-64 overflow-hidden mb-6 rounded-lg">
-              <img src="/images/driving/drive_outdoor.png" alt="Močna svetloba" 
+              <img src="/images/driving/drive_outdoor.png" alt="Očala za vožnjo na prostem" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                 <h3 class="text-xl font-serif text-white">Na Prostem</h3>
@@ -86,7 +85,7 @@
     <!-- Video Section -->
     <section class="py-24 bg-primary-dark text-white">
       <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-3xl font-serif mb-8">Nova Dimenzija Vožnje</h2>
+        <h2 class="text-3xl font-serif mb-8">Nova dimenzija vožnje</h2>
         <p class="text-gray-300 mb-12">
             Drivewear stekla temnijo v različnih svetlobnih pogojih, zunaj in za vetrobranskim steklom avtomobila.
         </p>
@@ -102,9 +101,9 @@
     <!-- CTA -->
     <section class="py-20 text-center">
       <div class="container mx-auto px-6 max-w-3xl">
-        <h2 class="text-3xl font-serif text-primary-dark mb-6">Želite Varno Vožnjo?</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-6">Želite varno vožnjo?</h2>
         <p class="text-gray-600 mb-8 leading-relaxed">
-          Naročite se na pregled ali obiščite našo optiko, da preizkusite Drivewear tehnologijo v živo.
+          Naročite se na pregled ali obiščite našo optiko, da preizkusite Drivewear tehnologijo v živo. Vaš <strong>optik za Bežigradom</strong> vas pričakuje.
         </p>
         <NuxtLink 
           to="/kontakt" 
@@ -119,9 +118,10 @@
 
 <script setup>
 useHead({
-  title: 'Očala za Vožnjo - Drivewear',
+  title: 'Očala za Vožnjo Ljubljana | Drivewear Stekla | Optika Si',
   meta: [
-    { name: 'description', content: 'Drivewear očala za varno vožnjo v vseh pogojih. Polarizirana stekla, ki se prilagajajo svetlobi v avtu in na prostem.' }
+    { name: 'description', content: 'Zagotovite si varno vožnjo v vseh pogojih. Drivewear očala za vožnjo se prilagajajo svetlobi. Polarizirana stekla v butični optiki v Ljubljani.' },
+    { name: 'keywords', content: 'očala za vožnjo, drivewear, polarizirana očala, optika ljubljana, varna vožnja, očala za vožnjo cena' }
   ]
 })
 </script>

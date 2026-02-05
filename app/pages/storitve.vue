@@ -2,15 +2,15 @@
   <div>
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img src="/images/hero_services.png" alt="Naše Storitve" class="w-full h-full object-cover opacity-60" />
+         <img src="/images/hero_services.png" alt="Pregled vida Ljubljana" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
-        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">OptikaSI</span>
+        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Optika Ljubljana - Bežigrad</span>
         <h1 class="text-5xl md:text-7xl font-serif mb-8 leading-tight">
-          Optika z Osebnim Pristopom
+          Strokovni Pregled Vida
         </h1>
         <p class="text-xl md:text-2xl font-light text-gray-200 leading-relaxed max-w-2xl mx-auto">
-           Pri nas se čas ustavi. Vzamemo si ga posebej zate in za tvoje oči.
+           Pri nas se čas ustavi. Vzamemo si ga posebej za vas in vaše oči. Zagotovite si natančen <strong>pregled vida v Ljubljani</strong> brez čakanja.
         </p>
       </div>
     </section>
@@ -18,7 +18,7 @@
     <!-- Philosophy / Intro (From O Nas) -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-3xl font-serif text-primary-dark mb-8">Zakaj Naročanje na Termin?</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-8">Zakaj izbrati butični okulistični pregled?</h2>
         <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
           <p>
             <span class="text-accent font-bold">Pozornost in čas bosta namenjena le vam.</span> 
@@ -27,7 +27,7 @@
           </p>
           <p>
             Naš cilj je preprost: združiti vrhunske optične lastnosti z vašim osebnim stilom. 
-            Vsak obraz je edinstven — in takšna morajo biti tudi očala.
+            <strong>Merjenje dioptrije</strong> ni le tehnični postopek, ampak prvi korak do vašega boljšega počutja.
           </p>
         </div>
       </div>
@@ -87,17 +87,29 @@
             <div class="flex items-start space-x-4 mb-4">
               <span class="text-4xl text-accent">👓</span>
               <div>
-                <h2 class="text-2xl font-serif text-primary-dark mb-3">Izbira Okvirjev</h2>
+                <h2 class="text-2xl font-serif text-primary-dark mb-3">Svetovanje pri izbiri očal</h2>
                 <p class="text-gray-600 leading-relaxed">
                   Pomagamo vam izbrati okvir, ki se popolnoma ujema z obliko 
-                  vašega obraza in osebnostjo. Na voljo imamo več kot 
-                  500 modelov priznanih svetovnih znamk in našo lastno linijo.
+                  vašega obraza in osebnostjo. Na voljo imamo <strong>modne okvirje za očala</strong> priznanih svetovnih znamk in našo lastno linijo.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Service 2 -->
+          <div class="group">
+            <div class="flex items-start space-x-4 mb-4">
+              <span class="text-4xl text-accent">👁️</span>
+              <div>
+                <h2 class="text-2xl font-serif text-primary-dark mb-3">Okulistični pregled</h2>
+                <p class="text-gray-600 leading-relaxed">
+                  Strokovni <strong>okulist v Ljubljani</strong> opravi temeljit pregled zdravja vaših oči. Natančno določimo vašo dioptrijo in svetujemo glede najboljše korekcije za vaš vid.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
           <div class="group">
             <div class="flex items-start space-x-4 mb-4">
               <span class="text-4xl text-accent">🔧</span>
@@ -112,31 +124,16 @@
             </div>
           </div>
 
-          <!-- Service 3 -->
-          <div class="group">
-            <div class="flex items-start space-x-4 mb-4">
-              <span class="text-4xl text-accent">✨</span>
-              <div>
-                <h2 class="text-2xl font-serif text-primary-dark mb-3">Vintage Kolekcija</h2>
-                <p class="text-gray-600 leading-relaxed">
-                  Ljubitelje retro stila vabimo k ogledu naše unikatne kolekcije. 
-                  Skrbno izbrani in obnovljeni kosi iz preteklih desetletij. 
-                  Klasika, ki nikoli ne gre iz mode.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <!-- Service 4 -->
           <div class="group">
             <div class="flex items-start space-x-4 mb-4">
               <span class="text-4xl text-accent">🌅</span>
               <div>
-                <h2 class="text-2xl font-serif text-primary-dark mb-3">Progresivna Stekla</h2>
+                <h2 class="text-2xl font-serif text-primary-dark mb-3">Progresivna Očala</h2>
                 <p class="text-gray-600 leading-relaxed">
-                  Strokovna meritev in vgradnja progresivnih stekel za mehak prehod 
+                  Strokovna meritev in vgradnja <strong>progresivnih stekel</strong> za mehak prehod 
                   med razdaljami. Garancija na privajanje in vrhunska 
-                  tehnologija za vaš vid.
+                  tehnologija za vaš oster vid na vse razdalje.
                 </p>
               </div>
             </div>
@@ -147,10 +144,10 @@
             <div class="flex items-start space-x-4 mb-4">
               <span class="text-4xl text-accent">☀️</span>
               <div>
-                <h2 class="text-2xl font-serif text-primary-dark mb-3">Sončna Očala</h2>
+                <h2 class="text-2xl font-serif text-primary-dark mb-3">Sončna očala z dioptrijo</h2>
                 <p class="text-gray-600 leading-relaxed">
                   Zaščitite oči s stilom. Širok izbor modnih sončnih očal z UV zaščito 
-                  in polarizacijo. Možnost vgradnje sončnih stekel z vašo dioptrijo.
+                  in polarizacijo. Možnost vgradnje sončnih stekel z vašo dioptrijo za brezskrbno poletje.
                 </p>
               </div>
             </div>
@@ -161,10 +158,9 @@
             <div class="flex items-start space-x-4 mb-4">
               <span class="text-4xl text-accent">🎯</span>
               <div>
-                <h2 class="text-2xl font-serif text-primary-dark mb-3">Prilagajanje Okvirjev</h2>
+                <h2 class="text-2xl font-serif text-primary-dark mb-3">Individualna izdelava očal</h2>
                 <p class="text-gray-600 leading-relaxed">
-                  Tudi najboljša stekla ne pomagajo, če okvir ne sedi pravilno. 
-                  Brezplačno prilagodimo vsa očala za popolno udobje pri nošenju.
+                  Vsak okvir prilagodimo vašim anatomskim meram. Tudi najboljša stekla ne pomagajo, če okvir ne sedi pravilno. Brezplačno prilagodimo vsa očala za popolno udobje.
                 </p>
               </div>
             </div>
@@ -178,7 +174,7 @@
       <div class="container mx-auto px-6 max-w-5xl">
         <div class="text-center mb-16">
           <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Mnenja Strank</span>
-          <h2 class="text-3xl font-serif">Kaj Pravijo Naši Kupci</h2>
+          <h2 class="text-3xl font-serif">Zakaj smo dobra optika v Ljubljani</h2>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -263,7 +259,7 @@
       <div class="container mx-auto px-6 max-w-3xl">
         <h2 class="text-4xl font-serif text-primary-dark mb-6">Obiščite Nas</h2>
         <p class="text-gray-600 mb-10 text-lg leading-relaxed">
-          Vabimo vas v našo butično optiko na Vojkovi cesti 58. 
+          Vabimo vas v našo <strong>butično optiko v Ljubljani</strong> na Vojkovi cesti 58. 
           Dovolite, da poskrbimo za vaš vid z osebno noto.
         </p>
         <NuxtLink 
@@ -279,10 +275,10 @@
 
 <script setup>
 useHead({
-  title: 'Storitve Optike | Pregled Vida & Svetovanje Ljubljana | Optika Si',
+  title: 'Pregled Vida Ljubljana | Merjenje Dioptrije & Okulist | Optika Si',
   meta: [
-    { name: 'description', content: 'Storitve butične optike: 1-na-1 pregled vida, servis očal, svetovanje stilista in unikatna vintage kolekcija. Odkrijte oseben pristop v Ljubljani.' },
-    { name: 'keywords', content: 'optika ljubljana, o nas, storitve, mnenja, servis očal, pregled vida cena' }
+    { name: 'description', content: 'Strokovni pregled vida v Ljubljani brez čakanja. Natančno merjenje dioptrije, svetovanje pri izbiri očal in okulistični pregledi v butičnem ambientu Bežigrada.' },
+    { name: 'keywords', content: 'optika ljubljana, pregled vida ljubljana, okulist ljubljana, merjenje dioptrije, servis očal, pregled vida cena, butična optika bežigrad' }
   ]
 })
 
@@ -334,24 +330,6 @@ const testimonials = [
     date: '1. 6. 2024',
     source: 'Google',
     text: 'Najboljša Optika! 😍 Oseben pristop, prijaznost na vrhuncu, prilagodljivost in občutek za ljudi!! ❤️'
-  },
-  {
-    name: 'Maja K.',
-    date: '',
-    source: '',
-    text: 'Odlična optika! Res si vzamejo čas za stranko. Prijazno osebje, strokovno svetovanje. Priporočam vsem!'
-  },
-  {
-    name: 'Petra T.',
-    date: '',
-    source: '',
-    text: 'Prvič sem bila pri njih in sem navdušena. Brez naglice, brez pritiska. Končno sem dobila očala, ki mi res ustrezajo.'
-  },
-  {
-    name: 'Ana M.',
-    date: '',
-    source: '',
-    text: 'Super izkušnja! Izbira okvirjev je ogromna, cene pa poštene. Vsekakor se bom vrnila tudi za sončna očala.'
   }
 ]
 
@@ -366,7 +344,7 @@ const processSteps = [
 const faqs = reactive([
   { 
     question: 'Koliko časa traja pregled vida?', 
-    answer: 'Pregled vida pri nas traja približno 30-45 minut. Vzamemo si čas za natančne meritve in pogovor o vaših potrebah.',
+    answer: 'Pregled vida pri nas traja približno 45-60 minut. Vzamemo si čas za natančne meritve in pogovor o vaših potrebah, saj smo butična optika z osebnim pristopom.',
     open: false 
   },
   { 

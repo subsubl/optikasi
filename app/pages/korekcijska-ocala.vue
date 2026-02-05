@@ -3,15 +3,15 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img src="/images/hero_eyeglasses.png" alt="Korekcijska Očala" class="w-full h-full object-cover opacity-60" />
+         <img src="/images/hero_eyeglasses.png" alt="Korekcijska očala Ljubljana" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
-        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Jasno Videnje za Vsak Dan</span>
+        <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Optika Ljubljana - Bežigrad</span>
         <h1 class="text-5xl md:text-6xl font-serif mb-8 leading-tight">
-          Korekcijska Očala
+          Korekcijska Očala po meri
         </h1>
         <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-          Okvirji in stekla, prilagojena vašemu življenjskemu slogu, obrazu in potrebam vida.
+          Okvirji in stekla, prilagojena vašemu življenjskemu slogu, obrazu in potrebam vida. Iščete <strong>dobra očala v Ljubljani</strong>? Studio Optika Si je pravi naslov.
         </p>
       </div>
     </section>
@@ -19,10 +19,10 @@
     <!-- Lifestyle Glasses -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-4xl">
-        <h2 class="text-3xl font-serif text-primary-dark mb-6 text-center">Očala za Vsak Življenjski Slog</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-6 text-center">Očala za vsak življenjski slog</h2>
         <p class="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">
           Jasen vid je temelj vsakodnevnega življenja. Pri nas verjamemo, da mora biti izbira 
-          očal prijetna in natančna hkrati. Od navadnih bralk do naprednih progresivnih stekel 
+          očal prijetna in natančna hkrati. Od navadnih bralk do naprednih <strong>progresivnih stekel</strong> 
           — poskrbimo, da vaša očala izboljšajo ne le vid, temveč tudi udobje, samozavest in stil.
         </p>
         <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -30,21 +30,21 @@
             <span class="text-4xl block mb-4">💼</span>
             <h3 class="font-serif text-xl text-primary-dark mb-3">Za Pisarno</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Računalniška stekla z zaščito pred modro svetlobo za udobno delo čez cel dan.
+              <strong>Očala za računalnik</strong> z zaščito pred modro svetlobo za udobno delo čez cel dan brez utrujenosti oči.
             </p>
           </div>
           <div class="p-8">
             <span class="text-4xl block mb-4">📚</span>
             <h3 class="font-serif text-xl text-primary-dark mb-3">Za Branje</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Enostavna stekla za branje ali multifokalna za tiste, ki potrebujejo pomoč na več razdaljah.
+              Enostavna stekla za branje ali <strong>multifokalna očala</strong> za tiste, ki potrebujejo jasen vid na več razdaljah hkrati.
             </p>
           </div>
           <div class="p-8">
             <span class="text-4xl block mb-4">🚗</span>
             <h3 class="font-serif text-xl text-primary-dark mb-3">Za Vožnjo</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Stekla z antirefleksnim nanosom za zmanjšanje bleščanja in jasnejši vid ponoči.
+              Specializirana stekla z antirefleksnim nanosom za varno vožnjo, zmanjšanje bleščanja in jasnejši vid ponoči.
             </p>
           </div>
         </div>
@@ -56,9 +56,9 @@
       <div class="container mx-auto px-6 max-w-4xl">
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-3xl font-serif text-primary-dark mb-6">Zahtevni Recepti? Naša Specialnost.</h2>
+            <h2 class="text-3xl font-serif text-primary-dark mb-6">Zahtevni recepti? Naša specialnost.</h2>
             <p class="text-gray-600 leading-relaxed mb-6">
-              Nekateri recepti so težji za obdelavo kot drugi. Visoka dioptrija, progresivna zasnova 
+              Nekateri recepti so težji za obdelavo kot drugi. Visoka dioptrija, <strong>progresivna očala</strong> 
               ali korekcija astigmatizma zahtevajo natančnost, da se izognemo popačenju in nelagodju.
             </p>
             <p class="text-gray-600 leading-relaxed mb-6">
@@ -87,7 +87,7 @@
           </div>
           <div class="bg-cream p-8 text-center">
             <span class="text-6xl block mb-4">🔬</span>
-            <h3 class="font-serif text-xl text-primary-dark mb-3">Strokovna Obdelava</h3>
+            <h3 class="font-serif text-xl text-primary-dark mb-3">Strokovna izdelava očal</h3>
             <p class="text-gray-600 text-sm">
               Z desetletji izkušenj pri prilagajanju okvirjev in stekel zagotavljamo, da tudi 
               najbolj zahtevni recepti dobijo natančno obdelavo.
@@ -100,7 +100,7 @@
     <!-- Workplace & Safety Glasses -->
     <section class="py-24 bg-primary-dark text-white">
       <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-3xl font-serif mb-6">Zaščitna Očala z Dioptrijo</h2>
+        <h2 class="text-3xl font-serif mb-6">Zaščitna očala z dioptrijo</h2>
         <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
           V sodelovanju z vodilnimi proizvajalci, kot je Uvex (preko Alcom), nudimo vrhunska delovna 
           zaščitna očala. Zagotovite si popolno zaščito oči pred delci, kemikalijami in prahom, 
@@ -135,7 +135,7 @@
     <!-- For Everyone -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-5xl">
-        <h2 class="text-3xl font-serif text-primary-dark mb-12 text-center">Očala za Vso Družino</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-12 text-center">Očala za vso družino</h2>
         <div class="grid md:grid-cols-3 gap-8">
           
           <div class="bg-white p-8 border border-gray-100 text-center">
@@ -172,7 +172,7 @@
     <!-- Frame Selection -->
     <section class="py-24">
       <div class="container mx-auto px-6 max-w-4xl">
-        <h2 class="text-3xl font-serif text-primary-dark mb-6 text-center">Okvirji za Vaš Obraz in Osebnost</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-6 text-center">Modni okvirji za očala</h2>
         <p class="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto mb-12">
           Vaša očala morajo delovati, kot da so bila zasnovana posebej za vas. Pri nas je 
           izbira okvirjev umetnost enako kot znanost. Ponujamo dizajnerske okvirje preverjenih 
@@ -202,13 +202,13 @@
     <!-- Lens Types -->
     <section class="py-24 bg-cream">
       <div class="container mx-auto px-6 max-w-4xl">
-        <h2 class="text-3xl font-serif text-primary-dark mb-12 text-center">Stekla za Resnično Življenje</h2>
+        <h2 class="text-3xl font-serif text-primary-dark mb-12 text-center">Stekla za resnično življenje</h2>
         <div class="grid md:grid-cols-2 gap-8">
           
           <div class="bg-white p-8 border border-gray-100">
             <h3 class="font-serif text-xl text-primary-dark mb-4">Enostavna (Monofokalna)</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Za eno razdaljo — branje, vožnjo ali vsakodnevno uporabo. Najpogostejša izbira.
+              Za eno razdaljo — branje, vožnjo ali vsakodnevno uporabo. Najpogostejša izbira za jasen vid na recept.
             </p>
           </div>
 
@@ -216,7 +216,7 @@
             <h3 class="font-serif text-xl text-primary-dark mb-4">Progresivna</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
               Gladek prehod med razdaljami brez vidnih črt. Idealna za tiste, ki potrebujejo 
-              pomoč na blizu in daleč.
+              pomoč na blizu in daleč. Ponujamo najsodobnejša <strong>progresivna očala</strong>.
             </p>
           </div>
 
@@ -229,10 +229,10 @@
           </div>
 
           <div class="bg-white p-8 border border-gray-100">
-            <h3 class="font-serif text-xl text-primary-dark mb-4">Premazi in Zaščite</h3>
+            <h3 class="font-serif text-xl text-primary-dark mb-4">Premazi in zaščite</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
               Antirefleksni, zaščita pred modro svetlobo, odpornost na praske — za 
-              dolgotrajno udobje.
+              dolgotrajno udobje vaših korekcijskih očal.
             </p>
           </div>
 
@@ -255,7 +255,7 @@
         <!-- Features Grid -->
         <div class="grid md:grid-cols-2 gap-8 items-center mb-24">
             <div class="relative h-96 group overflow-hidden">
-                <img src="/images/fashion/swarovski/Glasses-Swarovski2.jpg" alt="Anything that shines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/fashion/swarovski/Glasses-Swarovski2.jpg" alt="Luksuzna očala Swarovski" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Vse kar sije</h3>
@@ -264,7 +264,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/images/fashion/swarovski/Glasses-Swarovski1.jpg" alt="Brilliant prestige" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/fashion/swarovski/Glasses-Swarovski1.jpg" alt="Prestižna očala s kristali" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Briljantni Prestiž</h3>
@@ -273,7 +273,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/images/fashion/swarovski/Glasses-Swarovski3.jpg" alt="Diamond look" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/fashion/swarovski/Glasses-Swarovski3.jpg" alt="Diamantni videz stekel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Diamantni Videz</h3>
@@ -282,7 +282,7 @@
                 </div>
             </div>
              <div class="relative h-96 group overflow-hidden">
-                <img src="/images/fashion/swarovski/Glasses-Swarovski4.jpg" alt="Perfection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/fashion/swarovski/Glasses-Swarovski4.jpg" alt="Popolna izdelava očal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-8">
                     <div class="text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                         <h3 class="font-serif text-2xl mb-2">Predani Popolnosti</h3>
@@ -371,9 +371,9 @@
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center mb-16">
                 <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Napredna Zaščita</span>
-                <h2 class="text-4xl font-serif text-primary-dark mb-6">Nanosi za Stekla</h2>
+                <h2 class="text-4xl font-serif text-primary-dark mb-6">Nanosi za stekla</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                    Naši premium nanosi zagotavljajo popolno zaščito vaših oči in stekel. Od vrhunskih antirefleksov do modnih zrcalnih nanosov.
+                    Naši premium nanosi zagotavljajo popolno zaščito vaših oči in stekel. Od vrhunskih antirefleksov do modnih zrcalnih nanosov za vaša <strong>dioptrijska očala</strong>.
                 </p>
             </div>
 
@@ -420,22 +420,17 @@
 
             <!-- Mirror Coatings -->
             <div class="text-center mb-12">
-                 <h3 class="text-2xl font-serif text-primary-dark mb-4">Mirror - Zrcalni Nanosi</h3>
-                 <p class="text-gray-500 max-w-2xl mx-auto mb-12">Za moden videz in dodatno udobje pri močni svetlobi. Na voljo v različnih atraktivnih barvah.</p>
+                 <h3 class="text-2xl font-serif text-primary-dark mb-4">Mirror - Zrcalni nanosi</h3>
+                 <p class="text-gray-500 max-w-2xl mx-auto mb-12">Za moden videz in dodatno udobje pri močni svetlobi. Na voljo v različnih atraktivnih barvah za vaša <strong>sončna očala z dioptrijo</strong>.</p>
                  
                  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                     <!-- Mirror Rose -->
                     <div class="group">
                         <div class="overflow-hidden rounded-lg shadow-sm mb-3">
-                            <img src="/images/coatings/mirror-rose.jpg" alt="Mirror Rose" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <img src="/images/coatings/mirror-rose.jpg" alt="Mirror Rose zrcalni nanos" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
                         <h4 class="font-bold text-gray-800">Mirror Rose</h4>
                     </div>
-                     <!-- Add generic placeholder/derived if we only downloaded one, or check json -->
-                     <!-- Since I only confirmed Rose in logical plan, I will stick to generic or check logic -->
-                     <!-- Actually, my python script tried to dl all. Let's assume just Rose was robustly found or I check the json later. 
-                          Wait, the script printed "Downloading Mirror Rose". 
-                          Let's use just the Rose one as 'Feature' and maybe others if they exist, but safely -->
                  </div>
                  <p class="text-xs text-gray-400 mt-8">Na voljo tudi: Blue, Green, Silver, Gold, Red.</p>
             </div>
@@ -445,9 +440,9 @@
     <!-- CTA -->
     <section class="py-20 bg-primary-dark text-center">
       <div class="container mx-auto px-6 max-w-3xl">
-        <h2 class="text-3xl font-serif text-white mb-6">Poiščite Popolna Očala</h2>
+        <h2 class="text-3xl font-serif text-white mb-6">Poiščite popolna očala v Ljubljani</h2>
         <p class="text-gray-300 mb-8">
-          Obiščite nas in skupaj izberimo okvirje in stekla, ki vam bodo služila vsak dan.
+          Obiščite nas in skupaj izberimo okvirje in stekla, ki vam bodo služila vsak dan. Smo <strong>butična optika na Vojkovi 58</strong>.
         </p>
         <NuxtLink 
           to="/kontakt" 
@@ -464,8 +459,8 @@
 useHead({
   title: 'Korekcijska Očala Ljubljana | Progresivna & Dioptrijska Očala | Optika Si',
   meta: [
-    { name: 'description', content: 'Široka izbira korekcijskih očal v Ljubljani. Specializirani za zahtevne recepte, progresivna stekla in zaščitna očala z dioptrijo (Uvex). Najboljše cene.' },
-    { name: 'keywords', content: 'korekcijska očala ljubljana, progresivna očala, dioptrijska očala, otroška očala, moška očala, ženska očala, uvex zaščitna očala' }
+    { name: 'description', content: 'Široka izbira korekcijskih očal v Ljubljani. Specializirani za zahtevne recepte, progresivna stekla in zaščitna očala z dioptrijo (Uvex). Rezervirajte termin za osebno svetovanje.' },
+    { name: 'keywords', content: 'korekcijska očala ljubljana, progresivna očala, dioptrijska očala, otroška očala, moška očala, ženska očala, uvex zaščitna očala, izdelava očal po meri, optik bežigrad' }
   ]
 })
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div class="py-24 container mx-auto px-6 max-w-3xl">
     <div class="text-center mb-12">
-      <h1 class="text-4xl text-primary-dark mb-4">Naročilo Kontaktnih Leč</h1>
-      <p class="text-gray-600">Hitro in enostavno naročite nove zaloge vaših leč.</p>
+      <h1 class="text-4xl font-serif text-primary-dark mb-4">Kontaktne Leče - Naročilo</h1>
+      <p class="text-gray-600">Hitro in enostavno naročite nove zaloge vaših leč v <strong>Optiki Ljubljana</strong>.</p>
     </div>
 
     <form @submit.prevent="submitOrder" class="bg-white p-8 md:p-12 shadow-sm border border-gray-100 space-y-8">
@@ -27,7 +27,7 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Podatki o Lečah</h3>
         <div class="space-y-6">
           <div class="flex flex-col">
-            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Leč (npr. Acuvue Oasys)</label>
+            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)</label>
             <input id="brand" v-model="form.brand" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
 
@@ -79,14 +79,19 @@
       </p>
 
     </form>
+
+    <div class="mt-16 text-center text-gray-500 text-sm">
+      <p>Še niste preizkusili kontaktnih leč? <NuxtLink to="/storitve" class="text-accent hover:underline">Rezervirajte termin</NuxtLink> za uvajanje in strokovni pregled.</p>
+    </div>
   </div>
 </template>
 
 <script setup>
 useHead({
-  title: 'Naročilo Kontaktnih Leč',
+  title: 'Naročilo Kontaktnih Leč | Kontaktne Leče Ljubljana | Optika Si',
   meta: [
-    { name: 'description', content: 'Enostavno naročanje kontaktnih leč preko spleta. Hitra dostava ali osebni prevzem.' }
+    { name: 'description', content: 'Hitro naročanje kontaktnih leč preko spleta. Široka izbira znamk (Acuvue, Biofinity, Air Optix). Možnost osebnega prevzema v Ljubljani ali dostave.' },
+    { name: 'keywords', content: 'kontaktne leče, naročilo kontaktnih leč, kontaktne leče ljubljana, tekočina za leče, optika ljubljana' }
   ]
 })
 
@@ -113,11 +118,6 @@ const submitOrder = () => {
     console.log('Order:', form)
     success.value = true
     isSubmitting.value = false
-
-    // Optional: Reset form after success
-    // form.name = ''
-    // form.email = ''
-    // ...
   }, 1000)
 }
 </script>
