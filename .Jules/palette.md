@@ -21,3 +21,7 @@
 ## 2026-10-24 - Input Labeling
 **Learning:** Inputs relying solely on placeholders for identification are inaccessible to screen readers.
 **Action:** Always include an `aria-label` matching the placeholder if a visible `<label>` is not design-compliant.
+
+## 2026-02-05 - Tactile Feedback in Quizzes
+**Learning:** Static selection cards feel dull and lack affordance. Keyboard users often get lost without clear focus rings.
+**Action:** Combine `hover:-translate-y-1` for mouse users with `focus-visible:ring-2` for keyboard users to make selection steps feel alive and accessible.
