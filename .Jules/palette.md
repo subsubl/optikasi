@@ -25,3 +25,7 @@
 ## 2026-02-05 - Tactile Feedback in Quizzes
 **Learning:** Static selection cards feel dull and lack affordance. Keyboard users often get lost without clear focus rings.
 **Action:** Combine `hover:-translate-y-1` for mouse users with `focus-visible:ring-2` for keyboard users to make selection steps feel alive and accessible.
+
+## 2026-10-25 - Horizontal Scroll Accessibility
+**Learning:** Horizontal scroll areas with hidden scrollbars are inaccessible to mouse users without touchpads and undiscoverable.
+**Action:** Add explicit "Previous" and "Next" buttons that appear on hover AND on focus (using `group-focus-within`), ensuring keyboard users can also access them.
