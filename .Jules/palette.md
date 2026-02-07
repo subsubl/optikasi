@@ -29,3 +29,7 @@
 ## 2026-10-25 - Horizontal Scroll Accessibility
 **Learning:** Horizontal scroll areas with hidden scrollbars are inaccessible to mouse users without touchpads and undiscoverable.
 **Action:** Add explicit "Previous" and "Next" buttons that appear on hover AND on focus (using `group-focus-within`), ensuring keyboard users can also access them.
+
+## 2026-10-26 - Accordion Accessibility
+**Learning:** Expanding sections (accordions) need explicit state indicators (`aria-expanded`) and relationship mapping (`aria-controls`) to be understandable by screen readers.
+**Action:** Always bind `aria-expanded` to the toggle state and link the button to the content via `aria-controls` and `id` attributes.

@@ -237,14 +237,20 @@
         <div class="space-y-4">
           <div v-for="(faq, index) in faqs" :key="index" class="border border-gray-200 rounded-lg overflow-hidden">
             <button 
+              :id="`faq-question-${index}`"
               @click="faq.open = !faq.open"
-              class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+              class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent relative z-10"
+              :aria-expanded="faq.open"
+              :aria-controls="`faq-answer-${index}`"
             >
               <span class="font-serif text-lg text-primary-dark">{{ faq.question }}</span>
               <span class="text-accent text-xl transition-transform duration-300" :class="{ 'rotate-45': faq.open }">+</span>
             </button>
             <div 
               v-show="faq.open"
+              :id="`faq-answer-${index}`"
+              role="region"
+              :aria-labelledby="`faq-question-${index}`"
               class="px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-100"
             >
               {{ faq.answer }}
