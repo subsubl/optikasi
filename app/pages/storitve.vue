@@ -239,6 +239,9 @@
             <button 
               @click="faq.open = !faq.open"
               class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+              :aria-expanded="faq.open"
+              :aria-controls="'faq-content-' + index"
+              :id="'faq-button-' + index"
             >
               <span class="font-serif text-lg text-primary-dark">{{ faq.question }}</span>
               <span class="text-accent text-xl transition-transform duration-300" :class="{ 'rotate-45': faq.open }">+</span>
@@ -246,6 +249,9 @@
             <div 
               v-show="faq.open"
               class="px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-100"
+              role="region"
+              :id="'faq-content-' + index"
+              :aria-labelledby="'faq-button-' + index"
             >
               {{ faq.answer }}
             </div>
