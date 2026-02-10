@@ -29,3 +29,7 @@
 ## 2026-10-25 - Horizontal Scroll Accessibility
 **Learning:** Horizontal scroll areas with hidden scrollbars are inaccessible to mouse users without touchpads and undiscoverable.
 **Action:** Add explicit "Previous" and "Next" buttons that appear on hover AND on focus (using `group-focus-within`), ensuring keyboard users can also access them.
+
+## 2026-10-26 - Skip to Content Implementation
+**Learning:** Animated "Skip to Content" links (using `transition-transform`) require a delay in verification scripts to capture the focused state correctly.
+**Action:** When testing animated UI elements with Playwright, always include `page.wait_for_timeout()` matching the transition duration before taking screenshots.

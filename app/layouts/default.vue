@@ -1,7 +1,11 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-cream font-sans">
+  <div class="flex flex-col min-h-screen bg-cream font-sans relative">
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="fixed top-4 left-4 z-[100] -translate-y-[200%] focus:translate-y-0 bg-white text-primary font-bold px-6 py-3 shadow-lg rounded-sm ring-2 ring-accent transition-transform duration-300 uppercase tracking-widest text-sm focus:outline-none">
+      Preskoči na vsebino
+    </a>
     <AppNavbar />
-    <main class="flex-grow pt-20"> <!-- Padding top for fixed navbar -->
+    <main id="main-content" tabindex="-1" class="flex-grow pt-20 outline-none"> <!-- Padding top for fixed navbar -->
       <slot />
       <InstagramFeed />
       <div class="container mx-auto px-6 mt-16 mb-12">
