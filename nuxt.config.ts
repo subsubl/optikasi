@@ -20,7 +20,14 @@ export default defineNuxtConfig({
     }
   },
   robots: {
-    robotsTxt: false
+    // Generate robots.txt
+    robotsTxt: true,
+    // Add custom rules if needed (e.g., disallow /admin)
+    rules: [
+      { UserAgent: '*' },
+      { Disallow: '/admin' }, // Example: Protect potential admin routes
+      { Sitemap: 'https://optikasi.si/sitemap.xml' }
+    ]
   },
   site: {
     url: 'https://optikasi.si',
