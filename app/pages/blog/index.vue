@@ -35,6 +35,20 @@ useHead({
 
 const posts = [
   {
+    title: 'Retro sončna očala 2026: Povratek 70-ih',
+    slug: '/blog/retro-soncna-ocala-2026',
+    category: 'Trendi 2026',
+    excerpt: 'Oversized okvirji in futuristični vizirji so nazaj. Poglejte, kako 70-ta leta navdihujejo letošnjo pomlad v Ljubljani.',
+    image: '/images/shop/studio-optika-si.png'
+  },
+  {
+    title: 'Ljubljana Ulični Stil 2026: Obarvana Očala',
+    slug: '/blog/obarvana-ocala-trend-2026',
+    category: 'Trendi 2026',
+    excerpt: 'Zakaj so nežno obarvana očala (soft tints) nova maskara? Trend, ki definira ulice Ljubljane.',
+    image: '/images/coatings/mirror-rose.jpg'
+  },
+  {
     title: 'Kako izbrati prava očala za vašo obliko obraza?',
     slug: '/blog/izbira-ocala-oblika-obraza',
     category: 'Svetovanje',
