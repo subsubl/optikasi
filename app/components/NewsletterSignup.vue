@@ -7,7 +7,7 @@
       <span class="text-accent uppercase tracking-[0.2em] text-xs font-bold mb-3 block">VIP Klub</span>
       <h3 class="text-2xl font-serif mb-4">Postanite del naše zgodbe</h3>
       <p class="text-gray-300 text-sm mb-6 font-light leading-relaxed">
-        Prijavite se na novičke in bodite prvi obveščeni o novih kolekcijah (Lindberg, Cartier) ter ekskluzivnih dogodkih.
+        Prijavite se na novičke in bodite prvi obveščeni o novih, ekskluzivnih kolekcijah ter dogodkih.
       </p>
 
       <form @submit.prevent="subscribe" class="flex flex-col sm:flex-row gap-4">

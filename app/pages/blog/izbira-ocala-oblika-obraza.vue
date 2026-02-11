@@ -83,7 +83,7 @@
         </div>
 
         <p class="mb-8">
-          Ne pozabite, da so to le smernice. Najpomembnejše je, da se v svojih novih očalih počutite samozavestno. Obiščite nas na Vojkovi 58, kjer vas čaka bogata izbira znamk kot so <strong>Lindberg, Cartier, Gucci</strong> in mnogi drugi.
+          Ne pozabite, da so to le smernice. Najpomembnejše je, da se v svojih novih očalih počutite samozavestno. Obiščite nas na Vojkovi 58, kjer vas čaka bogata izbira znamk kot so <strong>prestižne znamke, neodvisni oblikovalci</strong> in mnogi drugi.
         </p>
       </div>
 

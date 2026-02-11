@@ -142,10 +142,10 @@ const budgets = [
 const recommendation = computed(() => {
   const recs = {
     'round-classic': 'Pravokotni ali kvadratni okvirji (npr. Ray-Ban Wayfarer)',
-    'round-modern': 'Geometrijski okvirji z ostrimi robovi (npr. Lindberg)',
-    'round-bold': 'Veliki kvadratni okvirji (npr. Gucci Square)',
+    'round-modern': 'Geometrijski okvirji z ostrimi robovi (npr. minimalistični dizajni)',
+    'round-bold': 'Veliki kvadratni okvirji (npr. drzni kvadratni modeli)',
     'oval-classic': 'Aviator ali okrogli okvirji (npr. Ray-Ban Aviator)',
-    'oval-modern': 'Minimalistični rimless okvirji (npr. Lindberg Air)',
+    'oval-modern': 'Minimalistični rimless okvirji (npr. lahki okvirji brez vijakov)',
     'oval-bold': 'Cat-eye ali oversized okvirji (npr. Tom Ford)',
     'square-classic': 'Okrogli ali ovalni okvirji (npr. Persol 649)',
     'square-modern': 'Tanki kovinski okvirji (npr. Oliver Peoples)',

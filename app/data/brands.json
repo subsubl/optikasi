@@ -15,20 +15,6 @@
         ]
     },
     {
-        "slug": "gucci",
-        "name": "Gucci",
-        "tagline": "Italijanska eleganca in drznost",
-        "description": "Gucci očala združujejo italijansko obrtništvo z drznimi dizajnerskimi rešitvami. Prepoznavni logotip GG, živahne barve in luksuzni materiali ustvarjajo kose, ki so resnična modna izjava. V naši kolekciji najdete tako klasične kot avantgardne modele.",
-        "keywords": [
-            "gucci očala",
-            "gucci ljubljana",
-            "gucci sončna očala"
-        ],
-        "featured": [
-            "gucci-gg1234"
-        ]
-    },
-    {
         "slug": "tom-ford",
         "name": "Tom Ford",
         "tagline": "Sofisticirana senzualnost",
@@ -68,20 +54,6 @@
         ],
         "featured": [
             "persol-649"
-        ]
-    },
-    {
-        "slug": "lindberg",
-        "name": "Lindberg",
-        "tagline": "Danska popolnost brez kompromisov",
-        "description": "Lindberg je znan po minimalističnem dizajnu in izjemni lahkotnosti. Očala brez vijakov, iz titana in roževine, so ročno sestavljena na Danskem. Za tiste, ki cenijo diskrentno eleganco in tehnično dovršenost.",
-        "keywords": [
-            "lindberg očala",
-            "lindberg ljubljana",
-            "titanska očala"
-        ],
-        "featured": [
-            "lindberg-air-rim"
         ]
     }
 ]

@@ -19,7 +19,7 @@
 useHead({
   title: 'Blagovne Znamke in Okvirji',
   meta: [
-    { name: 'description', content: 'Ponujamo vrhunske okvirje priznanih znamk: Ray-Ban, Oakley, Gucci, Tom Ford, Lindberg in druge. Na voljo korekcijska in sončna očala.' }
+    { name: 'description', content: 'Ponujamo vrhunske okvirje priznanih znamk: Ray-Ban, Oakley, Tom Ford in druge. Na voljo korekcijska in sončna očala.' }
   ]
 })
 
@@ -27,7 +27,6 @@ const brands = [
   { name: 'Ray Ban', image: 'https://placehold.co/400x200/ffffff/000000?text=Ray+Ban' },
   { name: 'Polar', image: 'https://placehold.co/400x200/ffffff/000000?text=Polar' },
   { name: 'People', image: 'https://placehold.co/400x200/ffffff/000000?text=People' },
-  { name: 'Gucci', image: 'https://placehold.co/400x200/ffffff/000000?text=Gucci' },
   { name: 'David Beckham', image: 'https://placehold.co/400x200/ffffff/000000?text=David+Beckham' },
   { name: 'Flowers', image: 'https://placehold.co/400x200/ffffff/000000?text=Flowers' },
   { name: 'Missoni', image: 'https://placehold.co/400x200/ffffff/000000?text=Missoni' },

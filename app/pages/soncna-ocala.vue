@@ -85,7 +85,7 @@
             <span class="text-4xl block mb-4">💎</span>
             <h3 class="font-serif text-xl text-primary-dark mb-3">Dizajnerska sončna očala</h3>
             <p class="text-gray-600 text-sm leading-relaxed">
-              Ray-Ban, Gucci, Tom Ford, Persol in druge prestižne znamke za tiste, 
+              Ray-Ban, Tom Ford, Persol in druge prestižne znamke za tiste, 
               ki cenijo luksuz in <strong>modne okvirje za očala</strong>.
             </p>
           </div>
@@ -229,7 +229,7 @@
 useHead({
   title: 'Sončna Očala Ljubljana | Sončna Očala z Dioptrijo | Optika Si',
   meta: [
-    { name: 'description', content: 'Iščete sončna očala v Ljubljani? Nudimo dizajnerske okvirje in vrhunska sončna očala z dioptrijo. Ray-Ban, Gucci, Oakley in več. Polarizirana stekla.' },
+    { name: 'description', content: 'Iščete sončna očala v Ljubljani? Nudimo dizajnerske okvirje in vrhunska sončna očala z dioptrijo. Ray-Ban, Oakley in več. Polarizirana stekla.' },
     { name: 'keywords', content: 'sončna očala ljubljana, sončna očala z dioptrijo, polarizirajoča očala, ray-ban ljubljana, gucci sončna očala, optika bežigrad' }
   ]
 })
