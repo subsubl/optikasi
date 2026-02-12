@@ -29,3 +29,7 @@
 ## 2026-10-25 - Horizontal Scroll Accessibility
 **Learning:** Horizontal scroll areas with hidden scrollbars are inaccessible to mouse users without touchpads and undiscoverable.
 **Action:** Add explicit "Previous" and "Next" buttons that appear on hover AND on focus (using `group-focus-within`), ensuring keyboard users can also access them.
+
+## 2026-10-26 - Stepper Accessibility
+**Learning:** Visual-only steppers (just numbers/circles) leave screen reader users lost in a process.
+**Action:** Use `<nav>` + `<ol>`, apply `aria-current="step"`, and include invisible text like "Step X of Y - [Status]" to provide full context.

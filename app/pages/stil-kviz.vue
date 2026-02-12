@@ -7,15 +7,20 @@
 
     <div class="bg-white p-8 md:p-12 shadow-sm border border-gray-100">
       <!-- Step Indicator -->
-      <div class="flex justify-center mb-12">
-        <div v-for="s in 3" :key="s" class="flex items-center">
-          <div :class="[
-            'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors',
-            step >= s ? 'bg-accent text-white' : 'bg-gray-100 text-gray-400'
-          ]">{{ s }}</div>
-          <div v-if="s < 3" class="w-12 h-0.5 bg-gray-200"></div>
-        </div>
-      </div>
+      <nav aria-label="Napredek kviza" class="mb-12">
+        <ol class="flex justify-center items-center">
+          <li v-for="s in 3" :key="s" class="flex items-center" :aria-current="step === s ? 'step' : undefined">
+            <div :class="[
+              'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors',
+              step >= s ? 'bg-accent text-white' : 'bg-gray-100 text-gray-400'
+            ]">
+              <span aria-hidden="true">{{ s }}</span>
+              <span class="sr-only">Korak {{ s }} od 3 {{ step > s ? '(zaključeno)' : '' }} {{ step === s ? '(trenutno)' : '' }}</span>
+            </div>
+            <div v-if="s < 3" class="w-12 h-0.5 bg-gray-200" aria-hidden="true"></div>
+          </li>
+        </ol>
+      </nav>
 
       <!-- Step 1: Face Shape -->
       <div v-if="step === 1" class="space-y-6">
