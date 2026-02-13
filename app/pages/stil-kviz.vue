@@ -7,22 +7,31 @@
 
     <div class="bg-white p-8 md:p-12 shadow-sm border border-gray-100">
       <!-- Step Indicator -->
-      <div class="flex justify-center mb-12">
-        <div v-for="s in 3" :key="s" class="flex items-center">
-          <div :class="[
-            'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors',
-            step >= s ? 'bg-accent text-white' : 'bg-gray-100 text-gray-400'
-          ]">{{ s }}</div>
-          <div v-if="s < 3" class="w-12 h-0.5 bg-gray-200"></div>
-        </div>
-      </div>
+      <nav aria-label="Napredek kviza" class="flex justify-center mb-12">
+        <ol class="flex items-center">
+          <li v-for="s in 3" :key="s" class="flex items-center">
+            <div
+              :class="[
+                'w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-colors',
+                step >= s ? 'bg-accent text-white' : 'bg-gray-100 text-gray-400'
+              ]"
+              :aria-current="step === s ? 'step' : undefined"
+            >
+              <span aria-hidden="true">{{ s }}</span>
+              <span class="sr-only">Korak {{ s }} od 3: {{ stepTitles[s-1] }}</span>
+              <span v-if="step > s" class="sr-only">Opravljeno</span>
+            </div>
+            <div v-if="s < 3" class="w-12 h-0.5 bg-gray-200" aria-hidden="true"></div>
+          </li>
+        </ol>
+      </nav>
 
       <!-- Step 1: Face Shape -->
       <div v-if="step === 1" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšna je oblika vašega obraza?</h2>
         <div class="grid grid-cols-2 gap-4">
-          <button 
-            v-for="shape in faceShapes" 
+          <button
+            v-for="shape in faceShapes"
             :key="shape.id"
             @click="selectFaceShape(shape.id)"
             :aria-pressed="form.faceShape === shape.id"
@@ -41,8 +50,8 @@
       <div v-if="step === 2" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kateri stil vam je najbližji?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="style in styles" 
+          <button
+            v-for="style in styles"
             :key="style.id"
             @click="selectStyle(style.id)"
             :aria-pressed="form.style === style.id"
@@ -64,8 +73,8 @@
       <div v-if="step === 3" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšen je vaš proračun?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="budget in budgets" 
+          <button
+            v-for="budget in budgets"
             :key="budget.id"
             @click="selectBudget(budget.id)"
             :aria-pressed="form.budget === budget.id"
@@ -113,6 +122,8 @@ useHead({
 })
 
 const step = ref(1)
+
+const stepTitles = ['Oblika obraza', 'Stil', 'Proračun']
 
 const form = reactive({
   faceShape: '',
