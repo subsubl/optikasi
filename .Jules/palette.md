@@ -29,3 +29,7 @@
 ## 2026-10-25 - Horizontal Scroll Accessibility
 **Learning:** Horizontal scroll areas with hidden scrollbars are inaccessible to mouse users without touchpads and undiscoverable.
 **Action:** Add explicit "Previous" and "Next" buttons that appear on hover AND on focus (using `group-focus-within`), ensuring keyboard users can also access them.
+
+## 2026-10-26 - Multi-step Process Accessibility
+**Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
+**Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
