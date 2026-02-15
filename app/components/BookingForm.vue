@@ -22,8 +22,8 @@
       <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
     </div>
 
-    <div class="space-y-4 pt-4">
-      <label class="text-xs uppercase tracking-widest text-gray-500 font-bold block">Želeni Termini (Izberite več možnosti)</label>
+    <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
+      <legend class="text-xs uppercase tracking-widest text-gray-500 font-bold block w-full">Želeni Termini (Izberite več možnosti)</legend>
 
       <!-- Weekdays -->
       <div class="flex flex-wrap gap-3 mb-4">
@@ -44,7 +44,7 @@
           </span>
         </label>
       </div>
-    </div>
+    </fieldset>
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
