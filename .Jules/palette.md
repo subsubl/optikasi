@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Skip to Content Navigation
+**Learning:** Single Page Applications (SPAs) often trap keyboard users in lengthy navigation menus before they can reach the main content.
+**Action:** Implement a "Skip to Content" link as the first focusable element, targeting the `<main>` tag with `id` and `tabindex="-1"` for reliable focus management.
