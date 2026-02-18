@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Keyboard Scrollable Regions
+**Learning:** `overflow: auto` regions are not keyboard scrollable by default in all browsers unless they have `tabindex='0'`.
+**Action:** Always add `tabindex='0'`, `role='region'`, and `aria-label` to scrollable containers to ensure keyboard users can scroll them with arrow keys.
