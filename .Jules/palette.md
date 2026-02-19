@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Carousel Accessibility
+**Learning:** Horizontal scroll containers are inaccessible to keyboard users (no arrow key scrolling) unless the container is focusable.
+**Action:** Add `tabindex="0"`, `role="region"`, and `aria-label` to the scroll container, and ensure it has a visible focus indicator.
