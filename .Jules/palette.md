@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Scroll Container Semantics
+**Learning:** Scrollable containers without semantics are invisible to screen readers and keyboard inaccessible if they lack `tabindex`.
+**Action:** Add `tabindex="0"`, `role="region"`, `aria-label`, and `aria-controls` on buttons to make the scroll area fully accessible.
