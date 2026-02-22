@@ -22,29 +22,35 @@
       <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
     </div>
 
-    <div class="space-y-4 pt-4">
-      <label class="text-xs uppercase tracking-widest text-gray-500 font-bold block">Želeni Termini (Izberite več možnosti)</label>
+    <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
+      <legend class="text-xs uppercase tracking-widest text-gray-500 font-bold block mb-4 w-full">Želeni Termini (Izberite več možnosti)</legend>
 
       <!-- Weekdays -->
-      <div class="flex flex-wrap gap-3 mb-4">
-        <label v-for="day in days" :key="day" class="cursor-pointer">
-          <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
-            {{ day }}
-          </span>
-        </label>
-      </div>
+      <fieldset class="border-none p-0 m-0 mb-4">
+        <legend class="sr-only">Dnevi v tednu</legend>
+        <div class="flex flex-wrap gap-3">
+          <label v-for="day in days" :key="day" class="cursor-pointer">
+            <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
+            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
+              {{ day }}
+            </span>
+          </label>
+        </div>
+      </fieldset>
 
       <!-- Time Slots -->
-      <div class="flex flex-wrap gap-3">
-        <label v-for="slot in slots" :key="slot" class="cursor-pointer">
-          <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
-            {{ slot }}
-          </span>
-        </label>
-      </div>
-    </div>
+      <fieldset class="border-none p-0 m-0">
+        <legend class="sr-only">Časovni termini</legend>
+        <div class="flex flex-wrap gap-3">
+          <label v-for="slot in slots" :key="slot" class="cursor-pointer">
+            <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
+            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
+              {{ slot }}
+            </span>
+          </label>
+        </div>
+      </fieldset>
+    </fieldset>
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
