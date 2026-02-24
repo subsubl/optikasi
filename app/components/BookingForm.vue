@@ -9,27 +9,27 @@
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
         <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek</label>
-        <input id="name" v-model="form.name" type="text" name="name" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="Janez Novak" />
+        <input id="name" v-model="form.name" type="text" name="name" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Janez Novak" />
       </div>
       <div class="space-y-2">
         <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov</label>
-        <input id="email" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
+        <input id="email" v-model="form.email" type="email" name="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
       </div>
     </div>
 
     <div class="space-y-2">
       <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
-      <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
+      <input id="phone" v-model="form.phone" type="tel" name="phone" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
     </div>
 
-    <div class="space-y-4 pt-4">
-      <label class="text-xs uppercase tracking-widest text-gray-500 font-bold block">Želeni Termini (Izberite več možnosti)</label>
+    <fieldset class="space-y-4 pt-4 border-none p-0 m-0" :disabled="isSubmitting">
+      <legend class="text-xs uppercase tracking-widest text-gray-500 font-bold w-full mb-4">Želeni Termini (Izberite več možnosti)</legend>
 
       <!-- Weekdays -->
       <div class="flex flex-wrap gap-3 mb-4">
         <label v-for="day in days" :key="day" class="cursor-pointer">
           <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none peer-disabled:opacity-50 peer-disabled:cursor-not-allowed">
             {{ day }}
           </span>
         </label>
@@ -39,16 +39,16 @@
       <div class="flex flex-wrap gap-3">
         <label v-for="slot in slots" :key="slot" class="cursor-pointer">
           <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none peer-disabled:opacity-50 peer-disabled:cursor-not-allowed">
             {{ slot }}
           </span>
         </label>
       </div>
-    </div>
+    </fieldset>
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea id="message" v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm"></textarea>
+      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
     </div>
 
     <!-- Status Messages -->
