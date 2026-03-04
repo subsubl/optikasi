@@ -25,12 +25,15 @@
         </ol>
       </nav>
 
+      <!-- Step Container for Focus Management -->
+      <div ref="stepContainer" tabindex="-1" class="focus:outline-none">
+
       <!-- Step 1: Face Shape -->
       <div v-if="step === 1" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšna je oblika vašega obraza?</h2>
         <div class="grid grid-cols-2 gap-4">
-          <button 
-            v-for="shape in faceShapes" 
+          <button
+            v-for="shape in faceShapes"
             :key="shape.id"
             @click="selectFaceShape(shape.id)"
             :aria-pressed="form.faceShape === shape.id"
@@ -49,8 +52,8 @@
       <div v-if="step === 2" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kateri stil vam je najbližji?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="style in styles" 
+          <button
+            v-for="style in styles"
             :key="style.id"
             @click="selectStyle(style.id)"
             :aria-pressed="form.style === style.id"
@@ -72,8 +75,8 @@
       <div v-if="step === 3" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšen je vaš proračun?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="budget in budgets" 
+          <button
+            v-for="budget in budgets"
             :key="budget.id"
             @click="selectBudget(budget.id)"
             :aria-pressed="form.budget === budget.id"
@@ -108,6 +111,8 @@
         </button>
         <div v-else></div>
       </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -121,6 +126,14 @@ useHead({
 })
 
 const step = ref(1)
+const stepContainer = ref(null)
+
+watch(step, async () => {
+  await nextTick()
+  if (stepContainer.value) {
+    stepContainer.value.focus({ preventScroll: true })
+  }
+})
 
 const form = reactive({
   faceShape: '',
