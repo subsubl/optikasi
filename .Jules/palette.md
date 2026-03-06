@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Form Group Accessibility
+**Learning:** Using a generic `<div>` with a `<label>` to group related form controls (like checkboxes) causes screen readers to lose context when navigating into the group.
+**Action:** Always wrap related form controls in a semantic `<fieldset>` and use a `<legend>` to describe the group. Use Tailwind utilities like `border-none p-0 m-0` to reset default browser fieldset styling if needed.
