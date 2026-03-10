@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Grouping Form Controls
+**Learning:** Groups of related inputs (like checkboxes) without a semantic container are confusing for screen readers as the group label is not programmatically associated.
+**Action:** Wrap related inputs in a `<fieldset>` and use `<legend>` for the group label, ensuring spacing utilities (like `space-y-*`) are adjusted for the new element structure.
