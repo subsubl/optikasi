@@ -33,3 +33,4 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+## 2026-10-27 - Skip to Content Accessibility\n**Learning:** "Skip to Content" links must point to a container with `id="main-content"`, `tabindex="-1"`, and `focus:outline-none` to correctly transfer focus without displaying a default focus ring around the entire main content area.\n**Action:** Add an accessible skip link immediately after the body/layout opening tag and properly configure the target `<main>` element.
