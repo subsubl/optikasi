@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Skip to Content Links
+**Learning:** Adding a basic `<a href="#main-content">` link often causes a focus ring around the entire `main` element when activated.
+**Action:** Always add `tabindex="-1"` and `focus:outline-none` to the target `<main>` container to manage focus cleanly without a jarring visual artifact.
