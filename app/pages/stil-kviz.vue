@@ -35,7 +35,7 @@
             @click="selectFaceShape(shape.id)"
             :aria-pressed="form.faceShape === shape.id"
             :class="[
-              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
+              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md active:scale-95',
               form.faceShape === shape.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
@@ -55,7 +55,7 @@
             @click="selectStyle(style.id)"
             :aria-pressed="form.style === style.id"
             :class="[
-              'p-6 border text-left transition-all duration-300 flex items-center space-x-4 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
+              'p-6 border text-left transition-all duration-300 flex items-center space-x-4 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md active:scale-95',
               form.style === style.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
@@ -78,7 +78,7 @@
             @click="selectBudget(budget.id)"
             :aria-pressed="form.budget === budget.id"
             :class="[
-              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md',
+              'p-6 border text-center transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none hover:-translate-y-1 hover:shadow-md active:scale-95',
               form.budget === budget.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
