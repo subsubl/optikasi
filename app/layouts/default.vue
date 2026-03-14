@@ -1,7 +1,13 @@
 <template>
   <div class="flex flex-col min-h-screen bg-cream font-sans">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[100] focus:p-4 focus:bg-primary-dark focus:text-white focus:font-bold focus:uppercase focus:tracking-widest focus:text-sm"
+    >
+      Skoči na glavno vsebino
+    </a>
     <AppNavbar />
-    <main class="flex-grow pt-20"> <!-- Padding top for fixed navbar -->
+    <main id="main-content" tabindex="-1" class="flex-grow pt-20 focus:outline-none"> <!-- Padding top for fixed navbar -->
       <slot />
       <InstagramFeed />
       <div class="container mx-auto px-6 mt-16 mb-12">

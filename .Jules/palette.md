@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Skip to Content Link Accessibility
+**Learning:** Keyboard-only and screen reader users need a mechanism to bypass repetitive navigation blocks at the top of every page (like a fixed navbar) to efficiently access the main content.
+**Action:** Add a 'Skoči na glavno vsebino' link at the top of the `<template>` in `app/layouts/default.vue`. This link should be visually hidden by default using `sr-only`, but become visible on focus. Ensure it points to an element with `id="main-content"` that has `tabindex="-1"` and `focus:outline-none` so focus is smoothly transferred without a visual outline around the entire content area.
