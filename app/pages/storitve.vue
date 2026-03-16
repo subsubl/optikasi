@@ -238,13 +238,19 @@
           <div v-for="(faq, index) in faqs" :key="index" class="border border-gray-200 rounded-lg overflow-hidden">
             <button 
               @click="faq.open = !faq.open"
-              class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+              :aria-expanded="faq.open"
+              :aria-controls="`${faqIdPrefix}-content-${index}`"
+              :id="`${faqIdPrefix}-button-${index}`"
+              class="w-full px-6 py-5 text-left flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span class="font-serif text-lg text-primary-dark">{{ faq.question }}</span>
-              <span class="text-accent text-xl transition-transform duration-300" :class="{ 'rotate-45': faq.open }">+</span>
+              <span aria-hidden="true" class="text-accent text-xl transition-transform duration-300" :class="{ 'rotate-45': faq.open }">+</span>
             </button>
             <div 
               v-show="faq.open"
+              :id="`${faqIdPrefix}-content-${index}`"
+              role="region"
+              :aria-labelledby="`${faqIdPrefix}-button-${index}`"
               class="px-6 py-5 bg-white text-gray-600 leading-relaxed border-t border-gray-100"
             >
               {{ faq.answer }}
@@ -340,6 +346,8 @@ const processSteps = [
   { step: 'Korak 4', icon: '🔧', title: 'Prilagoditev', desc: 'Očala prilagodimo za maksimalno udobje.' },
   { step: 'Korak 5', icon: '✨', title: 'Prevzem', desc: 'Vaša nova očala so pripravljena!' }
 ]
+
+const faqIdPrefix = useId()
 
 const faqs = reactive([
   { 
