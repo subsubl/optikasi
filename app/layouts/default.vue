@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col min-h-screen bg-cream font-sans">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-dark text-white px-4 py-2 z-[100] rounded-sm font-bold uppercase tracking-widest text-xs">
+      Skoči na glavno vsebino
+    </a>
     <AppNavbar />
-    <main class="flex-grow pt-20"> <!-- Padding top for fixed navbar -->
+    <main id="main-content" tabindex="-1" class="flex-grow pt-20 focus:outline-none"> <!-- Padding top for fixed navbar -->
       <slot />
       <InstagramFeed />
       <div class="container mx-auto px-6 mt-16 mb-12">
@@ -12,7 +15,7 @@
       <div class="container mx-auto px-6 text-center">
         <h3 class="font-serif text-2xl tracking-widest mb-6">OPTIKASI</h3>
         <p class="text-sm tracking-wide opacity-80 mb-6">Vojkova cesta 58, Ljubljana<br>info@optikasi.si | 041 788 516</p>
-        
+
         <!-- Social Links -->
         <a href="https://www.instagram.com/optikasi/?hl=en" target="_blank" rel="noopener noreferrer" class="inline-block text-white hover:text-accent transition-colors mb-6">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

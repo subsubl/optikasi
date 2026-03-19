@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Skip to Content Links
+**Learning:** Keyboard users traversing lengthy navigation menus are frustrated without a mechanism to bypass them. A skip-to-content link is critical for accessibility but must be styled to not disrupt the visual layout when unfocused.
+**Action:** Implement visually hidden skip links (`sr-only`) at the very top of layouts that become visible upon focus (`focus:not-sr-only`, `focus:absolute`, `focus:z-50`). Ensure the target element has `tabindex="-1"` and `focus:outline-none` so it receives focus programmatically without displaying a confusing focus ring around the entire main area.
