@@ -33,3 +33,7 @@
 ## 2026-10-26 - Multi-step Process Accessibility
 **Learning:** Visual-only step indicators (divs) leave screen reader users lost in multi-step forms.
 **Action:** Use semantic `<nav>` and `<ol>` with `aria-label`, `aria-current="step"`, and hidden status text for each step.
+
+## 2026-10-27 - Skip to Content Pattern
+**Learning:** In complex layouts with fixed sticky headers, keyboard-only users must tab through every navigation item to reach primary content on every page load.
+**Action:** Add a visually hidden, focusable "Skip to content" link (`sr-only focus:not-sr-only`) targeting `main` with `tabindex="-1"` and `focus:outline-none` to improve keyboard navigation efficiency without disrupting visual design.
