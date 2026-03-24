@@ -75,7 +75,12 @@
           <p class="text-gray-500">Zakaj izbrati butični pristop 1-na-1 za vaš vid?</p>
         </div>
         
-        <div class="overflow-x-auto border border-gray-100 shadow-sm rounded-lg">
+        <div
+          class="overflow-x-auto border border-gray-100 shadow-sm rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          tabindex="0"
+          role="region"
+          aria-label="Primerjava storitev"
+        >
           <table class="w-full text-left">
             <thead>
               <tr class="bg-cream">
