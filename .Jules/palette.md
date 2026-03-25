@@ -37,3 +37,7 @@
 ## 2026-10-27 - Accessible Accordions
 **Learning:** Accordion toggles lacking `aria-expanded` and `aria-controls` do not convey state or relationship to screen reader users. In Vue/Nuxt, mapping IDs dynamically in `v-for` loops without a unique prefix can cause ID collisions if the component is reused.
 **Action:** Use Nuxt 3's `useId()` (or Vue 3.5+) to generate a unique prefix for accordion item IDs. Always implement `aria-expanded` on the trigger, `aria-controls` linking to the content, and `role="region"` with `aria-labelledby` on the collapsible content container. Hide decorative icons inside the toggle with `aria-hidden="true"`.
+
+## 2026-10-28 - Skip to Main Content Link Target Focus
+**Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
