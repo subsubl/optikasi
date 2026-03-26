@@ -41,3 +41,7 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+
+## 2026-03-26 - Icon-Only Link Accessibility
+**Learning:** Icon-only links (like social media icons in footers) that use SVGs with `aria-hidden="true"` are completely invisible to screen readers without a descriptive `aria-label` on the parent anchor tag. They also often lack keyboard focus styles, making them invisible to keyboard-only users navigating the site.
+**Action:** Always ensure icon-only `<a>` or `<button>` elements have a descriptive `aria-label`. Additionally, always provide explicit focus states (e.g., `focus:outline-none focus-visible:ring-2 focus-visible:ring-accent`) so keyboard users can see where they are on the page.
