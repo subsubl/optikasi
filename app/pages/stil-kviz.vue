@@ -27,10 +27,10 @@
 
       <!-- Step 1: Face Shape -->
       <div v-if="step === 1" class="space-y-6">
-        <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšna je oblika vašega obraza?</h2>
+        <h2 ref="stepHeading" tabindex="-1" class="text-2xl font-serif text-primary-dark text-center mb-8 focus:outline-none">Kakšna je oblika vašega obraza?</h2>
         <div class="grid grid-cols-2 gap-4">
-          <button 
-            v-for="shape in faceShapes" 
+          <button
+            v-for="shape in faceShapes"
             :key="shape.id"
             @click="selectFaceShape(shape.id)"
             :aria-pressed="form.faceShape === shape.id"
@@ -47,10 +47,10 @@
 
       <!-- Step 2: Style Preference -->
       <div v-if="step === 2" class="space-y-6">
-        <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kateri stil vam je najbližji?</h2>
+        <h2 ref="stepHeading" tabindex="-1" class="text-2xl font-serif text-primary-dark text-center mb-8 focus:outline-none">Kateri stil vam je najbližji?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="style in styles" 
+          <button
+            v-for="style in styles"
             :key="style.id"
             @click="selectStyle(style.id)"
             :aria-pressed="form.style === style.id"
@@ -70,10 +70,10 @@
 
       <!-- Step 3: Budget -->
       <div v-if="step === 3" class="space-y-6">
-        <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšen je vaš proračun?</h2>
+        <h2 ref="stepHeading" tabindex="-1" class="text-2xl font-serif text-primary-dark text-center mb-8 focus:outline-none">Kakšen je vaš proračun?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="budget in budgets" 
+          <button
+            v-for="budget in budgets"
             :key="budget.id"
             @click="selectBudget(budget.id)"
             :aria-pressed="form.budget === budget.id"
@@ -91,7 +91,7 @@
       <!-- Results -->
       <div v-if="step === 4" class="text-center space-y-8">
         <div class="text-accent text-6xl mb-4">✓</div>
-        <h2 class="text-2xl font-serif text-primary-dark">Vaše priporočilo</h2>
+        <h2 ref="stepHeading" tabindex="-1" class="text-2xl font-serif text-primary-dark focus:outline-none">Vaše priporočilo</h2>
         <p class="text-gray-600">Na podlagi vaših odgovorov vam priporočamo:</p>
         <div class="bg-cream p-6 rounded-sm">
           <p class="font-serif text-xl text-primary-dark">{{ recommendation }}</p>
@@ -103,7 +103,7 @@
 
       <!-- Navigation -->
       <div v-if="step < 4" class="flex justify-between mt-12">
-        <button v-if="step > 1" @click="step--" class="text-gray-500 hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm px-2">
+        <button v-if="step > 1" @click="changeStep(step - 1)" class="text-gray-500 hover:text-primary transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm px-2">
           ← Nazaj
         </button>
         <div v-else></div>
@@ -121,6 +121,15 @@ useHead({
 })
 
 const step = ref(1)
+const stepHeading = ref(null)
+
+const changeStep = async (newStep) => {
+  step.value = newStep
+  await nextTick()
+  if (stepHeading.value) {
+    stepHeading.value.focus()
+  }
+}
 
 const form = reactive({
   faceShape: '',
@@ -168,16 +177,16 @@ const recommendation = computed(() => {
 
 const selectFaceShape = (id) => {
   form.faceShape = id
-  step.value = 2
+  changeStep(2)
 }
 
 const selectStyle = (id) => {
   form.style = id
-  step.value = 3
+  changeStep(3)
 }
 
 const selectBudget = (id) => {
   form.budget = id
-  step.value = 4
+  changeStep(4)
 }
 </script>
