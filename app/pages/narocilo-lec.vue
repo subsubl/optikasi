@@ -8,8 +8,8 @@
     <form @submit.prevent="submitOrder" class="bg-white p-8 md:p-12 shadow-sm border border-gray-100 space-y-8">
 
       <!-- Personal Details -->
-      <div>
-        <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Osebni Podatki</h3>
+      <fieldset class="border-none p-0 m-0">
+        <legend class="text-lg font-serif text-primary-dark border-b border-gray-100 w-full pb-2 mb-6">Osebni Podatki</legend>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex flex-col">
             <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek</label>
@@ -20,11 +20,11 @@
             <input id="email" v-model="form.email" type="email" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
         </div>
-      </div>
+      </fieldset>
 
       <!-- Lens Details -->
-      <div>
-        <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Podatki o Lečah</h3>
+      <fieldset class="border-none p-0 m-0">
+        <legend class="text-lg font-serif text-primary-dark border-b border-gray-100 w-full pb-2 mb-6">Podatki o Lečah</legend>
         <div class="space-y-6">
           <div class="flex flex-col">
             <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)</label>
@@ -33,24 +33,24 @@
 
           <div class="grid md:grid-cols-2 gap-6">
             <!-- Left Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
+            <fieldset class="bg-gray-50 p-4 rounded-sm border-none m-0">
+              <legend class="block w-full text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</legend>
               <div class="space-y-3">
                 <input v-model="form.os.power" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.os.axis" placeholder="Os (AX)" aria-label="Levo oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
               </div>
-            </div>
+            </fieldset>
 
             <!-- Right Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
+            <fieldset class="bg-gray-50 p-4 rounded-sm border-none m-0">
+              <legend class="block w-full text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</legend>
               <div class="space-y-3">
                 <input v-model="form.od.power" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.od.axis" placeholder="Os (AX)" aria-label="Desno oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
               </div>
-            </div>
+            </fieldset>
           </div>
 
            <div class="flex flex-col">
@@ -63,7 +63,7 @@
             </select>
           </div>
         </div>
-      </div>
+      </fieldset>
 
       <button
         type="submit"
