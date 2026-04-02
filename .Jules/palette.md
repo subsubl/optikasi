@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2024-04-02 - Form Focus and Fieldset Grouping
+**Learning:** Adding `focus-visible` ring classes is crucial for text inputs and custom elements built with spans. Checkbox groups heavily rely on `<fieldset>` and `<legend>` for screen reader semantic meaning. Nested fieldsets often require `sr-only` legends to prevent visual clutter while maintaining context.
+**Action:** When auditing forms, verify keyboard focus states on all interactive elements. Replace visual grouping `div`s with `<fieldset border-none p-0 m-0>` and provide proper `<legend>` elements.
