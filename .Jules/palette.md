@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2026-10-29 - Required Field Indicators and Hidden Symbols
+**Learning:** Adding visual asterisks (*) to denote required fields can cause screen readers to announce "asterisk", which is annoying when the field already has a `required` attribute.
+**Action:** When adding visual indicators like asterisks (`*`) for required form fields, include `aria-hidden="true"` on the element (e.g., `<span aria-hidden="true">*</span>`) to prevent screen readers from announcing the symbol.
