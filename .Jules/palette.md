@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2026-10-29 - Semantic Form Grouping
+**Learning:** Using `div`, `span`, or orphaned `label` elements to group checkboxes (e.g., preferred days/times) or related text inputs (e.g., left/right eye prescriptions) removes essential context for screen reader users. They hear the inputs without knowing what category they belong to.
+**Action:** Always refactor visual grouping containers into semantic `<fieldset>` and `<legend>` tags. For nested groups that don't need a visible label, use `<fieldset>` with a `<legend class="sr-only">`. Apply Tailwind utilities like `border-none p-0 m-0` to the fieldset and `w-full block` to the legend to normalize browser default styles and maintain the visual design.
