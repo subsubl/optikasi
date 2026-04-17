@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2026-10-29 - Form Group Accessibility with Tailwind
+**Learning:** Using orphaned `<label>` elements or visual `div` containers to group related form controls (like checkboxes) does not convey grouping to screen readers.
+**Action:** Group related controls using semantic `<fieldset>` and `<legend>`. For nested groups or when visual design dictates, use `<fieldset>` with `border-none p-0 m-0` to reset styles, and `sr-only` on the `<legend>` to hide it visually while remaining accessible to screen readers.
