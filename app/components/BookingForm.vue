@@ -8,18 +8,18 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
-        <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek</label>
-        <input id="name" v-model="form.name" type="text" name="name" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="Janez Novak" />
+        <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+        <input id="name" v-model="form.name" type="text" name="name" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Janez Novak" />
       </div>
       <div class="space-y-2">
-        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov</label>
-        <input id="email" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
+        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+        <input id="email" v-model="form.email" type="email" name="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
       </div>
     </div>
 
     <div class="space-y-2">
       <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
-      <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
+      <input id="phone" v-model="form.phone" type="tel" name="phone" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
     </div>
 
     <div class="space-y-4 pt-4">
@@ -28,8 +28,8 @@
       <!-- Weekdays -->
       <div class="flex flex-wrap gap-3 mb-4">
         <label v-for="day in days" :key="day" class="cursor-pointer">
-          <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
+          <input type="checkbox" :value="day" v-model="form.preferredDays" :disabled="isSubmitting" class="sr-only peer" />
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-all select-none">
             {{ day }}
           </span>
         </label>
@@ -38,8 +38,8 @@
       <!-- Time Slots -->
       <div class="flex flex-wrap gap-3">
         <label v-for="slot in slots" :key="slot" class="cursor-pointer">
-          <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
-          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
+          <input type="checkbox" :value="slot" v-model="form.preferredSlots" :disabled="isSubmitting" class="sr-only peer" />
+          <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-all select-none">
             {{ slot }}
           </span>
         </label>
@@ -48,7 +48,7 @@
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea id="message" v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm"></textarea>
+      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
     </div>
 
     <!-- Status Messages -->
@@ -62,9 +62,15 @@
     <button
       type="submit"
       :disabled="isSubmitting"
-      class="w-full bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      class="w-full bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
     >
-      <span v-if="isSubmitting">Pošiljam...</span>
+      <span v-if="isSubmitting" class="flex items-center gap-2">
+        <svg class="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Pošiljam...
+      </span>
       <span v-else>Pošlji Povpraševanje</span>
     </button>
   </form>
