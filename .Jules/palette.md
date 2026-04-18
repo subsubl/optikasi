@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2024-05-24 - Consistent Form Submission States
+**Learning:** Found that custom checkbox elements (`input` mapped via `peer` to a visual `span`) fail to visually indicate their disabled state during async form submissions when standard `disabled:opacity-50` is applied only to the wrapper or input. Users may attempt to interact with visually enabled but functionally locked custom inputs.
+**Action:** Always apply `peer-disabled:opacity-50 peer-disabled:cursor-not-allowed` to the visual `span` elements of custom checkboxes (or radios) alongside `:disabled="isSubmitting"` on the hidden inputs to ensure consistent UX feedback during async operations.
