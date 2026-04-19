@@ -40,4 +40,10 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
-**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.## 2026-10-29 - Required Form Field Indicators
+**Learning:** Required form fields relying solely on HTML5 `required` attributes do not provide visual cues to sighted users, while adding an asterisk (`*`) directly to text can add unwanted noise for screen reader users.
+**Action:** When adding visual required indicators like asterisks, include `aria-hidden="true"` on the element (e.g., `<span aria-hidden="true">*</span>`) so the visual cue is present but screen readers don't read "star" out loud.
+
+## 2026-10-29 - Fieldset Layout Reset
+**Learning:** Refactoring visually grouped `div` elements into semantic `<fieldset>` elements often breaks layouts due to default browser styles for fieldsets and legends (borders, padding, margins).
+**Action:** Use Tailwind utility classes `border-none p-0 m-0` on the fieldset and `w-full block` on the legend to reset default browser styling, maintaining visual consistency while vastly improving structure for assistive technologies.
