@@ -33,8 +33,8 @@
 
           <div class="grid md:grid-cols-2 gap-6">
             <!-- Left Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
+            <div class="bg-gray-50 p-4 rounded-sm" role="group" aria-labelledby="left-eye-heading">
+              <span id="left-eye-heading" class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
               <div class="space-y-3">
                 <input v-model="form.os.power" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
@@ -43,8 +43,8 @@
             </div>
 
             <!-- Right Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
+            <div class="bg-gray-50 p-4 rounded-sm" role="group" aria-labelledby="right-eye-heading">
+              <span id="right-eye-heading" class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
               <div class="space-y-3">
                 <input v-model="form.od.power" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
                 <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
