@@ -12,11 +12,11 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Osebni Podatki</h3>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex flex-col">
-            <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek</label>
+            <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek <span class="text-red-500" aria-hidden="true">*</span></label>
             <input id="name" v-model="form.name" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
           <div class="flex flex-col">
-            <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov</label>
+            <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov <span class="text-red-500" aria-hidden="true">*</span></label>
             <input id="email" v-model="form.email" type="email" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
         </div>
@@ -27,7 +27,7 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Podatki o Lečah</h3>
         <div class="space-y-6">
           <div class="flex flex-col">
-            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)</label>
+            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity) <span class="text-red-500" aria-hidden="true">*</span></label>
             <input id="brand" v-model="form.brand" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
           </div>
 
