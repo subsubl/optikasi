@@ -8,11 +8,11 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
-        <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek</label>
+        <label for="name" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Ime in Priimek <span class="text-red-500" aria-hidden="true">*</span></label>
         <input id="name" v-model="form.name" type="text" name="name" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="Janez Novak" />
       </div>
       <div class="space-y-2">
-        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov</label>
+        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Email Naslov <span class="text-red-500" aria-hidden="true">*</span></label>
         <input id="email" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
       </div>
     </div>
