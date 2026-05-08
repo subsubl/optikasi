@@ -40,4 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
-**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.## 2024-05-08 - High-Contrast Focus Rings for Dark Backgrounds
+**Learning:** Icon-only links in dark areas (like the global footer) that lack text can become invisible when focused if the focus ring relies only on the primary color and no offset.
+**Action:** Always add `focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark` alongside standard focus classes for interactive elements on dark backgrounds to ensure the ring is distinctly visible.
