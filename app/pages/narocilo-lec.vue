@@ -12,12 +12,12 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Osebni Podatki</h3>
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex flex-col">
-            <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek</label>
-            <input id="name" v-model="form.name" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
+            <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+            <input id="name" v-model="form.name" type="text" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
           <div class="flex flex-col">
-            <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov</label>
-            <input id="email" v-model="form.email" type="email" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
+            <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+            <input id="email" v-model="form.email" type="email" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
         </div>
       </div>
@@ -27,8 +27,8 @@
         <h3 class="text-lg font-serif text-primary-dark border-b border-gray-100 pb-2 mb-6">Podatki o Lečah</h3>
         <div class="space-y-6">
           <div class="flex flex-col">
-            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)</label>
-            <input id="brand" v-model="form.brand" type="text" required class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
+            <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+            <input id="brand" v-model="form.brand" type="text" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
@@ -36,9 +36,9 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
               <div class="space-y-3">
-                <input v-model="form.os.power" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
-                <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
-                <input v-model="form.os.axis" placeholder="Os (AX)" aria-label="Levo oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.os.power" :disabled="isSubmitting" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <input v-model="form.os.cyl" :disabled="isSubmitting" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <input v-model="form.os.axis" :disabled="isSubmitting" placeholder="Os (AX)" aria-label="Levo oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
               </div>
             </div>
 
@@ -46,16 +46,16 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
               <div class="space-y-3">
-                <input v-model="form.od.power" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
-                <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
-                <input v-model="form.od.axis" placeholder="Os (AX)" aria-label="Desno oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none">
+                <input v-model="form.od.power" :disabled="isSubmitting" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <input v-model="form.od.cyl" :disabled="isSubmitting" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <input v-model="form.od.axis" :disabled="isSubmitting" placeholder="Os (AX)" aria-label="Desno oko: Os (AX)" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
               </div>
             </div>
           </div>
 
            <div class="flex flex-col">
             <label for="quantity" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Količina (škatlice)</label>
-            <select id="quantity" v-model="form.quantity" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none">
+            <select id="quantity" v-model="form.quantity" :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
               <option>1 par / škatlica</option>
               <option>2 para / škatlici</option>
               <option>3 pari / škatlice (Zaloga za 3 mesece)</option>
