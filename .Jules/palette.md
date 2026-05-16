@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2026-10-29 - Screen Reader Accessibility for Combined Visual Ratings
+**Learning:** Repeating visual elements representing a single combined value (such as multiple stars for a 5-star rating) can clutter the screen reader output if not grouped properly. The screen reader may just read "star star star star star".
+**Action:** Wrap such repeating visual elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena: 5 zvezdic"`), and apply `aria-hidden="true"` to the individual decorative child elements to provide a single, clear semantic meaning to assistive technologies.
