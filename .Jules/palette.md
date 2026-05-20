@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2026-10-29 - Repeating Decorative Elements
+**Learning:** Repeating decorative text elements (like "★★★★★") are read out loud multiple times by screen readers, making them annoying and unclear.
+**Action:** Wrap repeating decorative characters in a container with `role="img"` and a descriptive `aria-label`, and apply `aria-hidden="true"` on the characters to ensure screen readers read a cohesive semantic label instead.
