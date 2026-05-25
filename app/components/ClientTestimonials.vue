@@ -10,7 +10,7 @@
       <div class="grid md:grid-cols-3 gap-12">
         <div v-for="(review, index) in reviews" :key="index" class="bg-white p-8 border border-gray-100 shadow-sm relative">
           <!-- Quote Icon -->
-          <div class="absolute -top-4 -left-4 text-accent opacity-20 text-6xl font-serif">"</div>
+          <div class="absolute -top-4 -left-4 text-accent opacity-20 text-6xl font-serif" aria-hidden="true">"</div>
 
           <p class="text-gray-600 leading-relaxed mb-6 italic relative z-10">
             {{ review.text }}
@@ -22,8 +22,8 @@
             </div>
             <div>
               <h4 class="text-primary-dark font-bold text-sm uppercase tracking-wide">{{ review.author }}</h4>
-              <div class="flex text-accent text-xs">
-                <span v-for="i in 5" :key="i">★</span>
+              <div class="flex text-accent text-xs" role="img" aria-label="Ocena 5 od 5 zvezdic">
+                <span v-for="i in 5" :key="i" aria-hidden="true">★</span>
               </div>
             </div>
           </div>
