@@ -41,3 +41,6 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+## 2024-05-30 - Accessible Form Groups
+**Learning:** Replacing `div` wrappers with `<fieldset>` and `<legend>` is critical for grouping related custom form controls (like time slots or preferences) so screen readers can interpret them together, rather than as orphaned elements.
+**Action:** When creating grouped options in Vue components (e.g., in `BookingForm.vue`), always wrap them in `<fieldset>` and `<legend>`. Apply `border-none p-0 m-0` to the fieldset and `w-full block` to the legend to prevent breaking existing Tailwind CSS layouts while ensuring semantic accessibility.
