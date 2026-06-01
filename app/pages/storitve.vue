@@ -265,7 +265,9 @@
           >
             <div>
               <div class="flex justify-between items-start mb-4">
-                <div class="flex text-accent text-sm">★★★★★</div>
+                <div class="flex text-accent text-sm" role="img" aria-label="Ocena 5 od 5 zvezdic">
+                  <span aria-hidden="true">★★★★★</span>
+                </div>
                 <span class="text-xs text-gray-400 font-mono">{{
                   review.date
                 }}</span>
