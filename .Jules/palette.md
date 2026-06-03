@@ -41,3 +41,7 @@
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
 **Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+
+## 2026-06-03 - Nested Fieldsets for Multi-dimensional Grouping
+**Learning:** When a form contains multiple distinct but related sub-groups (like Days and Time Slots within a broader 'Preferred Times' section), placing them inside a single `fieldset` without further structure creates ambiguity for screen reader users. They need context for both the overarching group and the specific sub-group.
+**Action:** Use a nested `<fieldset>` pattern. Wrap the entire section in a main `<fieldset>` with a visible `<legend>` (e.g., 'Želeni Termini'). Inside, wrap each sub-group (Days, Time Slots) in its own `<fieldset>` with an `sr-only` `<legend>` to provide granular context to assistive technologies without altering the visual layout.
