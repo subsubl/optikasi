@@ -40,4 +40,9 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
-**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.
+**Action:** Ensure the target container of a skip link always includes `id="target-id"`, `tabindex="-1"`, and `focus:outline-none` (using Tailwind, or standard CSS) to smoothly accept and manage programmatic focus without visual disruption.## 2026-10-29 - Required Field Indicators
+**Learning:** Adding a literal asterisk `*` to required form fields causes screen readers to announce "star" redundantly alongside the "required" attribute.
+**Action:** When adding visual asterisks, always wrap them in a span with `aria-hidden="true"` (e.g., `<span aria-hidden="true" class="text-accent">*</span>`).
+## 2026-10-29 - Visual Form Disabled States
+**Learning:** Setting `isSubmitting = true` on a form often lacks immediate visual feedback if inputs simply become un-clickable without a style change.
+**Action:** Ensure all inputs, textareas, and buttons receive `disabled:opacity-50 disabled:cursor-not-allowed` styles, and custom UI checkboxes receive `peer-disabled:opacity-50 peer-disabled:cursor-not-allowed`.
