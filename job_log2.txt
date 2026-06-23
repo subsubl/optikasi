@@ -1,0 +1,290 @@
+﻿2026-06-23T15:48:03.2407160Z Current runner version: '2.335.1'
+2026-06-23T15:48:03.2440585Z ##[group]Runner Image Provisioner
+2026-06-23T15:48:03.2441880Z Hosted Compute Agent
+2026-06-23T15:48:03.2442774Z Version: 20260611.554
+2026-06-23T15:48:03.2443795Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-06-23T15:48:03.2445115Z Build Date: 2026-06-11T21:40:46Z
+2026-06-23T15:48:03.2445901Z Worker ID: {3d589b0f-3cdf-475a-ae7e-918aabe80461}
+2026-06-23T15:48:03.2446720Z Azure Region: northcentralus
+2026-06-23T15:48:03.2447373Z ##[endgroup]
+2026-06-23T15:48:03.2449148Z ##[group]Operating System
+2026-06-23T15:48:03.2449829Z Ubuntu
+2026-06-23T15:48:03.2450361Z 24.04.4
+2026-06-23T15:48:03.2450982Z LTS
+2026-06-23T15:48:03.2451509Z ##[endgroup]
+2026-06-23T15:48:03.2452098Z ##[group]Runner Image
+2026-06-23T15:48:03.2452724Z Image: ubuntu-24.04
+2026-06-23T15:48:03.2453318Z Version: 20260615.205.1
+2026-06-23T15:48:03.2455011Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260615.205/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-23T15:48:03.2457279Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260615.205
+2026-06-23T15:48:03.2458832Z ##[endgroup]
+2026-06-23T15:48:03.2461193Z ##[group]GITHUB_TOKEN Permissions
+2026-06-23T15:48:03.2464277Z Contents: read
+2026-06-23T15:48:03.2465206Z Metadata: read
+2026-06-23T15:48:03.2466168Z Pages: write
+2026-06-23T15:48:03.2466961Z ##[endgroup]
+2026-06-23T15:48:03.2469634Z Secret source: Actions
+2026-06-23T15:48:03.2470792Z Prepare workflow directory
+2026-06-23T15:48:03.2935808Z Prepare all required actions
+2026-06-23T15:48:03.2994412Z Getting action download info
+2026-06-23T15:48:03.6324259Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-23T15:48:03.7888620Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-06-23T15:48:03.8782215Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2026-06-23T15:48:04.1820491Z Getting action download info
+2026-06-23T15:48:04.3106079Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-06-23T15:48:04.4899352Z Complete job name: build
+2026-06-23T15:48:04.5663300Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-23T15:48:04.5672373Z ##[group]Run actions/checkout@v4
+2026-06-23T15:48:04.5673129Z with:
+2026-06-23T15:48:04.5673592Z   repository: subsubl/optikasi
+2026-06-23T15:48:04.5678384Z   token: ***
+2026-06-23T15:48:04.5678830Z   ssh-strict: true
+2026-06-23T15:48:04.5679376Z   ssh-user: git
+2026-06-23T15:48:04.5679835Z   persist-credentials: true
+2026-06-23T15:48:04.5680332Z   clean: true
+2026-06-23T15:48:04.5680781Z   sparse-checkout-cone-mode: true
+2026-06-23T15:48:04.5681327Z   fetch-depth: 1
+2026-06-23T15:48:04.5681762Z   fetch-tags: false
+2026-06-23T15:48:04.5682233Z   show-progress: true
+2026-06-23T15:48:04.5682683Z   lfs: false
+2026-06-23T15:48:04.5683133Z   submodules: false
+2026-06-23T15:48:04.5683584Z   set-safe-directory: true
+2026-06-23T15:48:04.5684619Z ##[endgroup]
+2026-06-23T15:48:04.6711305Z Syncing repository: subsubl/optikasi
+2026-06-23T15:48:04.6713280Z ##[group]Getting Git version info
+2026-06-23T15:48:04.6714351Z Working directory is '/home/runner/work/optikasi/optikasi'
+2026-06-23T15:48:04.6715631Z [command]/usr/bin/git version
+2026-06-23T15:48:04.6808896Z git version 2.54.0
+2026-06-23T15:48:04.6864667Z ##[endgroup]
+2026-06-23T15:48:04.6880733Z Temporarily overriding HOME='/home/runner/work/_temp/2275d447-3989-43dc-aaad-cd58513dc20f' before making global git config changes
+2026-06-23T15:48:04.6882873Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-23T15:48:04.6886782Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optikasi/optikasi
+2026-06-23T15:48:04.6957201Z Deleting the contents of '/home/runner/work/optikasi/optikasi'
+2026-06-23T15:48:04.6960935Z ##[group]Initializing the repository
+2026-06-23T15:48:04.6965952Z [command]/usr/bin/git init /home/runner/work/optikasi/optikasi
+2026-06-23T15:48:04.7107774Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-23T15:48:04.7109091Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-23T15:48:04.7110087Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-23T15:48:04.7110859Z hint: call:
+2026-06-23T15:48:04.7111596Z hint:
+2026-06-23T15:48:04.7112257Z hint: 	git config --global init.defaultBranch <name>
+2026-06-23T15:48:04.7112898Z hint:
+2026-06-23T15:48:04.7113517Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-23T15:48:04.7115014Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-23T15:48:04.7116416Z hint:
+2026-06-23T15:48:04.7117199Z hint: 	git branch -m <name>
+2026-06-23T15:48:04.7118084Z hint:
+2026-06-23T15:48:04.7119310Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-23T15:48:04.7121221Z Initialized empty Git repository in /home/runner/work/optikasi/optikasi/.git/
+2026-06-23T15:48:04.7130853Z [command]/usr/bin/git remote add origin https://github.com/subsubl/optikasi
+2026-06-23T15:48:04.7182275Z ##[endgroup]
+2026-06-23T15:48:04.7183589Z ##[group]Disabling automatic garbage collection
+2026-06-23T15:48:04.7187337Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-23T15:48:04.7219659Z ##[endgroup]
+2026-06-23T15:48:04.7220436Z ##[group]Setting up auth
+2026-06-23T15:48:04.7226494Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-23T15:48:04.7262620Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-23T15:48:04.7647520Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-23T15:48:04.7685160Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-23T15:48:04.7921308Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-23T15:48:04.7955027Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-23T15:48:04.8190197Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-23T15:48:04.8230524Z ##[endgroup]
+2026-06-23T15:48:04.8231543Z ##[group]Fetching the repository
+2026-06-23T15:48:04.8241450Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +52c71e59b19f4403799fed2a197620ab56abd726:refs/remotes/origin/main
+2026-06-23T15:48:05.9340799Z From https://github.com/subsubl/optikasi
+2026-06-23T15:48:05.9342358Z  * [new ref]         52c71e59b19f4403799fed2a197620ab56abd726 -> origin/main
+2026-06-23T15:48:05.9382563Z ##[endgroup]
+2026-06-23T15:48:05.9383215Z ##[group]Determining the checkout info
+2026-06-23T15:48:05.9385084Z ##[endgroup]
+2026-06-23T15:48:05.9390310Z [command]/usr/bin/git sparse-checkout disable
+2026-06-23T15:48:05.9435247Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-23T15:48:05.9460285Z ##[group]Checking out the ref
+2026-06-23T15:48:05.9464403Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-23T15:48:06.1140270Z Switched to a new branch 'main'
+2026-06-23T15:48:06.1141259Z branch 'main' set up to track 'origin/main'.
+2026-06-23T15:48:06.1157407Z ##[endgroup]
+2026-06-23T15:48:06.1201611Z [command]/usr/bin/git log -1 --format=%H
+2026-06-23T15:48:06.1228773Z 52c71e59b19f4403799fed2a197620ab56abd726
+2026-06-23T15:48:06.1596905Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-23T15:48:06.1599009Z ##[group]Run actions/setup-node@v4
+2026-06-23T15:48:06.1599472Z with:
+2026-06-23T15:48:06.1599843Z   node-version: 20
+2026-06-23T15:48:06.1600234Z   cache: npm
+2026-06-23T15:48:06.1600623Z   always-auth: false
+2026-06-23T15:48:06.1601027Z   check-latest: false
+2026-06-23T15:48:06.1604543Z   token: ***
+2026-06-23T15:48:06.1604958Z ##[endgroup]
+2026-06-23T15:48:06.3127665Z Attempting to download 20...
+2026-06-23T15:48:06.3241160Z (node:2274) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-06-23T15:48:06.3243366Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-06-23T15:48:06.9370621Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+2026-06-23T15:48:07.3345402Z Extracting ...
+2026-06-23T15:48:07.3481704Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4abb6f80-007d-477a-864d-b28b7ffbd28d -f /home/runner/work/_temp/30740b4a-c976-43c9-9410-ebd57d3bc41b
+2026-06-23T15:48:08.3667615Z Adding to the cache ...
+2026-06-23T15:48:10.2586015Z ##[group]Environment details
+2026-06-23T15:48:10.5406135Z node: v20.20.2
+2026-06-23T15:48:10.5407377Z npm: 10.8.2
+2026-06-23T15:48:10.5408587Z yarn: 1.22.22
+2026-06-23T15:48:10.5409782Z ##[endgroup]
+2026-06-23T15:48:10.5438333Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+2026-06-23T15:48:10.6595323Z /home/runner/.npm
+2026-06-23T15:48:10.8005022Z Cache hit for: node-cache-Linux-x64-npm-9499ee0ae1c96ca351cb69f1bf5efd81a449b79d4e445aedb1c3968a6dee3386
+2026-06-23T15:48:10.8121295Z (node:2274) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-06-23T15:48:11.5458716Z Received 50826875 of 50826875 (100.0%), 76.5 MBs/sec
+2026-06-23T15:48:11.5459787Z Cache Size: ~48 MB (50826875 B)
+2026-06-23T15:48:11.5513720Z [command]/usr/bin/tar -xf /home/runner/work/_temp/dbaa63f1-bbd2-489a-a80b-4d570a089afe/cache.tzst -P -C /home/runner/work/optikasi/optikasi --use-compress-program unzstd
+2026-06-23T15:48:11.8262426Z Cache restored successfully
+2026-06-23T15:48:11.8297775Z Cache restored from key: node-cache-Linux-x64-npm-9499ee0ae1c96ca351cb69f1bf5efd81a449b79d4e445aedb1c3968a6dee3386
+2026-06-23T15:48:11.8564528Z ##[group]Run npm ci
+2026-06-23T15:48:11.8564877Z [36;1mnpm ci[0m
+2026-06-23T15:48:11.8799084Z shell: /usr/bin/bash -e {0}
+2026-06-23T15:48:11.8799530Z ##[endgroup]
+2026-06-23T15:48:21.1960831Z npm error code EUSAGE
+2026-06-23T15:48:21.1961279Z npm error
+2026-06-23T15:48:21.1962285Z npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+2026-06-23T15:48:21.1963096Z npm error
+2026-06-23T15:48:21.1963463Z npm error Missing: @nuxt/test-utils@4.0.3 from lock file
+2026-06-23T15:48:21.1963947Z npm error Missing: @playwright/test@1.61.0 from lock file
+2026-06-23T15:48:21.1964945Z npm error Missing: @vue/test-utils@2.4.11 from lock file
+2026-06-23T15:48:21.1965395Z npm error Missing: happy-dom@20.10.6 from lock file
+2026-06-23T15:48:21.1965807Z npm error Missing: playwright@1.61.0 from lock file
+2026-06-23T15:48:21.1966275Z npm error Missing: vitest@4.1.9 from lock file
+2026-06-23T15:48:21.1966688Z npm error Missing: @clack/prompts@1.2.0 from lock file
+2026-06-23T15:48:21.1967519Z npm error Missing: @nuxt/devtools-kit@2.7.0 from lock file
+2026-06-23T15:48:21.1968029Z npm error Missing: @nuxt/kit@3.21.8 from lock file
+2026-06-23T15:48:21.1968508Z npm error Invalid: lock file's c12@3.3.3 does not satisfy c12@3.3.4
+2026-06-23T15:48:21.1969041Z npm error Invalid: lock file's defu@6.1.4 does not satisfy defu@6.1.7
+2026-06-23T15:48:21.1969521Z npm error Missing: estree-walker@3.0.3 from lock file
+2026-06-23T15:48:21.1969958Z npm error Missing: fake-indexeddb@6.2.5 from lock file
+2026-06-23T15:48:21.1970590Z npm error Invalid: lock file's h3@1.15.5 does not satisfy h3@1.15.11
+2026-06-23T15:48:21.1971416Z npm error Missing: h3-next@2.0.1-rc.20 from lock file
+2026-06-23T15:48:21.1971910Z npm error Missing: crossws@0.4.6 from lock file
+2026-06-23T15:48:21.1972294Z npm error Missing: srvx@0.11.17 from lock file
+2026-06-23T15:48:21.1972769Z npm error Invalid: lock file's nypm@0.6.4 does not satisfy nypm@0.6.7
+2026-06-23T15:48:21.1973422Z npm error Invalid: lock file's perfect-debounce@2.0.0 does not satisfy perfect-debounce@2.1.0
+2026-06-23T15:48:21.1974672Z npm error Missing: std-env@4.1.0 from lock file
+2026-06-23T15:48:21.1975610Z npm error Invalid: lock file's tinyexec@1.0.2 does not satisfy tinyexec@1.2.4
+2026-06-23T15:48:21.1976417Z npm error Missing: unplugin@3.0.0 from lock file
+2026-06-23T15:48:21.1976968Z npm error Missing: vitest-environment-nuxt@2.0.0 from lock file
+2026-06-23T15:48:21.1977412Z npm error Missing: vue@3.5.38 from lock file
+2026-06-23T15:48:21.1977812Z npm error Missing: js-beautify@1.15.4 from lock file
+2026-06-23T15:48:21.1978324Z npm error Missing: vue-component-type-helpers@3.3.5 from lock file
+2026-06-23T15:48:21.1978874Z npm error Invalid: lock file's confbox@0.2.2 does not satisfy confbox@0.2.4
+2026-06-23T15:48:21.1979450Z npm error Invalid: lock file's dotenv@17.2.3 does not satisfy dotenv@17.4.2
+2026-06-23T15:48:21.1979920Z npm error Missing: giget@3.3.0 from lock file
+2026-06-23T15:48:21.1980325Z npm error Missing: rc9@3.0.1 from lock file
+2026-06-23T15:48:21.1980814Z npm error Invalid: lock file's cookie-es@1.2.2 does not satisfy cookie-es@1.2.3
+2026-06-23T15:48:21.1981311Z npm error Missing: @types/node@26.0.0 from lock file
+2026-06-23T15:48:21.1981763Z npm error Missing: @types/whatwg-mimetype@3.0.2 from lock file
+2026-06-23T15:48:21.1982193Z npm error Missing: @types/ws@8.18.1 from lock file
+2026-06-23T15:48:21.1982621Z npm error Missing: buffer-image-size@0.6.4 from lock file
+2026-06-23T15:48:21.1983138Z npm error Invalid: lock file's entities@7.0.0 does not satisfy entities@7.0.1
+2026-06-23T15:48:21.1983657Z npm error Missing: whatwg-mimetype@3.0.0 from lock file
+2026-06-23T15:48:21.1984536Z npm error Invalid: lock file's ws@8.19.0 does not satisfy ws@8.21.0
+2026-06-23T15:48:21.1985267Z npm error Missing: undici-types@8.3.0 from lock file
+2026-06-23T15:48:21.1985693Z npm error Missing: config-chain@1.1.13 from lock file
+2026-06-23T15:48:21.1986402Z npm error Missing: editorconfig@1.0.7 from lock file
+2026-06-23T15:48:21.1986814Z npm error Missing: glob@10.5.0 from lock file
+2026-06-23T15:48:21.1987200Z npm error Missing: js-cookie@3.0.8 from lock file
+2026-06-23T15:48:21.1987579Z npm error Missing: nopt@7.2.1 from lock file
+2026-06-23T15:48:21.1987942Z npm error Missing: ini@1.3.8 from lock file
+2026-06-23T15:48:21.1988318Z npm error Missing: proto-list@1.2.4 from lock file
+2026-06-23T15:48:21.1988727Z npm error Missing: @one-ini/wasm@0.1.1 from lock file
+2026-06-23T15:48:21.1989126Z npm error Missing: commander@10.0.1 from lock file
+2026-06-23T15:48:21.1989507Z npm error Missing: minimatch@9.0.9 from lock file
+2026-06-23T15:48:21.1989977Z npm error Invalid: lock file's citty@0.2.0 does not satisfy citty@0.2.2
+2026-06-23T15:48:21.1990487Z npm error Missing: fsevents@2.3.2 from lock file
+2026-06-23T15:48:21.1991141Z npm error Missing: playwright-core@1.61.0 from lock file
+2026-06-23T15:48:21.1991849Z npm error Missing: @vitest/expect@4.1.9 from lock file
+2026-06-23T15:48:21.1992592Z npm error Missing: @vitest/mocker@4.1.9 from lock file
+2026-06-23T15:48:21.1993627Z npm error Missing: @vitest/pretty-format@4.1.9 from lock file
+2026-06-23T15:48:21.1994633Z npm error Missing: @vitest/runner@4.1.9 from lock file
+2026-06-23T15:48:21.1995337Z npm error Missing: @vitest/snapshot@4.1.9 from lock file
+2026-06-23T15:48:21.1996042Z npm error Missing: @vitest/spy@4.1.9 from lock file
+2026-06-23T15:48:21.1996710Z npm error Missing: @vitest/utils@4.1.9 from lock file
+2026-06-23T15:48:21.1997381Z npm error Missing: expect-type@1.3.0 from lock file
+2026-06-23T15:48:21.1998033Z npm error Missing: std-env@4.1.0 from lock file
+2026-06-23T15:48:21.1998708Z npm error Missing: tinybench@2.9.0 from lock file
+2026-06-23T15:48:21.1999424Z npm error Missing: tinyrainbow@3.1.0 from lock file
+2026-06-23T15:48:21.2000143Z npm error Missing: why-is-node-running@2.3.0 from lock file
+2026-06-23T15:48:21.2000931Z npm error Missing: @standard-schema/spec@1.1.0 from lock file
+2026-06-23T15:48:21.2001644Z npm error Missing: @types/chai@5.2.3 from lock file
+2026-06-23T15:48:21.2002294Z npm error Missing: chai@6.2.2 from lock file
+2026-06-23T15:48:21.2003001Z npm error Missing: @types/deep-eql@4.0.2 from lock file
+2026-06-23T15:48:21.2003760Z npm error Missing: assertion-error@2.0.1 from lock file
+2026-06-23T15:48:21.2004749Z npm error Missing: estree-walker@3.0.3 from lock file
+2026-06-23T15:48:21.2005478Z npm error Missing: siginfo@2.0.0 from lock file
+2026-06-23T15:48:21.2006186Z npm error Missing: stackback@0.0.2 from lock file
+2026-06-23T15:48:21.2006905Z npm error Missing: @clack/core@1.2.0 from lock file
+2026-06-23T15:48:21.2007671Z npm error Missing: fast-string-width@1.1.0 from lock file
+2026-06-23T15:48:21.2008519Z npm error Missing: fast-wrap-ansi@0.1.6 from lock file
+2026-06-23T15:48:21.2009379Z npm error Missing: fast-string-truncated-width@1.2.1 from lock file
+2026-06-23T15:48:21.2010336Z npm error Invalid: lock file's jiti@2.6.1 does not satisfy jiti@2.7.0
+2026-06-23T15:48:21.2011277Z npm error Invalid: lock file's mlly@1.8.0 does not satisfy mlly@1.8.2
+2026-06-23T15:48:21.2012288Z npm error Invalid: lock file's pkg-types@2.3.0 does not satisfy pkg-types@2.3.1
+2026-06-23T15:48:21.2013136Z npm error Missing: rc9@3.0.1 from lock file
+2026-06-23T15:48:21.2013937Z npm error Invalid: lock file's semver@7.7.3 does not satisfy semver@7.8.5
+2026-06-23T15:48:21.2015199Z npm error Invalid: lock file's tinyglobby@0.2.15 does not satisfy tinyglobby@0.2.17
+2026-06-23T15:48:21.2016212Z npm error Invalid: lock file's ufo@1.6.3 does not satisfy ufo@1.6.4
+2026-06-23T15:48:21.2017157Z npm error Invalid: lock file's acorn@8.15.0 does not satisfy acorn@8.17.0
+2026-06-23T15:48:21.2018193Z npm error Invalid: lock file's picomatch@4.0.3 does not satisfy picomatch@4.0.4
+2026-06-23T15:48:21.2019034Z npm error Missing: rou3@0.8.1 from lock file
+2026-06-23T15:48:21.2019771Z npm error Missing: @vue/compiler-dom@3.5.38 from lock file
+2026-06-23T15:48:21.2020860Z npm error Missing: @vue/compiler-sfc@3.5.38 from lock file
+2026-06-23T15:48:21.2021673Z npm error Missing: @vue/runtime-dom@3.5.38 from lock file
+2026-06-23T15:48:21.2022501Z npm error Missing: @vue/server-renderer@3.5.38 from lock file
+2026-06-23T15:48:21.2023278Z npm error Missing: @vue/shared@3.5.38 from lock file
+2026-06-23T15:48:21.2024226Z npm error Missing: @vue/compiler-core@3.5.38 from lock file
+2026-06-23T15:48:21.2025278Z npm error Invalid: lock file's @babel/parser@7.28.6 does not satisfy @babel/parser@7.29.7
+2026-06-23T15:48:21.2026248Z npm error Missing: estree-walker@2.0.2 from lock file
+2026-06-23T15:48:21.2027257Z npm error Invalid: lock file's @babel/types@7.28.6 does not satisfy @babel/types@7.29.7
+2026-06-23T15:48:21.2028752Z npm error Invalid: lock file's @babel/helper-string-parser@7.27.1 does not satisfy @babel/helper-string-parser@7.29.7
+2026-06-23T15:48:21.2030590Z npm error Invalid: lock file's @babel/helper-validator-identifier@7.28.5 does not satisfy @babel/helper-validator-identifier@7.29.7
+2026-06-23T15:48:21.2031919Z npm error Missing: @vue/compiler-ssr@3.5.38 from lock file
+2026-06-23T15:48:21.2032715Z npm error Missing: estree-walker@2.0.2 from lock file
+2026-06-23T15:48:21.2033835Z npm error Invalid: lock file's postcss@8.5.6 does not satisfy postcss@8.5.15
+2026-06-23T15:48:21.2035083Z npm error Invalid: lock file's nanoid@3.3.11 does not satisfy nanoid@3.3.15
+2026-06-23T15:48:21.2036000Z npm error Missing: @vue/reactivity@3.5.38 from lock file
+2026-06-23T15:48:21.2036779Z npm error Missing: @vue/runtime-core@3.5.38 from lock file
+2026-06-23T15:48:21.2037495Z npm error Missing: minimatch@9.0.9 from lock file
+2026-06-23T15:48:21.2038204Z npm error Missing: path-scurry@1.11.1 from lock file
+2026-06-23T15:48:21.2038899Z npm error Missing: abbrev@2.0.0 from lock file
+2026-06-23T15:48:21.2039631Z npm error Missing: lru-cache@10.4.3 from lock file
+2026-06-23T15:48:21.2040158Z npm error
+2026-06-23T15:48:21.2040598Z npm error Clean install a project
+2026-06-23T15:48:21.2041046Z npm error
+2026-06-23T15:48:21.2041387Z npm error Usage:
+2026-06-23T15:48:21.2041751Z npm error npm ci
+2026-06-23T15:48:21.2042106Z npm error
+2026-06-23T15:48:21.2042476Z npm error Options:
+2026-06-23T15:48:21.2043325Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2026-06-23T15:48:21.2044709Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2026-06-23T15:48:21.2046013Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2026-06-23T15:48:21.2047225Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2026-06-23T15:48:21.2048157Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2026-06-23T15:48:21.2049099Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2026-06-23T15:48:21.2050173Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2026-06-23T15:48:21.2050852Z npm error
+2026-06-23T15:48:21.2051512Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2026-06-23T15:48:21.2052153Z npm error
+2026-06-23T15:48:21.2052607Z npm error Run "npm help ci" for more info
+2026-06-23T15:48:21.2053769Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-06-23T15_48_11_959Z-debug-0.log
+2026-06-23T15:48:21.2202809Z ##[error]Process completed with exit code 1.
+2026-06-23T15:48:21.2368954Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-06-23T15:48:21.2370249Z Post job cleanup.
+2026-06-23T15:48:21.3199716Z [command]/usr/bin/git version
+2026-06-23T15:48:21.3271542Z git version 2.54.0
+2026-06-23T15:48:21.3313827Z Temporarily overriding HOME='/home/runner/work/_temp/40eede5b-63f2-4429-8e16-b9f45d9b8b6c' before making global git config changes
+2026-06-23T15:48:21.3315422Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-23T15:48:21.3319726Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optikasi/optikasi
+2026-06-23T15:48:21.3360862Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-23T15:48:21.3397587Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-23T15:48:21.3626819Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-23T15:48:21.3655001Z http.https://github.com/.extraheader
+2026-06-23T15:48:21.3667704Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-23T15:48:21.3701376Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-23T15:48:21.3929899Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-23T15:48:21.3961735Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-23T15:48:21.4358335Z Cleaning up orphan processes
+2026-06-23T15:48:21.4708985Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
