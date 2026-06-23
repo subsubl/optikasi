@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('homepage loads with correct title', async ({ page }) => {
   await page.goto('/');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/OptikaSI/);
+  // Title template is '%s | Optika Ljubljana'
+  await expect(page).toHaveTitle(/Optika Ljubljana/);
 });
 
 test('storitve page loads', async ({ page }) => {
