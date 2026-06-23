@@ -1,6 +1,7 @@
 {
   "name": "optikasi",
   "type": "module",
+  "packageManager": "pnpm@9.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
