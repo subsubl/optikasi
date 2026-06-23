@@ -17,12 +17,11 @@
           </p>
 
           <div class="flex items-center">
-            <div class="w-10 h-10 bg-primary-light rounded-full flex items-center justify-center text-white font-serif font-bold mr-4">
+            <div class="w-10 h-10 bg-primary-light rounded-full flex items-center justify-center text-white font-serif font-bold mr-4" aria-hidden="true">
               {{ review.author.charAt(0) }}
             </div>
             <div>
               <h4 class="text-primary-dark font-bold text-sm uppercase tracking-wide">{{ review.author }}</h4>
-              <div class="flex text-accent text-xs" role="img" aria-label="Ocena: 5 zvezdic">
                 <span v-for="i in 5" :key="i" aria-hidden="true">★</span>
               </div>
             </div>
