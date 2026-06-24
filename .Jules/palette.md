@@ -40,3 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2026-06-24 - Added missing label to required email input
+**Learning:** In BookingForm.vue, a visually hidden label or missing label altogether can degrade accessibility on required fields. Also, decorative required indicators like '*' should be hidden from screen readers using `aria-hidden="true"` when the input itself already handles the `required` state semantically.
+**Action:** When auditing forms, ensure every input has an explicit `<label>` with a `for` attribute mapping to the input's `id`. If an asterisk is used for visual requirement, always wrap it with `aria-hidden="true"`.
