@@ -43,3 +43,6 @@
 ## 2024-06-25 - Properly styling custom checkboxes during form submission
 **Learning:** Using Tailwind's `peer` class with an `sr-only` checkbox means that standard `disabled` state styles on the proxy `<span>` won't work correctly during a form submission lock. The proxy visual element must use the `peer-disabled:` prefix (e.g., `peer-disabled:opacity-50 peer-disabled:cursor-not-allowed`) to properly react to the hidden input's disabled state.
 **Action:** When locking forms with `isSubmitting`, always use `peer-disabled:` utilities for custom-styled proxy elements linked to `sr-only` inputs to ensure consistent UX feedback.
+## 2024-06-25 - Fixing E2E tests after meta title changes
+**Learning:** Playwright E2E tests often verify the expected `<title>` text for standard verification. The `<title>` tag is usually configured globally or per-page using `useHead()` in Nuxt. Changing the page title to a specific layout or structure, such as replacing default site title structures with a custom one, can break smoke tests if those tests are hardcoded.
+**Action:** When updating the global `titleTemplate` or the explicit page `title` in `useHead()`, always check E2E specs (e.g., `tests/e2e/smoke.spec.ts`) for hardcoded assertions like `expect(page).toHaveTitle(...)` and align them with the new title.
