@@ -40,3 +40,11 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - Missing Name Field in Web3Forms
+**Learning:** Forms built with `Web3Forms` submission logic often rely on a `name` field. Omitting this field can lead to confusing default data (e.g., "Nova rezervacija termina - ") in notification emails.
+**Action:** Always ensure that contact and booking forms have explicit `Ime in Priimek` (Name) inputs that match the backend or API schema requirements.
+
+## 2026-10-29 - Custom Checkbox Disabled States
+**Learning:** When using custom checkboxes styled with Tailwind's `peer` utilities, applying `:disabled` to the hidden input is not enough to provide visual feedback.
+**Action:** Always add `peer-disabled:opacity-50 peer-disabled:cursor-not-allowed` to the visual proxy span adjacent to the hidden `sr-only` input to ensure the disabled state is visually communicated to users.
