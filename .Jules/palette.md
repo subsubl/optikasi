@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - Missing Form Field Labels and Required Indicators
+**Learning:** Forms missing explicit `<label>` elements and visual indicators for required fields are inaccessible to screen readers and confusing for sighted users who don't know which fields are mandatory. Relying only on placeholders is an accessibility anti-pattern.
+**Action:** Always ensure every input element has an explicitly associated `<label>` element matching the input's `id`. Add an explicit required indicator (e.g., `<span aria-hidden="true" class="text-accent ml-1">*</span>`) to mandatory fields.
