@@ -40,3 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2026-10-29 - Missing Inputs and Labels
+**Learning:** A missing `<label>` on an input makes it very difficult for screen readers to announce the field's purpose. Also, missing functional inputs (like Name) when they are expected by the payload causes a disjointed UX.
+**Action:** Always ensure that every input field is explicitly associated with a `<label>` (either via `for`/`id` matching or wrapping). Also, verify the visual implementation against the reactive model.
