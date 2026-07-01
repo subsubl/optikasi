@@ -22,6 +22,7 @@
             </div>
             <div>
               <h4 class="text-primary-dark font-bold text-sm uppercase tracking-wide">{{ review.author }}</h4>
+              <div class="flex text-accent text-sm" role="img" aria-label="Ocena 5 od 5 zvezdic">
                 <span v-for="i in 5" :key="i" aria-hidden="true">★</span>
               </div>
             </div>
