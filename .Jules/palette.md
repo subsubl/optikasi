@@ -40,3 +40,9 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2026-07-03 - Add missing name field and labels
+**Learning:** Forms may have backend state fields omitted from their template visually, which negatively impacts usability as users cannot provide that expected info.
+**Action:** Verify template inputs against component reactive state for completeness, and always ensure corresponding label elements are connected via `for` attributes along with aria-hidden required asterisks for screen-reader friendly required styling.
+## 2026-07-03 - E2E Testing Context
+**Learning:** The homepage uses a custom title template that differs from the default site-wide template. Hard-coding assumptions about title patterns in E2E tests can lead to fragile tests.
+**Action:** When making isolated UI improvements, be cautious not to change assertions in generic E2E tests unless they are directly related to the changed component.
