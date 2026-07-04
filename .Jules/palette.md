@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - Screen Reader Experience for Repeating Visual Elements
+**Learning:** Repeating visual elements representing a single combined value (such as a 5-star rating) are read individually by screen readers, creating a repetitive and poor user experience.
+**Action:** Wrap the repeating elements in a container with `role="img"` and a descriptive `aria-label`, and apply `aria-hidden="true"` to the individual decorative child elements.
