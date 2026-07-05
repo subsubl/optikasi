@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-07-05 - Vue Form Template Mapping
+**Learning:** Defining reactive form variables in `<script setup>` without corresponding visible inputs in the `<template>` leads to silent data loss, confusing users who expected to submit that information.
+**Action:** Always visually check the template to ensure every reactive form variable intended for submission has an explicitly mapped and accessible `<input>` or interactive field.
