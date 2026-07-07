@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - State-Template Sync & Accessibility
+**Learning:** Reactive state properties mapped to forms (like `name` in a booking form) can sometimes be omitted entirely from the visible template, failing to capture user input and violating expected data submissions. Also, inputs without explicit `<label>` tags are inaccessible, and a missing visually hidden indicator (`aria-hidden="true"`) on required asterisks degrades screen reader experience.
+**Action:** Always verify that all reactive state variables have corresponding inputs in the template. Add explicitly associated `<label>` tags to all inputs. Ensure visual markers like asterisks (`*`) are wrapped with `aria-hidden="true"` while retaining the native `required` attribute on the input.
