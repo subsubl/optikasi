@@ -137,7 +137,7 @@
 <script setup>
 useHead({
   title: 'Optika.si | Očala, Kontaktne leče in Pregled vida (Ljubljana & Slovenija)',
-  titleTemplate: '%s',
+  titleTemplate: '%s | Optika Ljubljana',
   meta: [
     { name: 'description', content: 'Iščete dobro optiko v Ljubljani? Studio Optika Si nudi butičen pristop, natančno merjenje dioptrije in vrhunska korekcijska očala brez čakanja na Vojkovi 58.' },
     { name: 'keywords', content: 'optika ljubljana, pregled vida ljubljana, butična optika, korekcijska očala, progresivna očala, merjenje dioptrije, optik bežigrad, okulist ljubljana' }
