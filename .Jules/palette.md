@@ -40,3 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2024-07-08 - Accessible Labels in BookingForm
+**Learning:** Found that `BookingForm.vue` relied solely on `placeholder` attributes for top-level `name` and `email` inputs, which is poor for screen readers and usability (placeholders disappear on typing).
+**Action:** When adding standard HTML labels to custom inputs, match the existing application's styling tokens (e.g., `text-xs uppercase tracking-widest`) and properly use `for` / `id` bindings to make the relationship explicit for assistive technology.
