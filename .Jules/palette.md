@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - Missing Form Inputs
+**Learning:** Reactive form state variables in `<script setup>` (e.g., `form.name`) might not have corresponding inputs in the UI template, leading to incomplete data submission and potential validation errors on the server side.
+**Action:** When examining component state to plan code changes, always verify all expected reactive variables have corresponding visible inputs with proper accessible `<label>` elements in the template.
