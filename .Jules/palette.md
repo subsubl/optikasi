@@ -40,3 +40,11 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-10-29 - Repeating Visual Elements (Star Ratings)
+**Learning:** Screen readers announce repeating visual elements like 5-star ratings (using symbols like ★) five separate times, creating significant noise.
+**Action:** Wrap the repeating elements in a container with `role="img"` and a descriptive `aria-label` (e.g., "Ocena 5 od 5 zvezdic"), and apply `aria-hidden="true"` to the individual decorative elements.
+
+## 2026-10-29 - Form Required Indicator Visuals
+**Learning:** Simply using the HTML5 `required` attribute doesn't give sighted users a visual cue that a field is mandatory, leading to unexpected form submission blocks.
+**Action:** Add a visual indicator like an asterisk (`*`) inside the `<label>`, ensuring it has `aria-hidden="true"` to prevent screen reader noise, and style it with theme colors (e.g., `text-accent ml-1`).
