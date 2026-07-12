@@ -40,3 +40,7 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+
+## 2026-07-12 - Form Label Required Indicators
+**Learning:** When using visual asterisks to indicate required form fields, appending them inside a `<label>` can cause screen readers to disruptively announce 'star' or 'asterisk' next to every field name.
+**Action:** Always wrap the asterisk in a `<span aria-hidden="true">` while still using the HTML5 `required` attribute on the corresponding `<input>` to maintain semantic validation.
