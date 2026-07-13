@@ -40,3 +40,4 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2026-10-29 - Vue Template Attributes\n**Learning:** When applying UX patterns from generic guidelines, React-specific syntax (like `htmlFor` or `className`) must be manually translated to native HTML attributes (like `for` and `class`) when working in `.vue` files.\n**Action:** Always use native HTML attributes in Vue templates.
