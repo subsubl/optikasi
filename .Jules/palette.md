@@ -40,3 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2024-05-18 - Semantic Labels for Required Fields
+**Learning:** In forms using the HTML5 `required` attribute, screen readers heavily rely on a semantic `<label>` associated via the `for` attribute for field announcements. When denoting required fields visually with an asterisk, the asterisk must be wrapped in `aria-hidden="true"` to prevent repetitive reading (e.g., "star"), while letting the `required` attribute drive semantic validation.
+**Action:** When adding missing labels to required fields in Vue forms, ensure the `<label for="...">` strictly matches the input's `id`. Additionally, implement visual required indicators as `<span aria-hidden="true" class="text-accent ml-1">*</span>` to harmonize visual cues with screen reader experiences.
