@@ -44,3 +44,6 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+## 2024-07-20 - Ensure Playwright Screenshots Capture Target Elements
+**Learning:** When using Playwright to verify UI changes, relying on arbitrary scrolling (like `window.scrollBy(0, 500)`) can push the modified element out of the viewport, leading to a rejected review if the change isn't visible in the screenshot.
+**Action:** When capturing verification screenshots, ensure the target element is within the visible viewport, either by not scrolling if it's near the top, or by using element-specific scrolling like `.scroll_into_view_if_needed()`.
