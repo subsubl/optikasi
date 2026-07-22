@@ -44,3 +44,6 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+## 2026-10-30 - Disable Form Fields on Submit
+**Learning:** During form submission, leaving input fields enabled can allow users to accidentally alter data while the submission request is in flight, and standard submit buttons might be the only things disabled.
+**Action:** Use a reactive isSubmitting state to globally disable all relevant input, textarea, and select fields (as well as visual checkbox proxies via peer-disabled) to enhance UX and safety.
