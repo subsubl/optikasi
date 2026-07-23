@@ -44,3 +44,7 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+
+## 2024-07-23 - Add explicit labels to form inputs and disable during submission
+**Learning:** For accessibility, form inputs like emails need explicitly bound labels (via `for` and `id`), along with hidden indicators (like `aria-hidden="true"` on asterisks) so screen readers parse required fields correctly without reading out decorative characters. Additionally, disabling all inputs during an asynchronous submission explicitly informs the user that the form is processing and prevents double-submissions.
+**Action:** When creating or modifying forms, ensure all inputs have a properly associated label, and bind all interactive form fields (inputs, selects, textareas) and visually custom elements (like proxy checkboxes) to the reactive `isSubmitting` state using the `:disabled` attribute and appropriate Tailwind CSS variants (`disabled:opacity-50`, `peer-disabled:opacity-50`).
