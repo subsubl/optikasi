@@ -44,3 +44,6 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+## 2026-10-30 - Global Form Disabled State
+**Learning:** When forms contain many interactive elements (inputs, textareas, custom checkboxes), a reactive `isSubmitting` state must be bound to all of them, not just the submit button. Otherwise, users can still modify data during async submission, potentially causing data inconsistencies or double submissions.
+**Action:** When adding an `isSubmitting` state, ensure all `<input>`, `<textarea>`, and `<select>` elements receive `:disabled="isSubmitting"`. For custom proxy elements (like custom checkboxes using `sr-only` inputs), apply `peer-disabled` tailwind variants to visually convey the disabled state to the proxy elements while remaining semantically correct.
