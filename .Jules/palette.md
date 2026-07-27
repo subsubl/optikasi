@@ -44,3 +44,6 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+## 2026-07-27 - Consistent Accessible Form Labels
+**Learning:** Found that some form fields (like email in BookingForm.vue) lacked explicit `<label>` elements, relying only on placeholders, which hurts screen reader accessibility. Also, required fields were missing visual indicators (asterisks).
+**Action:** Always ensure every form input has an explicit `<label>` with a matching `for` attribute. For required fields, include a visually hidden asterisk using `<span aria-hidden="true">*</span>` to maintain visual consistency without double-announcing to screen readers.
