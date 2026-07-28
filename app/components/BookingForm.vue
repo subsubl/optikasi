@@ -8,13 +8,14 @@
 
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
-        <input id="email" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="janez@example.com" />
+        <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">E-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+        <input id="email" :disabled="isSubmitting" v-model="form.email" type="email" name="email" required class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
       </div>
     </div>
 
     <div class="space-y-2">
       <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
-      <input id="phone" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors" placeholder="041 123 456" />
+      <input id="phone" :disabled="isSubmitting" v-model="form.phone" type="tel" name="phone" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
     </div>
 
     <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
@@ -25,8 +26,8 @@
         <legend class="sr-only">Želeni dnevi v tednu</legend>
         <div class="flex flex-wrap gap-3 mb-4">
           <label v-for="day in days" :key="day" class="cursor-pointer">
-            <input type="checkbox" :value="day" v-model="form.preferredDays" class="sr-only peer" />
-            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light transition-all select-none">
+            <input type="checkbox" :value="day" v-model="form.preferredDays" :disabled="isSubmitting" class="sr-only peer" />
+            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-light peer-checked:text-white peer-checked:border-primary-light peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary-light peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-all select-none">
               {{ day }}
             </span>
           </label>
@@ -38,8 +39,8 @@
         <legend class="sr-only">Želeni časi</legend>
         <div class="flex flex-wrap gap-3">
           <label v-for="slot in slots" :key="slot" class="cursor-pointer">
-            <input type="checkbox" :value="slot" v-model="form.preferredSlots" class="sr-only peer" />
-            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent transition-all select-none">
+            <input type="checkbox" :value="slot" v-model="form.preferredSlots" :disabled="isSubmitting" class="sr-only peer" />
+            <span class="px-3 py-1 border border-gray-200 text-sm text-gray-600 peer-checked:bg-accent peer-checked:text-white peer-checked:border-accent peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-accent peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-all select-none">
               {{ slot }}
             </span>
           </label>
@@ -49,7 +50,7 @@
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea id="message" v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm"></textarea>
+      <textarea id="message" :disabled="isSubmitting" v-model="form.message" name="message" rows="4" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
     </div>
 
     <!-- Status Messages -->
