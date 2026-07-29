@@ -44,3 +44,6 @@
 ## 2026-10-29 - Repeating Visual Elements Accessibility (Star Ratings)
 **Learning:** Rendering repeating visual elements like a 5-star rating using a loop of `aria-hidden="true"` icons leaves the rating completely invisible to screen readers, missing a crucial piece of social proof or feedback.
 **Action:** When implementing repeating visual elements representing a single combined value (like a star rating), wrap the elements in a container with `role="img"` and a descriptive `aria-label` (e.g., `aria-label="Ocena 5 od 5 zvezdic"`), while keeping the individual child elements `aria-hidden="true"`.
+## 2025-07-29 - Missing Email Label in Booking Form
+**Learning:** Found an email input that lacked an explicit label, making it less accessible for screen reader users. The placeholder alone isn't sufficient for accessibility.
+**Action:** Always add an explicit `<label>` associated via the `for` attribute for all inputs, ensuring we include a visually indicating `aria-hidden` asterisk if the field is required.
