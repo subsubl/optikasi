@@ -40,3 +40,6 @@
 
 ## 2026-10-28 - Skip to Main Content Link Target Focus
 **Learning:** When linking to a main content area (`#main-content`) via a "Skip to main content" link, simply assigning the ID is not enough. Without `tabindex="-1"` and `focus:outline-none` on the target container, the browser might not programmatically transfer focus correctly, or it will display an undesirable focus ring around the entire main layout.
+## 2025-07-14 - Scope limitations when fixing missing form labels
+**Learning:** When acting as a micro-UX agent (Palette), fixing missing form labels must be strictly limited to existing data model fields. Adding new form inputs and reactive v-model properties borders on backend/business logic changes, which can lead to application build failures or regressions if not fully wired up.
+**Action:** Only add <label> tags and ARIA attributes for existing <input> fields that appear in the script setup state. Do not add completely new fields to fix a perceived UI gap.
