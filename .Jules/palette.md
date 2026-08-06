@@ -47,3 +47,7 @@
 ## 2026-10-30 - Form Input Disabled States and Labels
 **Learning:** Using placeholder text alone for form inputs is an accessibility violation, and inputs often lack disabled states during asynchronous submission, which leaves users uncertain if their actions registered.
 **Action:** Always provide explicit visual or `aria-label` labels for inputs and pair form submissions with disabled states using `disabled:opacity-50 disabled:cursor-not-allowed` to improve user feedback.
+
+## 2026-10-31 - Async Interaction Feedback
+**Learning:** Adding an inline SVG spinner directly within the submit button during the `isSubmitting` state (using Tailwind's `animate-spin` and `flex gap-2`) provides crucial immediate visual feedback and improves the perceived performance of async forms.
+**Action:** Always provide a loading indicator (spinner) and pair it with disabled states for async buttons.
