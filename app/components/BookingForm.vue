@@ -64,9 +64,15 @@
     <button
       type="submit"
       :disabled="isSubmitting"
-      class="w-full bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      class="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      <span v-if="isSubmitting">Pošiljam...</span>
+      <span v-if="isSubmitting" class="flex items-center gap-2">
+        <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Pošiljam...
+      </span>
       <span v-else>Pošlji Povpraševanje</span>
     </button>
   </form>
