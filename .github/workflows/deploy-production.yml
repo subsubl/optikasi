@@ -1,0 +1,68 @@
+name: Deploy to Production (optikasi.si)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with Nuxt (static generation)
+        run: npx nuxi generate
+        env:
+          NUXT_APP_BASE_URL: /
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: .output/public
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: ./dist
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Sync files to production server
+        run: |
+          rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/public_html/optikasi.si/
+
+      - name: Verify deployment
+        run: |
+          sleep 5
+          echo "Checking deployment..."
+          curl -sI https://optikasi.si | head -20
+          echo ""
+          echo "Deployment completed!"
