@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "route": "/storitve",
+      "name": "Pregled vida",
+      "description": "Popoln pregled vida za ohranjanje zdravja očes in vidnega sistema.",
+      "serviceType": "EyeExam"
+    },
+    {
+      "route": "/narocilo-lec",
+      "name": "Kontaktne leče",
+      "description": "Izbor in nakup kontaktne leče za vaše oči.",
+      "serviceType": "ContactLens"
+    },
+    {
+      "route": "/korekcijska-ocala",
+      "name": "Korekcijska očala",
+      "description": "Korekcijska očala za popravljanje vida.",
+      "serviceType": "Eyewear"
+    },
+    {
+      "route": "/soncna-ocala",
+      "name": "Sončna očala",
+      "description": "Sončna očala za zaščito pred UV žarjenjem.",
+      "serviceType": "Sunglasses"
+    },
+    {
+      "route": "/sportna-ocala",
+      "name": "Športna očala",
+      "description": "Očala za športne aktivnosti.",
+      "serviceType": "SportsEyewear"
+    },
+    {
+      "route": "/ocala-za-voznjo",
+      "name": "Očala za vožnjo",
+      "description": "Očala za varno vožnjo.",
+      "serviceType": "DrivingGlasses"
+    },
+    {
+      "route": "/varnostna-ocala",
+      "name": "Varnostna očala",
+      "description": "Varnostna očala za delovna mesta.",
+      "serviceType": "SafetyEyewear"
+    }
+  ]
+}
