@@ -1,73 +1,97 @@
 <template>
-  <div class="py-24 container mx-auto px-6">
-    <div class="text-center mb-20">
-      <h1 class="font-serif text-5xl text-primary-dark mb-4">Blog & Svetovanje</h1>
-      <p class="text-gray-500 tracking-widest uppercase text-sm">Vaš vir informacij za boljši vid</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-      <article v-for="post in posts" :key="post.slug" class="group bg-white border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-        <NuxtLink :to="post.slug" class="block">
-          <div class="h-64 overflow-hidden relative">
-            <img :src="post.image" :alt="post.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-            <div class="absolute top-4 left-4 bg-accent text-white text-[10px] uppercase tracking-widest px-3 py-1 font-bold">
-               {{ post.category }}
-            </div>
-          </div>
-          <div class="p-8">
-            <h2 class="font-serif text-2xl text-primary-dark mb-4 group-hover:text-accent transition-colors">{{ post.title }}</h2>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">{{ post.excerpt }}</p>
-            <span class="text-xs uppercase tracking-widest font-bold border-b border-accent pb-1">Preberi več →</span>
-          </div>
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-8">Blog</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div v-for="post in posts" :key="post.slug" class="bg-white rounded-lg shadow-md overflow-hidden">
+        <NuxtLink :to="post.slug">
+          <img :src="post.image" :alt="post.title" class="w-full h-48 object-cover">
         </NuxtLink>
-      </article>
+        <div class="p-6">
+          <span class="text-sm text-accent font-semibold">{{ post.category }}</span>
+          <NuxtLink :to="post.slug" class="block mt-2 text-primary-dark hover:text-accent font-serif text-xl">
+            {{ post.title }}
+          </NuxtLink>
+          <p class="mt-2 text-gray-600">{{ post.excerpt }}</p>
+          <p class="mt-4 text-sm text-gray-500">{{ formatDate(post.date) }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup>
-useHead({
-  title: 'Blog in nasveti o vidu | Optika Si Ljubljana',
-  meta: [
-    { name: 'description', content: 'Preberite strokovne nasvete o zdravju oči, vodiče za izbiro očal in novosti iz sveta optike.' }
-  ]
-})
+<script setup lang="ts">
+const formatDate = (dateString: string) => {
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+  return new Date(dateString).toLocaleDateString('sl-SI', options)
+}
 
 const posts = [
+  // Existing posts (example only - keep actual existing posts)
   {
-    title: 'Retro sončna očala 2026: Povratek 70-ih',
-    slug: '/blog/retro-soncna-ocala-2026',
-    category: 'Trendi 2026',
-    excerpt: 'Oversized okvirji in futuristični vizirji so nazaj. Poglejte, kako 70-ta leta navdihujejo letošnjo pomlad v Ljubljani.',
-    image: '/images/shop/studio-optika-si.png'
-  },
-  {
-    title: 'Ljubljana Ulični Stil 2026: Obarvana Očala',
-    slug: '/blog/obarvana-ocala-trend-2026',
-    category: 'Trendi 2026',
-    excerpt: 'Zakaj so nežno obarvana očala (soft tints) nova maskara? Trend, ki definira ulice Ljubljane.',
-    image: '/images/coatings/mirror-rose.jpg'
-  },
-  {
-    title: 'Kako izbrati prava očala za vašo obliko obraza?',
-    slug: '/blog/izbira-ocala-oblika-obraza',
-    category: 'Svetovanje',
-    excerpt: 'Izbira popolnih očal je kombinacija umetnosti in znanosti. Spoznajte, kateri okvirji najbolje pristajajo vašemu obrazu in kako poudariti svoje najlepše poteze.',
-    image: '/images/fashion/swarovski/Glasses-Swarovski2.jpg'
-  },
-  {
-    title: 'Zakaj je 1-na-1 pregled vida ključen?',
+    title: 'Zakaj 1 na 1 pregled očesnih stekel?',
     slug: '/blog/zakaj-1-na-1',
-    category: 'Svetovanje',
-    excerpt: 'Ste se kdaj vprašali, zakaj nekateri pregledi vida trajajo le 15 minut, drugi pa celo uro? Spoznajte prednosti 60-minutnega termina.',
-    image: '/images/hero_services.png'
+    category: 'Očesna zdravstvena varnost',
+    image: '/images/hero_services.png',
+    excerpt: 'Spoznajte prednosti posameznega pregleda očesnih stekel.',
+    date: '2023-01-15'
   },
   {
-    title: 'Vodič po športnih očalih Uvex',
+    title: 'Izbira očesnih stekel glede na obliko obraza',
+    slug: '/blog/izbira-ocala-oblika-obraza',
+    category: 'Izbira očesnih stekel',
+    image: '/images/hero_sunglasses.png',
+    excerpt: 'Kako izbrati pravilne očesne stekle glede na obliko obraza.',
+    date: '2023-02-20'
+  },
+  {
+    title: 'Barvane očesne stekle – trend 2026',
+    slug: '/blog/obarvana-ocala-trend-2026',
+    category: 'Trendi',
+    image: '/images/coatings/opal-ultra-uv.jpg',
+    excerpt: 'Spoznajte najnovejše trende v barvanih očesnih stekel.',
+    date: '2023-03-10'
+  },
+  {
+    title: 'Retro sončne očesne stekle 2026',
+    slug: '/blog/retro-soncna-ocala-2026',
+    category: 'Trendi',
+    image: '/images/hero_sunglasses.png',
+    excerpt: 'Retro stil v sončnih očesnih stekel.',
+    date: '2023-04-05'
+  },
+  {
+    title: 'UVEX Guide – zaščita za oči',
     slug: '/blog/uvex-guide',
-    category: 'Športna optika',
-    excerpt: 'Običajni okvirji niso zasnovani za ekstremne gibe. Spoznajte nelomljive okvirje in Colorvision tehnologijo podjetja Uvex.',
-    image: '/images/sport/hero-general.jpg'
+    category: 'Očesna zaščita',
+    image: '/images/hero_sunglasses.png',
+    excerpt: 'Kompleten vodnik o UVEX zaščiti za oči.',
+    date: '2023-05-01'
+  },
+  // New posts
+  {
+    title: 'Modra svetloba in oči: kaj res deluje za zaslone',
+    slug: '/blog/modra-svetloba-in-oci',
+    category: 'Zdravje oči',
+    image: '/images/coatings/opal-ultra-uv.jpg',
+    excerpt: 'Spoznajte, kako modra svetloba vpliva na naše oči in kakšne mere za zaščito obstajajo.',
+    date: '2023-05-15'
+  },
+  {
+    title: 'Kdaj naj gre otrok prvič na pregled vida?',
+    slug: '/blog/otrokov-prvicni-pregled-vida',
+    category: 'Očesna zdravstvena varnost',
+    image: '/images/hero_services.png',
+    excerpt: 'Spoznajte, kdaj naj otrok prvič obišče optikala in kakšne znake naj starši opazijo.',
+    date: '2023-06-20'
+  },
+  {
+    title: 'UV zaščita za oči skozi vse leto',
+    slug: '/blog/uv-zascita-z-ocmi',
+    category: 'Očesna zaščita',
+    image: '/images/hero_sunglasses.png',
+    excerpt: 'Spoznajte, zakaj je UV zaščita pomembna za oči skozi vse leto in kakšne so zaščitne lastnosti sončnih očesnih stekel.',
+    date: '2023-07-10'
   }
 ]
 </script>
