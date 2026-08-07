@@ -76,6 +76,12 @@ jobs:
           ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/deploy_key -o ConnectTimeout=10 -o StrictHostKeyChecking=no \
             "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" "echo 'SSH connection successful'"
 
+      - name: Create remote directory
+        run: |
+          echo "Creating remote directory..."
+          ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" "mkdir -p /public_html/optikasi.si"
+
       - name: Sync files to production server
         run: |
           echo "Deploying to ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/public_html/optikasi.si/"
