@@ -51,3 +51,4 @@
 ## 2026-10-31 - Async Interaction Feedback
 **Learning:** Adding an inline SVG spinner directly within the submit button during the `isSubmitting` state (using Tailwind's `animate-spin` and `flex gap-2`) provides crucial immediate visual feedback and improves the perceived performance of async forms.
 **Action:** Always provide a loading indicator (spinner) and pair it with disabled states for async buttons.
+## 2026-08-07 - Use get_by_role instead of get_by_label for form inputs with nested elements\n**Learning:** Playwright's `get_by_label` can fail to interact with form inputs if the associated `<label>` contains nested elements (like `<span aria-hidden="true">*</span>`).\n**Action:** Use `get_by_role('textbox', name='...')` with `exact=False` or `exact=True` (omitting the nested text) to reliably target form inputs for interaction in Playwright scripts.
