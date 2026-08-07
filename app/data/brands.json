@@ -2,58 +2,122 @@
     {
         "slug": "ray-ban",
         "name": "Ray-Ban",
-        "tagline": "Ikona stila od 1937",
-        "description": "Ray-Ban že skoraj stoletje postavlja standarde v svetu očal. Od legendarne Aviator oblike, ki je nastala za ameriške pilote, do kultnih Wayfarer očal, ki so postala simbol buntovništva in mode. Pri OptikaSI ponujamo široko izbiro originalnih Ray-Ban okvirjev za korekcijska in sončna očala.",
+        "tagline": "Ikona stila od leta 1937",
+        "description": "Ray-Ban je že skoraj desetletja sinonim za brezčasen stil in vrhunsko kakovost. Od kultnih Aviator očal, zasnovanih za ameriške pilote, do legendarnih Wayfarer očal, postavlja standarde sodobne mode.",
+        "heritage": "Znamka Ray-Ban se je rodila leta 1937 na pobudo poročnika ameriškega letalstva. Da bi zaščitil pilote pred močnim soncem na višinah, je ustvaril očala z zelenimi lečami, ki so postala znana kot Aviator. Danes Ray-Ban združuje avtentično dediščino z inovacijami in ostaja najprepoznavnejša znamka očal na svetu.",
         "keywords": [
             "ray-ban očala",
             "ray-ban ljubljana",
             "ray-ban wayfarer",
-            "ray-ban aviator"
+            "ray-ban aviator",
+            "ray-ban korekcijska očala"
         ],
-        "featured": [
-            "rb-aviator-gold"
-        ]
+        "highlights": [
+            "Legendarne oblike Aviator in Wayfarer",
+            "Kakovostne kristalne leče z 100% UV zaščito",
+            "Avtentična znamka s skoraj 90-letno tradicijo"
+        ],
+        "image": "/images/frames/rayban-wayfarer.jpg",
+        "featured": ["rb-wayfarer-classic"]
     },
     {
-        "slug": "tom-ford",
-        "name": "Tom Ford",
-        "tagline": "Sofisticirana senzualnost",
-        "description": "Tom Ford predstavlja vrhunec sodobnega luksuza. Njegova kolekcija očal odraža filmsko eleganco in brezčasni šarm. Vsak okvir je zasnovan z občutkom za proporcije in materiale, ki poudarjajo obraz nosilca.",
+        "slug": "david-beckham",
+        "name": "David Beckham",
+        "tagline": "Sodoben šik z osebnostjo",
+        "description": "Kolekcija očal David Beckham združuje brezčasno eleganco z modernim pristopom. Vsak model odraža prefinjen Beckhamov okus in kakovostne materiale, ki zagotavljajo udobje in stil.",
+        "heritage": "Znamka očal David Beckham je nastala v sodelovanju z uveljavljenim italijanskim proizvajalcem in prinaša izrazito sodoben, a obenem brezčasen karakter. Kolekcije združujejo ročno obdelane okvirje, kovinske podrobnosti in skrbno premišljene proporce.",
         "keywords": [
-            "tom ford očala",
-            "tom ford ljubljana",
-            "tom ford optika"
+            "david beckham očala",
+            "db očala",
+            "david beckham okvirji",
+            "dizajnerska očala ljubljana"
         ],
-        "featured": [
-            "tf-henry"
-        ]
+        "highlights": [
+            "Ročno obdelani kovinski okvirji",
+            "Sodoben dizajn z brezčasno eleganco",
+            "Idealen za poslovni in priložnostni videz"
+        ],
+        "image": "/images/frames/david-beckham-db7153.jpg",
+        "featured": ["db-7153"]
     },
     {
-        "slug": "oakley",
-        "name": "Oakley",
-        "tagline": "Tehnologija za vrhunske dosežke",
-        "description": "Oakley je sinonim za športno optiko naj višjega razreda. Revolucionarne tehnologije leč, vzdržljivi materiali in ergonomska oblika zagotavljajo popolno izkušnjo za aktivne posameznike. Od kolesarjenja do golfa – Oakley naredi razliko.",
+        "slug": "gucci",
+        "name": "Gucci",
+        "tagline": "Italijanski luksuz",
+        "description": "Gucci očala so izraz maksimalističnega italijanskega luksuza. Z drznimi oblikami, prepoznavnimi detajli in vrhunskimi materiali postavljajo smernice svetovne mode.",
+        "heritage": "Gucci, ustanovljen leta 1921 v Firencah, je ena najvplivnejših modnih hiš na svetu. Njihova optična kolekcija prenaša prepoznaven gucci značaj na okvirje očal – drznost, razkošje in nezmotljiv stil, ki ga prepoznate na prvi pogled.",
         "keywords": [
-            "oakley očala",
-            "oakley ljubljana",
-            "športna očala"
+            "gucci očala",
+            "gucci okvirji",
+            "gucci ljubljana",
+            "luksuzna očala"
         ],
-        "featured": [
-            "oakley-sutro"
-        ]
+        "highlights": [
+            "Prepoznavni gucci detajli",
+            "Vrhunski italijanski materiali",
+            "Drzen in razpoznaven dizajn"
+        ],
+        "image": "/images/frames/gucci-gg1795o.jpg",
+        "featured": ["gucci-1795o"]
     },
     {
-        "slug": "persol",
-        "name": "Persol",
-        "tagline": "Italijanska tradicija od 1917",
-        "description": "Persol je ena najstarejših znamk očal na svetu. Patentirani mechiconski tečaj (Meflecto) zagotavlja udobje, ikonična oblika 649 pa je postala simbol italijanskega stila. Idealna izbira za ljubitelje klasike z značajem.",
+        "slug": "missoni",
+        "name": "Missoni",
+        "tagline": "Barviti vzorci, brezčasna eleganca",
+        "description": "Missoni očala prinašajo prepoznavne barvite vzorce in italijansko rokodelsko tradicijo. Vsak okvir je umetnina, ki združuje drzne barve z elegantnimi oblikami.",
+        "heritage": "Modna hiša Missoni, znana po svojih ikoničnih vzorcih, je leta 1953 ustanovila Ottavio in Rosita Missoni. Njihova optična kolekcija prenaša prepoznavno misoni estetiko na okvirje – edinstvene barvne kombinacije in kreativne oblike.",
         "keywords": [
-            "persol očala",
-            "persol ljubljana",
-            "persol 649"
+            "missoni očala",
+            "missoni okvirji",
+            "missoni ljubljana",
+            "barvita očala"
         ],
-        "featured": [
-            "persol-649"
-        ]
+        "highlights": [
+            "Prepoznavni barviti vzorci",
+            "Italijanska rokodelska tradicija",
+            "Edinstven in umetniški dizajn"
+        ],
+        "image": "/images/frames/missoni-mis0262.jpg",
+        "featured": ["missoni-0262"]
+    },
+    {
+        "slug": "polar",
+        "name": "Polar",
+        "tagline": "Funkcionalnost in udobje",
+        "description": "Polar očala so zasnovana za vsakodnevno udobje in funkcionalnost. Z lahkimi, trpežnimi materiali in ergonomsko obliko so idealna izbira za vse, ki cenite praktičnost brez kompromisov.",
+        "heritage": "Znamka Polar se osredotoča na zdravo in udobno nošenje očal. Z uporabo lahkih acetatnih materialov in sodobnih tehnologij ustvarja okvirje, ki so enako primerni za delo in prosti čas.",
+        "keywords": [
+            "polar očala",
+            "polar okvirji",
+            "lahka očala",
+            "udobna očala ljubljana"
+        ],
+        "highlights": [
+            "Lahka acetatna kolekcija",
+            "Ergonomska oblika za udobno nošenje",
+            "Odlično razmerje med ceno in kakovostjo"
+        ],
+        "image": "/images/frames/polar-429.jpg",
+        "featured": ["polar-429"]
+    },
+    {
+        "slug": "montana",
+        "name": "Montana",
+        "tagline": "Urbana klasika",
+        "description": "Montana očala ponujajo sodobne urbane oblike po dostopni ceni. Z mat teksturami in minimalističnim dizajnom so idealna izbira za moderni vsakdan.",
+        "heritage": "Znamka Montana prinaša svežino sodobnega oblikovanja na trg optike. Osredotoča se na preproste, a elegantne linije v kombinaciji s kakovostnimi materiali, ki ustrezajo tako korekcijskim kot sončnim očalom.",
+        "keywords": [
+            "montana očala",
+            "montana okvirji",
+            "urbana očala",
+            "poceni očala ljubljana"
+        ],
+        "highlights": [
+            "Sodobna urbana klasika",
+            "Dostopna cena",
+            "Minimalističen in eleganten dizajn"
+        ],
+        "image": "/images/frames/montana-ma60.jpg",
+        "featured": ["montana-ma60"]
     }
 ]

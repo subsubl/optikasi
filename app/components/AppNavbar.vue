@@ -25,7 +25,7 @@
 
       <!-- Right Side Actions -->
       <div class="flex items-center gap-4 z-50 relative">
-         <NuxtLink to="/kontakt" class="hidden lg:block bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest">
+         <NuxtLink to="/kontakt" data-goal="nav-book" class="hidden lg:block bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest">
           Naročite se
         </NuxtLink>
 
@@ -63,7 +63,7 @@
                 </div>
            </div>
         </template>
-         <NuxtLink to="/kontakt" @click="isOpen = false" class="text-primary font-bold uppercase text-sm tracking-widest mt-2 block">
+         <NuxtLink to="/kontakt" data-goal="nav-book-mobile" @click="isOpen = false" class="text-primary font-bold uppercase text-sm tracking-widest mt-2 block">
           Naročite se
         </NuxtLink>
       </div>

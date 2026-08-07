@@ -63,6 +63,7 @@
 
     <button
       type="submit"
+      data-goal="booking-submit"
       :disabled="isSubmitting"
       class="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
     >

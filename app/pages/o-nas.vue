@@ -76,7 +76,7 @@
                 <span class="text-sm tracking-wide">{{ point }}</span>
               </li>
             </ul>
-            <NuxtLink to="/kontakt" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
+            <NuxtLink to="/kontakt" data-goal="about-book" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
               Rezervirajte svoj termin →
             </NuxtLink>
           </div>
@@ -135,6 +135,7 @@
             </div>
             <NuxtLink
               to="/kontakt"
+              data-goal="about-visit"
               class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors text-center"
             >
               Rezervirajte Termin

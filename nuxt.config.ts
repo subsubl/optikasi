@@ -43,7 +43,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/icon.png' }
       ],
       script: [
-        { src: 'https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js', async: true }
+        { src: 'https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js', async: true },
+        // Plausible analytics (privacy-friendly, GDPR-compliant, no cookie banner needed)
+        { src: 'https://plausible.io/js/script.tagged-events.js', defer: true, 'data-domain': 'optikasi.si' }
       ]
     },
     // Use '/' for optikasi.si, '/optikasi/' for GitHub Pages
