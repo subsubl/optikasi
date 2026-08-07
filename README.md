@@ -1,75 +1,56 @@
-# Nuxt Minimal Starter
+# OptikaSI Brand Landing Page
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This project is a static website for OptikaSI, featuring brand landing pages for various optical brands. The site is built using Nuxt 4, Vue 3, Tailwind CSS, and Pnpm.
 
 ## Setup
 
-Make sure to install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/optikasi/optikasi.git
+   ```
 
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+## Usage
+
+To generate static content:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm run generate
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+To run tests:
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm test
 ```
 
-## Production
-
-Build the application for production:
-
+To run end-to-end tests:
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm run test:e2e
 ```
 
-Locally preview production build:
+## Contributing
 
-```bash
-# npm
-npm run preview
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch`
+3. Make your changes.
+4. Commit your changes: `git commit -am 'Add some feature'`
+5. Push to the branch: `git push origin feature-branch`
+6. Open a Pull Request.
 
-# pnpm
-pnpm preview
+## Dependencies
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Nuxt 4
+- Vue 3
+- Tailwind CSS
+- Pnpm
+- Playwright
