@@ -92,6 +92,30 @@ const posts = [
     image: '/images/hero_sunglasses.png',
     excerpt: 'Spoznajte, zakaj je UV zaščita pomembna za oči skozi vse leto in kakšne so zaščitne lastnosti sončnih očesnih stekel.',
     date: '2023-07-10'
+  },
+  {
+    title: 'Kontaktne leče: vodič od izbire do nošenja',
+    slug: '/blog/kontaktne-lece-vodic',
+    category: 'Kontaktne leče',
+    image: '/images/hero_services.png',
+    excerpt: 'Izvedite več o različnih vrstah kontaktnih leč, njihovi izbiri, prilagajanju, higieni in varnosti.',
+    date: '2026-08-15'
+  },
+  {
+    title: 'Progresivna stekla: za koga so in kako se nanje navaditi',
+    slug: '/blog/progresivna-stekla',
+    category: 'Stekla',
+    image: '/images/coatings/opal-ultra-uv.jpg',
+    excerpt: 'Spoznajte, kaj so progresivna stekla, za koga so primerna in kako poteka prilagajanje na njih.',
+    date: '2026-08-16'
+  },
+  {
+    title: 'Nanosi na lečah: antirefleksni, oleo/hidrofobni, UV',
+    slug: '/blog/nanosi-na-lecah',
+    category: 'Tehnologija',
+    image: '/images/coatings/mirror-rose.jpg',
+    excerpt: 'Razložimo, kaj so antirefleksni, oleo/hidrofobni in UV nanosi ter kako izbrati prave za vaš način življenja.',
+    date: '2026-08-17'
   }
 ]
 </script>
