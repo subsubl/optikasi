@@ -57,11 +57,29 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          
+          # Add host to known_hosts with timeout and retry
+          echo "Adding host to known_hosts..."
+          for i in {1..3}; do
+            if ssh-keyscan -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null; then
+              echo "Host key added successfully"
+              break
+            else
+              echo "Attempt $i failed, retrying in 5s..."
+              sleep 5
+            fi
+          done
+
+      - name: Test SSH connection
+        run: |
+          echo "Testing SSH connection..."
+          ssh -p "${{ secrets.SSH_PORT }}" -i ~/.ssh/deploy_key -o ConnectTimeout=10 -o StrictHostKeyChecking=no \
+            "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" "echo 'SSH connection successful'"
 
       - name: Sync files to production server
         run: |
-          rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+          echo "Deploying to ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/public_html/optikasi.si/"
+          rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o ConnectTimeout=30" \
             ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/public_html/optikasi.si/
 
       - name: Verify deployment
