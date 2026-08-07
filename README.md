@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+# Optikasi.si Blog Articles
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This repository contains three new blog articles for the Optikasi.si website, created to provide educational content about contact lenses, progressive lenses, and lens coatings.
 
 ## Setup
 
-Make sure to install dependencies:
+Ensure you have a working Nuxt 4 + Vue 3 + Tailwind + pnpm environment. The articles are located in `app/pages/blog/` directory.
 
-```bash
-# npm
-npm install
+## Usage
 
-# pnpm
-pnpm install
+To view the articles:
+1. Run `pnpm run dev` to start the development server
+2. Navigate to `/blog/kontaktne-lece-vodic`, `/blog/progresivna-stekla`, or `/blog/nanosi-na-lecah`
 
-# yarn
-yarn install
+Each article includes:
+- SEO-optimized content with proper metadata
+- Structured data schema injection via useArticleSchema composable
+- Responsive design using Tailwind CSS
+- Back navigation to blog index
+- Final call-to-action to contact page
 
-# bun
-bun install
-```
+## Files Created
 
-## Development Server
+- `app/pages/blog/kontaktne-lece-vodic.vue`
+- `app/pages/blog/progresivna-stekla.vue`
+- `app/pages/blog/nanosi-na-lecah.vue`
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+All articles follow the established template pattern and use the existing `useArticleSchema` composable for proper SEO implementation.
