@@ -1,47 +1,47 @@
 [
-    {
-        "id": "rb-wayfarer-classic",
-        "brand": "Ray-Ban",
-        "name": "Wayfarer Classic RB5121",
-        "description": "Legendarni dizajn iz 50-ih let, klasika za vsak dan.",
-        "price": 145.00,
-        "image": "/images/frames/rayban-wayfarer.jpg",
-        "isNew": true
-    },
-    {
-        "id": "db-7153",
-        "brand": "David Beckham",
-        "name": "DB 7153",
-        "description": "Sodoben pravokotni okvir s podpisom DB.",
-        "price": 169.00,
-        "image": "/images/frames/david-beckham-db7153.jpg",
-        "isNew": true
-    },
-    {
-        "id": "missoni-0262",
-        "brand": "Missoni",
-        "name": "MIS 0262",
-        "description": "Ženska mačja oblika z barvitim vzorcem.",
-        "price": 119.00,
-        "image": "/images/frames/missoni-mis0262.jpg",
-        "isNew": true
-    },
-    {
-        "id": "polar-429",
-        "brand": "Polar",
-        "name": "429",
-        "description": "Lahka acetatna kolekcija za udobno nošenje.",
-        "price": 89.00,
-        "image": "/images/frames/polar-429.jpg",
-        "isNew": true
-    },
-    {
-        "id": "montana-ma60",
-        "brand": "Montana",
-        "name": "MA60",
-        "description": "Sodobna urbana klasika v mat črni.",
-        "price": 59.00,
-        "image": "/images/frames/montana-ma60.jpg",
-        "isNew": true
-    }
+  {
+    "id": "ray-ban-aviator",
+    "brand": "Ray-Ban",
+    "name": "Aviator",
+    "description": "Klasik, ki je ostal v času.",
+    "price": 220.00,
+    "image": "/images/frames/ray-ban-aviator.jpg",
+    "isNew": false
+  },
+  {
+    "id": "ray-ban-wayfarer",
+    "brand": "Ray-Ban",
+    "name": "Wayfarer",
+    "description": "Znamenita oblika, ki je postala ikona.",
+    "price": 240.00,
+    "image": "/images/frames/ray-ban-wayfarer.jpg",
+    "isNew": false
+  },
+  {
+    "id": "gucci-1795o",
+    "brand": "Gucci",
+    "name": "GG1795O",
+    "description": "Sodobna mačja oblika s prepoznavnim gucci detajlom.",
+    "price": 270.00,
+    "image": "/images/frames/gucci-gg1795o.jpg",
+    "isNew": true
+  },
+  {
+    "id": "prada-p1101",
+    "brand": "Prada",
+    "name": "P1101",
+    "description": "Minimalistična oblika z elegantno linijo.",
+    "price": 320.00,
+    "image": "/images/frames/prada-p1101.jpg",
+    "isNew": false
+  },
+  {
+    "id": "versace-vx001",
+    "brand": "Versace",
+    "name": "VX001",
+    "description": "Sodobna oblika z prepoznavnim versace logotipom.",
+    "price": 290.00,
+    "image": "/images/frames/versace-vx001.jpg",
+    "isNew": false
+  }
 ]

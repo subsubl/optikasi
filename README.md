@@ -1,75 +1,54 @@
-# Nuxt Minimal Starter
+# Optikasi Brand Pages
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This repository contains the brand landing pages for Optikasi, featuring SEO-optimized pages with JSON-LD schemas, local SEO keywords, and interactive elements.
 
 ## Setup
 
-Make sure to install dependencies:
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
+2. Run development server:
+   ```bash
+   pnpm dev
+   ```
+
+3. Generate static site:
+   ```bash
+   pnpm generate
+   ```
+
+## Usage
+
+### Brand Pages
+
+Access brand pages at `/znamke/[slug]` where slug corresponds to brand names in the data files.
+
+### Features
+
+- SEO-optimized with JSON-LD Product and FAQ schemas
+- Local SEO integration for Ljubljana/Bežigrad/Vojkova 58
+- Responsive design using Tailwind CSS
+- Interactive FAQ accordion
+- Frame finder recommendation
+- Brand-specific content sections
+
+### Data Files
+
+- `app/data/frames.json`: Contains all frame information including new Gucci GG1795O
+- `app/data/brands.json`: Contains brand information (7 brands inherited from main)
+
+### Testing
+
+Run E2E tests with:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm test:e2e
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+Specifically test Ray-Ban page with:
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm test:e2e --project=chromium tests/e2e/znamke/ray-ban.spec.ts
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
