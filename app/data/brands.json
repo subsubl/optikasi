@@ -18,7 +18,21 @@
             "Avtentična znamka s skoraj 90-letno tradicijo"
         ],
         "image": "/images/frames/rayban-wayfarer.jpg",
-        "featured": ["rb-wayfarer-classic"]
+        "featured": ["rb-wayfarer-classic"],
+        "faqs": [
+            {
+                "q": "Ali je Ray-Ban original brez vijakov?",
+                "a": "Na vseh modelih skrbimo, da okvirji ostanejo pristni. Pri izbiri vam pomagamo preveriti originalnost in svetujemo pravo obliko za vaš obraz ter dioptrijo."
+            },
+            {
+                "q": "Ali lahko v Ray-Ban vgradim korekcijska stekla?",
+                "a": "Da. V OptikaSI v Ray-Ban okvirje vgradimo vrhunska korekcijska stekla z 100% UV zaščito, vključno s progresivnimi lečami."
+            },
+            {
+                "q": "Katere Ray-Ban oblike so najbolj priljubljene?",
+                "a": "Najbolj priljubljene so Aviator, Wayfarer in Clubmaster. Pri nas jih lahko preizkusite in dobite osebno svetovanje, katera najbolj pristaja vašemu obrazu."
+            }
+        ]
     },
     {
         "slug": "david-beckham",
@@ -119,5 +133,53 @@
         ],
         "image": "/images/frames/montana-ma60.jpg",
         "featured": ["montana-ma60"]
+    },
+    {
+        "slug": "lindberg",
+        "name": "Lindberg",
+        "tagline": "Danska mojstrska brezvijačna lahkotnost",
+        "description": "Lindberg očala so sinonim za prefinjen skandinavski dizajn in izjemno lahkotnost. Njihovi revolucionarni okvirji brez vijakov iz titana so izdelani ročno na Danskem ter so izjemno trpežni, hipoalergeni in popolnoma prilagodljivi vašemu obrazu.",
+        "heritage": "Lindberg je ustanovil Poul-Jørn Lindberg leta 1986 na Danskem s prepričanjem, da lahko očala naredi drugače — bolj preprosto, bolj elegantno in bolj udobno. Leta 1989 so predstavili prve okvirje iz titana brez vijakov in tečajev, kar je bila revolucija v optiki. Še danes se vsak par očal Lindberg izdela ročno v danski tovarni v Århusu ter tudi z najnovejšo tehnologijo Air Titanium ostaja lažji od 10 gramov. Za Studio Optika SI je Lindberg izbira za zahtevne stranke, ki cenijo arhitekturo, minimalizem in vrhunsko funkcionalnost.",
+        "keywords": [
+            "lindberg očala",
+            "lindberg ljubljana",
+            "lindberg titan okvirji",
+            "lindberg brez vijakov",
+            "lindberg air titanium",
+            "hipoalergena očala",
+            "dizajnerska očala ljubljana"
+        ],
+        "highlights": [
+            "Patentirana brezvijačna konstrukcija",
+            "Ultralahki titan — težji manj kot 10 gramov",
+            "100% hipoalergeni, idealni za občutljivo kožo",
+            "Ročna izdelava na Danskem",
+            "Popolnoma prilagodljivo prileganje obrazu",
+            "Individualno svetovanje in vgradnja vrhunskih stekel"
+        ],
+        "image": "",
+        "featured": [],
+        "faqs": [
+            {
+                "q": "Ali so Lindberg očala res tako lahka?",
+                "a": "Da — Lindberg Air Titanium okvirji tehtajo manj kot 10 gramov, v kombinaciji s tankimi lečami pa praktično ne občutite, da jih nosite."
+            },
+            {
+                "q": "Kaj pomeni 'brez vijakov'?",
+                "a": "Znamka oblikuje okvirje brez vijakov, zvarov in tečajev. Zaradi takšne konstrukcije se očala ne zrahljajo, so trpežna in zelo vzdržljiva."
+            },
+            {
+                "q": "Ali so primerna za občutljivo kožo?",
+                "a": "Absolutno. Titan in brezhibno brušeni materiali so hipoalergeni in ne vsebujejo nikla, zato so idealna izbira za osebe z občutljivo kožo ali alergijami."
+            },
+            {
+                "q": "Ali Lindberg očala dobim tudi z dioptrijo?",
+                "a": "Da. V OptikaSI v Lindberg okvirje vgradimo najkakovostnejša korekcijska in progresivna stekla ter jih natančno prilagodimo vašemu obrazu."
+            },
+            {
+                "q": "Kje lahko Lindberg očala preizkusim?",
+                "a": "V Studio Optika SI na Vojkovi cesti 58 v Ljubljani. Rezervirajte termin za osebno svetovanje in izkušnjo prilagajanja iz prve roke."
+            }
+        ]
     }
 ]

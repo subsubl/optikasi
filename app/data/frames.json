@@ -43,5 +43,14 @@
         "price": 59.00,
         "image": "/images/frames/montana-ma60.jpg",
         "isNew": true
+    },
+    {
+        "id": "gucci-1795o",
+        "brand": "Gucci",
+        "name": "GG1795O",
+        "description": "Prepoznavna mačja oblika z gucci detajlom.",
+        "price": 270.00,
+        "image": "/images/frames/gucci-gg1795o.jpg",
+        "isNew": true
     }
 ]
