@@ -1,49 +1,111 @@
 <template>
   <div>
     <component :is="'script'" type="application/ld+json">
-      {{ JSON.stringify(schema) }}
+      {{ JSON.stringify(opticianSchema) }}
+    </component>
+    <component :is="'script'" type="application/ld+json">
+      {{ JSON.stringify(medicalBusinessSchema) }}
     </component>
   </div>
 </template>
 
-<script setup>
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Optician",
-  "name": "Studio Optika Si",
-  "image": "https://optikasi.si/images/shop/studio-optika-si.png",
-  "description": "Boutique opticians in Ljubljana offering personalized 1-on-1 eye exams and high-quality eyewear at the best prices.",
-  "@id": "https://optikasi.si",
-  "url": "https://optikasi.si",
-  "telephone": "041788516",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Vojkova cesta 58",
-    "addressLocality": "Ljubljana",
-    "postalCode": "1000",
-    "addressCountry": "SI"
+<script setup lang="ts">
+const opticianSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Optician',
+  '@id': 'https://optikasi.si',
+  'name': 'Studio Optika Si',
+  'description': 'Butična optika v Ljubljani z individualnim 1-na-1 pristopom. Strokovni pregledi vida (60 min) in vrhunska očala po najboljših cenah.',
+  'url': 'https://optikasi.si',
+  'image': 'https://optikasi.si/images/shop/studio-optika-si.png',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Vojkova cesta 58',
+    'addressLocality': 'Ljubljana',
+    'postalCode': '1000',
+    'addressCountry': 'SI'
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 46.0705,
-    "longitude": 14.5168
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 46.0705,
+    'longitude': 14.5168
   },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "18:00",
-    "note": "By appointment only / Po dogovoru"
-  },
-  "sameAs": [
-    "https://www.instagram.com/optikasi/"
+  'hasCredential': [
+    {
+      '@type': 'EducationalOccupationalCredential',
+      'credentialCategory': 'Optometrist',
+      'educationalLevel': 'Bachelor',
+      'provider': {
+        '@type': 'Organization',
+        'name': 'Slovenska optična zdravstvena služba'
+      }
+    }
   ],
-  "priceRange": "$$"
+  'areaServed': [
+    { '@type': 'City', 'name': 'Ljubljana' },
+    { '@type': 'CityDistrict', 'name': 'Bežigrad' },
+    { '@type': 'CityDistrict', 'name': 'Center' },
+    { '@type': 'CityDistrict', 'name': 'Šiška' },
+    { '@type': 'CityDistrict', 'name': 'Vič' },
+    { '@type': 'CityDistrict', 'name': 'Moste' },
+    { '@type': 'CityDistrict', 'name': 'Črnuče' },
+    { '@type': 'CityDistrict', 'name': 'Šentvid' },
+    { '@type': 'CityDistrict', 'name': 'Rudnik' }
+  ],
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '18:00'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': 'Saturday',
+      'opens': '09:00',
+      'closes': '18:00',
+      'note': 'Po dogovoru / By appointment'
+    }
+  ],
+  'priceRange': '$$',
+  'telephone': '+386 41 788 516',
+  'email': 'info@optikasi.si',
+  'sameAs': ['https://www.instagram.com/optikasi/']
+}
+
+const medicalBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalBusiness',
+  'name': 'Studio Optika Si',
+  'url': 'https://optikasi.si',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'Vojkova cesta 58',
+    'addressLocality': 'Ljubljana',
+    'postalCode': '1000',
+    'addressCountry': 'SI'
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 46.0705,
+    'longitude': 14.5168
+  },
+  'openingHoursSpecification': [
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '18:00'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': 'Saturday',
+      'opens': '09:00',
+      'closes': '18:00',
+      'note': 'Po dogovoru / By appointment'
+    }
+  ],
+  'telephone': '+386 41 788 516',
+  'email': 'info@optikasi.si'
 }
 </script>
