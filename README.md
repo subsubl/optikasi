@@ -1,75 +1,50 @@
-# Nuxt Minimal Starter
+# OptikaSI Brand Landing Pages
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This project implements dynamic brand landing pages for OptikaSI, featuring rich SEO optimization, interactive components, and local business integration. Each brand page displays key information including heritage, highlights, featured frames, and FAQs.
 
 ## Setup
 
-Make sure to install dependencies:
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
+2. Run development server:
+   ```bash
+   pnpm dev
+   ```
+
+3. Build for production:
+   ```bash
+   pnpm generate
+   ```
+
+## Usage
+
+### Brand Pages
+
+Access brand pages at `/znamke/[slug]` where slug corresponds to brand identifiers in `app/data/brands.json`.
+
+### Features
+
+- **SEO Optimization**: JSON-LD structured data for products, item lists, and FAQs
+- **Local SEO**: Keywords for Ljubljana, Bežigrad, and Vojkova 58
+- **Customer Guidance**: Face shape recommendation hints
+- **Interactive Elements**: FAQ accordion with smooth toggling
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+
+### Data Structure
+
+- `app/data/brands.json`: Contains brand metadata including descriptions, heritage, keywords, and featured frames
+- `app/data/frames.json`: Contains frame details including pricing and images
+
+### Testing
+
+Run E2E tests with:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm test:e2e
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Specifically, the Ray-Ban page is validated by `tests/e2e/znamke/ray-ban.spec.ts`.
