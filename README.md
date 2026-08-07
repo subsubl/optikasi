@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# Optikasi.si Brand Landing Page for Lindberg
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+This project extends the existing Nuxt3 optikasi.si boutique optician website to include a brand landing page for LINDBERG eyewear. The page is designed to match the existing brand template and design system.
 
 ## Setup
+1. Clone the repository: `git clone https://github.com/subsubl/optikasi.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-Make sure to install dependencies:
+## Usage
+Navigate to the `/lindberg` route to view the Lindberg brand landing page.
 
-```bash
-# npm
-npm install
+## UI Components
+### HeroSection
+- **Props**: `title`, `description`
+- **Usage**: Displays the title and description with a call-to-action button.
 
-# pnpm
-pnpm install
+### SEOSection
+- **Props**: `title`, `description`, `keywords`, `image`
+- **Usage**: Adds SEO metadata to the page.
 
-# yarn
-yarn install
+### HeritageSection
+- **Props**: `heritage`
+- **Usage**: Displays the heritage story of the brand.
 
-# bun
-bun install
-```
+### HighlightsSection
+- **Props**: `highlights`
+- **Usage**: Displays a grid of highlights with the brand's key features and benefits.
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### FAQSection
+- **Props**: `questions`
+- **Usage**: Displays a list of frequently asked questions.
