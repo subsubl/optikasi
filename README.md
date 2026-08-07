@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# Optikasi.si Blog Implementation
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This repository contains the implementation of a reusable Article/BlogPosting schema composable and three new educational blog articles for optikasi.si. The implementation follows existing project patterns and maintains consistency with the site's design language.
 
 ## Setup
 
-Make sure to install dependencies:
+Ensure you have Node.js and pnpm installed. Install dependencies with:
 
-```bash
-# npm
-npm install
-
-# pnpm
+```
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Usage
 
-Start the development server on `http://localhost:3000`:
+### Schema Composable
 
-```bash
-# npm
-npm run dev
+The `useArticleSchema` composable can be used in any blog article component to inject proper JSON-LD schema for SEO:
 
-# pnpm
-pnpm dev
+```typescript
+import { useArticleSchema } from '~/composables/useArticleSchema'
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
+useArticleSchema({
+  title: 'Article Title',
+  description: 'Article description',
+  datePublished: '2023-05-15',
+  dateModified: '2023-05-15',
+  image: 'https://optikasi.si/path/to/image.jpg',
+  keywords: ['keyword1', 'keyword2'],
+  slug: '/blog/article-slug'
+})
 ```
 
-## Production
+### Blog Articles
 
-Build the application for production:
+Three new blog articles have been created in `app/pages/blog/`:
 
-```bash
-# npm
-npm run build
+1. `modra-svetloba-in-oci.vue` - About blue light and eyes
+2. `otrokov-prvicni-pregled-vida.vue` - When to take children for their first eye exam
+3. `uv-zascita-z-ocmi.vue` - UV protection for eyes throughout the year
 
-# pnpm
-pnpm build
+Each article follows the established template with:
+- Serif heading typography
+- Hero image with proper dimensions
+- Prose sections with h2 headings
+- Final CTA block with contact link
 
-# yarn
-yarn build
+### Blog Index Page
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The blog index page (`app/pages/blog/index.vue`) has been updated to include the three new posts in the posts array while preserving existing content.
