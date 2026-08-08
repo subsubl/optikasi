@@ -20,7 +20,7 @@
       </header>
 
       <div class="relative h-96 mb-16 overflow-hidden rounded-lg">
-        <img src="/images/fashion/swarovski/Glasses-Swarovski2.jpg" alt="Modni okvirji za očala" class="w-full h-full object-cover" />
+        <img src="/images/blog/izbira-ocala-oblika-obraza.jpg" alt="Modni okvirji za očala" class="w-full h-full object-cover" />
       </div>
 
       <div class="prose prose-lg prose-primary mx-auto text-gray-700 leading-relaxed">

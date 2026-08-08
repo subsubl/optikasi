@@ -1,8 +1,23 @@
+import fs from 'node:fs'
+import path from 'node:path'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+  hooks: {
+    'build:before': () => {
+      const paths = [
+        path.resolve('.nuxt/route-rules.mjs'),
+        path.resolve('node_modules/.cache/nuxt/.nuxt/route-rules.mjs')
+      ]
+      for (const p of paths) {
+        fs.mkdirSync(path.dirname(p), { recursive: true })
+        fs.writeFileSync(p, 'export default {};\n')
+      }
+    }
+  },
 
   // Configure Vite to handle public folder images with base URL
   vite: {

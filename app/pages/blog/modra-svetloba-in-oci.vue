@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Modra svetloba in oči: kaj res deluje za zaslone</h1>
       
-      <img :src="'/images/coatings/opal-ultra-uv.jpg'" alt="Modra svetloba in oči" class="w-full h-96 object-cover rounded-lg mb-8" />
+      <img src="/images/blog/modra-svetloba-in-oci.jpg" alt="Modra svetloba in oči" class="w-full h-96 object-cover rounded-lg mb-8" />
       
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">V današnjem svetu, kjer preživimo večino časa pred zasloni računalnikov, tablic in pametnih telefonov, se postavlja vprašanje, kako modra svetloba vpliva na naše oči. Modra svetloba je del spektra vidne svetlobe, ki jo izseva zaslon, in njena vloga pri zdravju oči je pomembna.</p>
@@ -79,7 +79,7 @@ useArticleSchema({
   description: 'Spoznajte, kako modra svetloba vpliva na naše oči in kakšne mere za zaščito pred njo obstajajo.',
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
-  image: 'https://optikasi.si/images/coatings/opal-ultra-uv.jpg',
+  image: 'https://optikasi.si/images/blog/modra-svetloba-in-oci.jpg',
   keywords: ['modra svetloba', 'digitalna utrujenost', 'oči', 'zasloni', 'zaščita'],
   slug: '/blog/modra-svetloba-in-oci'
 })

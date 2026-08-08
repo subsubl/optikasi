@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Nanosi na lečah: antirefleksni, oleo/hidrofobni, UV — kaj izbrati?</h1>
 
-      <img :src="'/images/coatings/mirror-rose.jpg'" alt="Nanosi na lečah" class="w-full h-96 object-cover rounded-lg mb-8">
+      <img src="/images/blog/nanosi-na-lecah.jpg" alt="Nanosi na lečah" class="w-full h-96 object-cover rounded-lg mb-8" />
 
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Nanosi na lečah so pomembni za izboljšanje kakovosti vida in dolgotrajnosti leč. Različni nanosi omogočajo različne koristi, kot so zmanjšanje odbojev, lažje čiščenje in zaščita pred škodljivo UV svetlobo. V tem članku bomo razložili različne vrste nanosov in kako izbrati najboljše za vaše potrebe.</p>
@@ -73,7 +73,7 @@ useArticleSchema({
   description: 'Izvedite več o različnih nanosih na lečah in kako izbrati najboljše za vaše potrebe.',
   datePublished: '2026-08-17',
   dateModified: '2026-08-17',
-  image: 'https://optikasi.si/images/coatings/mirror-rose.jpg',
+  image: 'https://optikasi.si/images/blog/nanosi-na-lecah.jpg',
   keywords: ['nanosi na lečah', 'antirefleksni', 'UV400', 'studio optika si', 'ljubljana'],
   slug: '/blog/nanosi-na-lecah'
 })

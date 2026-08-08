@@ -10,7 +10,7 @@
       </h1>
       
       <div class="h-96 w-full bg-cream mb-12 flex items-center justify-center text-gray-300">
-         <img src="/images/sport/hero-general.jpg" alt="Uvex športna očala" class="w-full h-full object-cover rounded-lg shadow-sm" />
+         <img src="/images/blog/uvex-guide.jpg" alt="Uvex športna očala" class="w-full h-full object-cover rounded-lg shadow-sm" />
       </div>
 
       <h2 class="text-2xl font-serif text-primary-dark mt-12 mb-4">Zakaj običajna očala niso primerna za šport?</h2>

@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">UV zaščita za oči skozi vse leto</h1>
       
-      <img :src="'/images/hero_sunglasses.png'" alt="UV zaščita za oči" class="w-full h-96 object-cover rounded-lg mb-8" />
+      <img src="/images/blog/uv-zascita-z-ocmi.jpg" alt="UV zaščita za oči" class="w-full h-96 object-cover rounded-lg mb-8" />
       
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">UV (ultravioletna) svetloba je del sončne svetlobe, ki lahko povzroči škodo očem. Kljub temu, da je UV najmočnejši v poletju, je zaščita za oči pomembna tudi v drugih letnih časih. V tej objavi bomo razložili, zakaj je UV zaščita pomembna za oči skozi vse leto.</p>
@@ -77,7 +77,7 @@ useArticleSchema({
   description: 'Spoznajte, zakaj je UV zaščita pomembna za oči skozi vse leto in kakšne so zaščitne lastnosti sončnih očesnih stekel.',
   datePublished: '2026-07-15',
   dateModified: '2026-07-15',
-  image: 'https://optikasi.si/images/hero_sunglasses.png',
+  image: 'https://optikasi.si/images/blog/uv-zascita-z-ocmi.jpg',
   keywords: ['UV', 'oči', 'sončna zaščita', 'zaščita', 'sonce'],
   slug: '/blog/uv-zascita-z-ocmi'
 })
