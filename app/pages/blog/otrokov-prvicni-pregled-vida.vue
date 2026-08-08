@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Kdaj naj gre otrok prvič na pregled vida?</h1>
       
-      <img :src="'/images/hero_services.png'" alt="Otrok na pregledu vida" class="w-full h-96 object-cover rounded-lg mb-8" />
+      <img src="/images/blog/otrokov-prvicni-pregled-vida.jpg" alt="Otrok na pregledu vida" class="w-full h-96 object-cover rounded-lg mb-8" />
       
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Pregled vida je ključen za zdravje oči otrok. Pravilno zgodnje zaznavanje očesnih težav omogoča učinkovito zdravljenje in preprečevanje hudega vidnega defekta. V tej objavi bomo razložili, kdaj naj otrok prvič obišče optikala in kakšne znake naj starši opazijo.</p>
@@ -82,7 +82,7 @@ useArticleSchema({
   description: 'Spoznajte, kdaj naj otrok prvič obišče optikala in kakšne znake naj starši opazijo.',
   datePublished: '2026-07-08',
   dateModified: '2026-07-08',
-  image: 'https://optikasi.si/images/hero_services.png',
+  image: 'https://optikasi.si/images/blog/otrokov-prvicni-pregled-vida.jpg',
   keywords: ['otrok', 'pregled vida', 'oči', 'miopija', 'starši'],
   slug: '/blog/otrokov-prvicni-pregled-vida'
 })

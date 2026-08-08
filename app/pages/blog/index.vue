@@ -27,12 +27,11 @@ const formatDate = (dateString: string) => {
 }
 
 const posts = [
-  // Existing posts (example only - keep actual existing posts)
   {
     title: 'Zakaj 1 na 1 pregled očesnih stekel?',
     slug: '/blog/zakaj-1-na-1',
     category: 'Očesna zdravstvena varnost',
-    image: '/images/hero_services.png',
+    image: '/images/blog/zakaj-1-na-1.jpg',
     excerpt: 'Spoznajte prednosti posameznega pregleda očesnih stekel.',
     date: '2023-01-15'
   },
@@ -40,7 +39,7 @@ const posts = [
     title: 'Izbira očesnih stekel glede na obliko obraza',
     slug: '/blog/izbira-ocala-oblika-obraza',
     category: 'Izbira očesnih stekel',
-    image: '/images/hero_sunglasses.png',
+    image: '/images/blog/izbira-ocala-oblika-obraza.jpg',
     excerpt: 'Kako izbrati pravilne očesne stekle glede na obliko obraza.',
     date: '2023-02-20'
   },
@@ -48,7 +47,7 @@ const posts = [
     title: 'Barvane očesne stekle – trend 2026',
     slug: '/blog/obarvana-ocala-trend-2026',
     category: 'Trendi',
-    image: '/images/coatings/opal-ultra-uv.jpg',
+    image: '/images/blog/obarvana-ocala-trend-2026.jpg',
     excerpt: 'Spoznajte najnovejše trende v barvanih očesnih stekel.',
     date: '2023-03-10'
   },
@@ -56,7 +55,7 @@ const posts = [
     title: 'Retro sončne očesne stekle 2026',
     slug: '/blog/retro-soncna-ocala-2026',
     category: 'Trendi',
-    image: '/images/hero_sunglasses.png',
+    image: '/images/blog/retro-soncna-ocala-2026.jpg',
     excerpt: 'Retro stil v sončnih očesnih stekel.',
     date: '2023-04-05'
   },
@@ -64,16 +63,15 @@ const posts = [
     title: 'UVEX Guide – zaščita za oči',
     slug: '/blog/uvex-guide',
     category: 'Očesna zaščita',
-    image: '/images/hero_sunglasses.png',
+    image: '/images/blog/uvex-guide.jpg',
     excerpt: 'Kompleten vodnik o UVEX zaščiti za oči.',
     date: '2023-05-01'
   },
-  // New posts
   {
     title: 'Modra svetloba in oči: kaj res deluje za zaslone',
     slug: '/blog/modra-svetloba-in-oci',
     category: 'Zdravje oči',
-    image: '/images/coatings/opal-ultra-uv.jpg',
+    image: '/images/blog/modra-svetloba-in-oci.jpg',
     excerpt: 'Spoznajte, kako modra svetloba vpliva na naše oči in kakšne mere za zaščito obstajajo.',
     date: '2023-05-15'
   },
@@ -81,7 +79,7 @@ const posts = [
     title: 'Kdaj naj gre otrok prvič na pregled vida?',
     slug: '/blog/otrokov-prvicni-pregled-vida',
     category: 'Očesna zdravstvena varnost',
-    image: '/images/hero_services.png',
+    image: '/images/blog/otrokov-prvicni-pregled-vida.jpg',
     excerpt: 'Spoznajte, kdaj naj otrok prvič obišče optikala in kakšne znake naj starši opazijo.',
     date: '2023-06-20'
   },
@@ -89,7 +87,7 @@ const posts = [
     title: 'UV zaščita za oči skozi vse leto',
     slug: '/blog/uv-zascita-z-ocmi',
     category: 'Očesna zaščita',
-    image: '/images/hero_sunglasses.png',
+    image: '/images/blog/uv-zascita-z-ocmi.jpg',
     excerpt: 'Spoznajte, zakaj je UV zaščita pomembna za oči skozi vse leto in kakšne so zaščitne lastnosti sončnih očesnih stekel.',
     date: '2023-07-10'
   },
@@ -97,7 +95,7 @@ const posts = [
     title: 'Kontaktne leče: vodič od izbire do nošenja',
     slug: '/blog/kontaktne-lece-vodic',
     category: 'Kontaktne leče',
-    image: '/images/hero_services.png',
+    image: '/images/blog/kontaktne-lece-vodic.jpg',
     excerpt: 'Izvedite več o različnih vrstah kontaktnih leč, njihovi izbiri, prilagajanju, higieni in varnosti.',
     date: '2026-08-15'
   },
@@ -105,7 +103,7 @@ const posts = [
     title: 'Progresivna stekla: za koga so in kako se nanje navaditi',
     slug: '/blog/progresivna-stekla',
     category: 'Stekla',
-    image: '/images/coatings/opal-ultra-uv.jpg',
+    image: '/images/blog/progresivna-stekla.jpg',
     excerpt: 'Spoznajte, kaj so progresivna stekla, za koga so primerna in kako poteka prilagajanje na njih.',
     date: '2026-08-16'
   },
@@ -113,7 +111,7 @@ const posts = [
     title: 'Nanosi na lečah: antirefleksni, oleo/hidrofobni, UV',
     slug: '/blog/nanosi-na-lecah',
     category: 'Tehnologija',
-    image: '/images/coatings/mirror-rose.jpg',
+    image: '/images/blog/nanosi-na-lecah.jpg',
     excerpt: 'Razložimo, kaj so antirefleksni, oleo/hidrofobni in UV nanosi ter kako izbrati prave za vaš način življenja.',
     date: '2026-08-17'
   }

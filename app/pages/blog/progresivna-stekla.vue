@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Progresivna stekla: za koga so in kako se nanje navaditi</h1>
 
-      <img :src="'/images/coatings/opal-ultra-uv.jpg'" alt="Progresivna stekla" class="w-full h-96 object-cover rounded-lg mb-8">
+      <img src="/images/blog/progresivna-stekla.jpg" alt="Progresivna stekla" class="w-full h-96 object-cover rounded-lg mb-8" />
 
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Progresivna stekla so zelo pogosta rešitev za osebe, ki imajo presbiopijo – starostno slabovidnost. Te stekla omogočajo dobro videno na različnih razdaljah brez vidne linije, kar jih naredi zelo prijetne za uporabo. V tem članku bomo razložili, kaj je presbiopija, kako delujejo progresivna stekla in kako se nanje navaditi.</p>
@@ -81,7 +81,7 @@ useArticleSchema({
   description: 'Izvedite več o progresivnih steklah, njihovi uporabi in prilagoditvi za presbiopijo.',
   datePublished: '2026-08-16',
   dateModified: '2026-08-16',
-  image: 'https://optikasi.si/images/coatings/opal-ultra-uv.jpg',
+  image: 'https://optikasi.si/images/blog/progresivna-stekla.jpg',
   keywords: ['progresivna stekla', 'presbiopija', 'optika', 'studio optika si', 'ljubljana'],
   slug: '/blog/progresivna-stekla'
 })

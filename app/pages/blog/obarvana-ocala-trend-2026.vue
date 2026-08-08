@@ -10,7 +10,7 @@
       </h1>
       
       <div class="h-96 w-full bg-cream mb-12 flex items-center justify-center text-gray-300">
-         <img src="/images/coatings/mirror-rose.jpg" alt="Obarvana očala - trend 2026" class="w-full h-full object-cover rounded-lg shadow-sm" />
+         <img src="/images/blog/obarvana-ocala-trend-2026.jpg" alt="Obarvana očala - trend 2026" class="w-full h-full object-cover rounded-lg shadow-sm" />
       </div>
 
       <p class="text-gray-600 mb-6 leading-relaxed">

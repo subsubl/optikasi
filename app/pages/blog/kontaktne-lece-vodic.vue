@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Kontaktne leče: vodič od izbire do nošenja</h1>
 
-      <img :src="'/images/hero_services.png'" alt="Kontaktne leče" class="w-full h-96 object-cover rounded-lg mb-8">
+      <img src="/images/blog/kontaktne-lece-vodic.jpg" alt="Kontaktne leče" class="w-full h-96 object-cover rounded-lg mb-8" />
 
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Kontaktne leče so zelo pogosta rešitev za popravljanje vida, ki omogočajo boljše vizualne izkušnje kot običajne okularje. Vendar je izbira pravih kontaktnih leč za vas pomembna, saj vpliva na udobje, varnost in učinkovitost. V tem vodiču bomo razložili različne vrste kontaktnih leč, kako se pravilno prilagajajo in kako izbrati najboljšo možnost za vaše potrebe.</p>
@@ -88,7 +88,7 @@ useArticleSchema({
   description: 'Izvedite več o različnih vrstah kontaktnih leč, njihovi izbiri, prilagajanju in varnosti.',
   datePublished: '2026-08-15',
   dateModified: '2026-08-15',
-  image: 'https://optikasi.si/images/hero_services.png',
+  image: 'https://optikasi.si/images/blog/kontaktne-lece-vodic.jpg',
   keywords: ['kontaktne leče', 'optika', 'studio optika si', 'ljubljana', 'vodič'],
   slug: '/blog/kontaktne-lece-vodic'
 })

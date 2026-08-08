@@ -9,10 +9,8 @@
         Retro sončna očala 2026: Povratek 70-ih in Boho stila
       </h1>
       
-      <div class="h-96 w-full bg-cream mb-12 flex items-center justify-center text-gray-300 relative overflow-hidden rounded-lg shadow-sm">
-         <!-- Placeholder for specific retro image -->
-         <div class="absolute inset-0 bg-gradient-to-tr from-orange-100 to-amber-50"></div>
-         <span class="relative z-10 text-primary-dark/50 font-serif italic text-2xl">Retro / Boho 2026</span>
+      <div class="h-96 w-full mb-12 relative overflow-hidden rounded-lg shadow-sm">
+         <img src="/images/blog/retro-soncna-ocala-2026.jpg" alt="Retro sončna očala 2026" class="w-full h-full object-cover" />
       </div>
 
       <p class="text-gray-600 mb-6 leading-relaxed">

@@ -10,7 +10,7 @@
       </h1>
       
       <div class="h-96 w-full bg-cream mb-12 flex items-center justify-center text-gray-300">
-         <img src="/images/hero_services.png" alt="Pregled vida" class="w-full h-full object-cover rounded-lg shadow-sm" />
+         <img src="/images/blog/zakaj-1-na-1.jpg" alt="Pregled vida" class="w-full h-full object-cover rounded-lg shadow-sm" />
       </div>
 
       <p class="text-xl text-gray-600 leading-relaxed mb-8 font-light italic">
