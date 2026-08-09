@@ -87,14 +87,16 @@
         <div class="space-y-4">
           <div v-for="(faq, i) in brand.faqs" :key="i" class="border border-gray-100 bg-cream">
             <button
+              :id="`${faqIdPrefix}-${i}-btn`"
               @click="toggleFaq(i)"
-              class="w-full flex items-center justify-between p-6 text-left"
+              class="w-full flex items-center justify-between p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               :aria-expanded="openFaq === i"
+              :aria-controls="`${faqIdPrefix}-${i}-content`"
             >
               <span class="font-serif text-lg text-primary-dark">{{ faq.q }}</span>
-              <span class="text-accent text-xl ml-4 transition-transform duration-300" :class="{ 'rotate-45': openFaq === i }">+</span>
+              <span class="text-accent text-xl ml-4 transition-transform duration-300" :class="{ 'rotate-45': openFaq === i }" aria-hidden="true">+</span>
             </button>
-            <div v-show="openFaq === i" class="px-6 pb-6">
+            <div v-show="openFaq === i" :id="`${faqIdPrefix}-${i}-content`" role="region" :aria-labelledby="`${faqIdPrefix}-${i}-btn`" class="px-6 pb-6">
               <p class="text-gray-600 leading-relaxed">{{ faq.a }}</p>
             </div>
           </div>
@@ -126,6 +128,7 @@
 import brandsData from '~/data/brands.json'
 import framesData from '~/data/frames.json'
 
+const faqIdPrefix = useId()
 const route = useRoute()
 const slug = route.params.slug
 
