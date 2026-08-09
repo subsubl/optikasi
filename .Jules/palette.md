@@ -55,3 +55,6 @@
 ## 2024-10-27 - [Add loading state to order form]
 **Learning:** For a11y and consistency across the app, loading state spinners in buttons should ideally be paired with `disabled` forms so the user is prevented from firing multiple submissions simultaneously. Utilizing SVG classes like `animate-spin` is highly effective when paired with standard Tailwind utilities.
 **Action:** When adding spinners, make sure they are visually hidden or unannounced (e.g., using `aria-hidden="true"`) to prevent verbose SR reading, and ensure flex wrappers keep the text and icon aligned well.
+## 2026-10-31 - Dynamic Accordion Accessibility with useId()
+**Learning:** In Nuxt 3 applications, accordion or toggle components rendered inside `v-for` loops can suffer from ID collisions if they don't use unique IDs per instance, breaking `aria-controls` and `aria-labelledby` relationships.
+**Action:** Use the `useId()` composable in the `<script setup>` block to generate a unique prefix for the component instance, and append the loop index to it to create robust, globally unique IDs for accessibility attributes.
