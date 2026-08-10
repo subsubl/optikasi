@@ -58,3 +58,6 @@
 ## 2026-10-31 - Dynamic Accordion Accessibility with useId()
 **Learning:** In Nuxt 3 applications, accordion or toggle components rendered inside `v-for` loops can suffer from ID collisions if they don't use unique IDs per instance, breaking `aria-controls` and `aria-labelledby` relationships.
 **Action:** Use the `useId()` composable in the `<script setup>` block to generate a unique prefix for the component instance, and append the loop index to it to create robust, globally unique IDs for accessibility attributes.
+## 2025-05-27 - Generic Button Labels
+**Learning:** E-commerce list pages often have generic repeating buttons (like "Kupi" or "Add to Cart") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
+**Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Kupi ' + product.name"`) to provide necessary context for assistive technologies.

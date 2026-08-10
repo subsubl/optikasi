@@ -19,8 +19,9 @@
           <p class="text-gray-500 text-sm mb-3 min-h-[40px]">{{ product.description }}</p>
           <div class="flex justify-between items-center pt-3 border-t border-gray-100">
             <span class="text-lg font-bold text-accent">{{ product.price.toFixed(2) }} €</span>
-            <button 
-              class="snipcart-add-item bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors"
+            <button
+              class="snipcart-add-item bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              :aria-label="'Kupi ' + product.name"
               :data-item-id="product.id"
               :data-item-price="product.price"
               :data-item-url="'/trgovina'"
@@ -46,8 +47,9 @@
           <p class="text-gray-500 text-sm mb-3 min-h-[40px]">{{ product.description }}</p>
           <div class="flex justify-between items-center pt-3 border-t border-gray-100">
             <span class="text-lg font-bold text-accent">{{ product.price.toFixed(2) }} €</span>
-            <button 
-              class="snipcart-add-item bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors"
+            <button
+              class="snipcart-add-item bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              :aria-label="'Kupi ' + product.name"
               :data-item-id="product.id"
               :data-item-price="product.price"
               :data-item-url="'/trgovina'"
@@ -75,7 +77,7 @@
           <p class="text-gray-500 text-sm mb-3 min-h-[40px]">{{ product.description }}</p>
           <div class="flex justify-between items-center pt-3 border-t border-gray-100">
             <span class="text-lg font-bold text-accent">Pošlji povpraševanje</span>
-             <a href="mailto:info@optikasi.si?subject=Povpraševanje za Uvex" 
+             <a href="mailto:info@optikasi.si?subject=Povpraševanje za Uvex"
                class="bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors">
                Info
              </a>
@@ -91,15 +93,15 @@
         <p class="text-gray-300 mb-8">
           Hitro in enostavno naročite vaše kontaktne leče brez čakanja v vrsti.
         </p>
-        <NuxtLink 
-          to="/narocilo-lec" 
+        <NuxtLink
+          to="/narocilo-lec"
           class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors"
         >
           Naroči Leče
         </NuxtLink>
       </div>
     </section>
-    
+
     <!-- Snipcart Hidden Settings -->
     <div id="snipcart" data-api-key="ST_NDlkZjE5YjctZWM2Yi00MTQyLTg0ZWItM2U1ZTM0ZGU4Yjg3NjM5MDEzNTMxNjM0OTkwOTgz" hidden></div>
   </div>
