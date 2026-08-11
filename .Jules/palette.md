@@ -61,3 +61,6 @@
 ## 2025-05-27 - Generic Button Labels
 **Learning:** E-commerce list pages often have generic repeating buttons (like "Kupi" or "Add to Cart") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Kupi ' + product.name"`) to provide necessary context for assistive technologies.
+## 2026-10-31 - Async Interaction Feedback with Spinners
+**Learning:** For a11y and consistency across the app, loading state spinners in buttons should ideally be paired with `disabled` forms so the user is prevented from firing multiple submissions simultaneously. Utilizing SVG classes like `animate-spin` is highly effective when paired with standard Tailwind utilities.
+**Action:** When adding spinners, make sure they are visually hidden or unannounced (e.g., using `aria-hidden="true"`) to prevent verbose SR reading, and ensure flex wrappers keep the text and icon aligned well.
