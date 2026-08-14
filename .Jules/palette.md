@@ -64,3 +64,7 @@
 ## 2026-10-31 - Async Interaction Feedback with Spinners
 **Learning:** For a11y and consistency across the app, loading state spinners in buttons should ideally be paired with `disabled` forms so the user is prevented from firing multiple submissions simultaneously. Utilizing SVG classes like `animate-spin` is highly effective when paired with standard Tailwind utilities.
 **Action:** When adding spinners, make sure they are visually hidden or unannounced (e.g., using `aria-hidden="true"`) to prevent verbose SR reading, and ensure flex wrappers keep the text and icon aligned well.
+
+## 2026-08-14 - Icon-only Social Links Accessibility
+**Learning:** Icon-only social links (like Instagram icons) in the footer often lack accessible names, making them unannounced by screen readers, and frequently miss explicit focus states for keyboard users.
+**Action:** Always provide an `aria-label` (localized) on the `<a>` tag and pair it with Tailwind's `focus-visible:ring-2` utilities to ensure the link is perceivable by all users.
