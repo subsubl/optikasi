@@ -78,7 +78,8 @@
           <div class="flex justify-between items-center pt-3 border-t border-gray-100">
             <span class="text-lg font-bold text-accent">Pošlji povpraševanje</span>
              <a href="mailto:info@optikasi.si?subject=Povpraševanje za Uvex"
-               class="bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors">
+               :aria-label="'Več informacij o ' + product.name"
+               class="bg-primary-dark text-white text-xs px-4 py-2 uppercase tracking-widest hover:bg-accent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent">
                Info
              </a>
           </div>
