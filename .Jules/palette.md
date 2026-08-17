@@ -68,3 +68,7 @@
 ## 2026-08-14 - Icon-only Social Links Accessibility
 **Learning:** Icon-only social links (like Instagram icons) in the footer often lack accessible names, making them unannounced by screen readers, and frequently miss explicit focus states for keyboard users.
 **Action:** Always provide an `aria-label` (localized) on the `<a>` tag and pair it with Tailwind's `focus-visible:ring-2` utilities to ensure the link is perceivable by all users.
+
+## 2026-08-17 - Instagram Feed Link Keyboard Accessibility
+**Learning:** Icon-only social links (like Instagram icons) often lack accessible names or proper focus states. An icon + text link might have hover animation (e.g. `group-hover:translate-x-1`) but misses the same feedback for keyboard users.
+**Action:** Add `group-focus:translate-x-1` and `focus-visible:ring-2` for keyboard users. Apply `aria-hidden="true"` to the decorative SVG to prevent redundant reading by screen readers since the visible text already provides context.
