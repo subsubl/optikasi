@@ -72,3 +72,7 @@
 ## 2026-08-17 - Instagram Feed Link Keyboard Accessibility
 **Learning:** Icon-only social links (like Instagram icons) often lack accessible names or proper focus states. An icon + text link might have hover animation (e.g. `group-hover:translate-x-1`) but misses the same feedback for keyboard users.
 **Action:** Add `group-focus:translate-x-1` and `focus-visible:ring-2` for keyboard users. Apply `aria-hidden="true"` to the decorative SVG to prevent redundant reading by screen readers since the visible text already provides context.
+
+## 2026-10-31 - Keyboard Accessibility on Informational Links
+**Learning:** Links and NuxtLinks used as CTAs (like "Oglejte si Cenik", "Rezerviraj Termin", or external links like Google reviews) often lack keyboard focus states (`focus-visible:ring-2`), making them hard to use for keyboard navigators, even if they have nice hover states for mouse users.
+**Action:** Always add standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to interactive elements. Also, if they use `group-hover` for internal element changes (like arrow movement), pair it with `group-focus-within` to mirror the interaction for keyboard users.
