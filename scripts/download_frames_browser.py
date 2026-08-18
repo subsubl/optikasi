@@ -6,6 +6,7 @@ Uses Playwright to bypass bot protection and download product images
 
 import asyncio
 import os
+import aiohttp
 import requests
 from playwright.async_api import async_playwright
 
@@ -80,14 +81,17 @@ async def download_with_browser(product_id, config):
                             print(f"  Found image: {src[:60]}...")
                             
                             # Download the image
-                            response = requests.get(src, headers=HEADERS, timeout=15)
-                            if response.status_code == 200 and len(response.content) > 5000:
-                                filepath = os.path.join(OUTPUT_DIR, f"{product_id}.jpg")
-                                with open(filepath, 'wb') as f:
-                                    f.write(response.content)
-                                print(f"  ✓ Downloaded: {product_id}.jpg ({len(response.content)} bytes)")
-                                await browser.close()
-                                return True
+                            async with aiohttp.ClientSession() as session:
+                                async with session.get(src, headers=HEADERS, timeout=15) as response:
+                                    if response.status == 200:
+                                        content = await response.read()
+                                        if len(content) > 5000:
+                                            filepath = os.path.join(OUTPUT_DIR, f"{product_id}.jpg")
+                                            with open(filepath, 'wb') as f:
+                                                f.write(content)
+                                            print(f"  ✓ Downloaded: {product_id}.jpg ({len(content)} bytes)")
+                                            await browser.close()
+                                            return True
                 except Exception as e:
                     continue
             
