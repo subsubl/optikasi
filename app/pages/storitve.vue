@@ -302,12 +302,12 @@
             href="https://g.page/r/CQnDsS_hbBdXEB0/review"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center space-x-3 text-accent hover:text-white transition-colors group"
+            class="inline-flex items-center space-x-3 text-accent hover:text-white transition-colors group focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
           >
             <span class="uppercase text-sm tracking-widest font-bold"
               >Preberite vse ocene na Googlu</span
             >
-            <span class="group-hover:translate-x-1 transition-transform"
+            <span class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform"
               >→</span
             >
           </a>
@@ -323,12 +323,12 @@
         </p>
         <NuxtLink
           to="/cenik"
-          class="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors"
+          class="inline-flex items-center space-x-2 text-primary hover:text-accent transition-colors group focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
         >
           <span class="uppercase text-sm tracking-widest font-bold"
             >Oglejte si Cenik</span
           >
-          <span>→</span>
+          <span class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform">→</span>
         </NuxtLink>
       </div>
     </section>
@@ -393,7 +393,7 @@
         </p>
         <NuxtLink
           to="/kontakt"
-          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest text-sm hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
         >
           Rezerviraj Termin
         </NuxtLink>
