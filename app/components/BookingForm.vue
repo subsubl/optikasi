@@ -65,7 +65,7 @@
       type="submit"
       data-goal="booking-submit"
       :disabled="isSubmitting"
-      class="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+      class="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 uppercase tracking-[0.15em] hover:bg-primary-dark transition-colors font-bold text-sm disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
     >
       <span v-if="isSubmitting" class="flex items-center gap-2">
         <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">

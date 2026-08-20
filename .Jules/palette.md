@@ -76,3 +76,7 @@
 ## 2026-10-31 - Keyboard Accessibility on Informational Links
 **Learning:** Links and NuxtLinks used as CTAs (like "Oglejte si Cenik", "Rezerviraj Termin", or external links like Google reviews) often lack keyboard focus states (`focus-visible:ring-2`), making them hard to use for keyboard navigators, even if they have nice hover states for mouse users.
 **Action:** Always add standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to interactive elements. Also, if they use `group-hover` for internal element changes (like arrow movement), pair it with `group-focus-within` to mirror the interaction for keyboard users.
+
+## 2026-08-20 - Focus States on Primary CTAs
+**Learning:** The primary calls-to-action (CTAs) across the application, including hero buttons, form submit buttons, and mobile sticky buttons, were missing explicit keyboard focus states, hindering accessibility for keyboard navigation users.
+**Action:** Standardize focus states on all interactive elements (buttons, links) by explicitly appending the `focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm` Tailwind pattern to ensure clear visibility without interfering with mouse usage.

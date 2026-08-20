@@ -11,7 +11,7 @@
         <p class="text-cream text-lg md:text-xl tracking-widest font-light mb-10 max-w-2xl mx-auto">
           Strokovni pregledi vida, vrhunska korekcijska očala in osebno svetovanje brez čakanja.
         </p>
-        <NuxtLink to="/kontakt" data-goal="hero-book" class="inline-block border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-[0.2em] transition-all duration-300">
+        <NuxtLink to="/kontakt" data-goal="hero-book" class="inline-block border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-[0.2em] transition-all duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Termin
         </NuxtLink>
       </div>
