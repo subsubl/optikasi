@@ -23,7 +23,7 @@
         <button
           type="submit"
           :disabled="isLoading"
-          class="bg-accent text-white px-8 py-3 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-primary-dark transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+          class="bg-accent text-white px-8 py-3 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-primary-dark transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark focus-visible:ring-accent focus:outline-none rounded-sm"
         >
           <span v-if="isLoading" class="flex items-center justify-center gap-2">
             <svg class="animate-spin h-5 w-5 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
