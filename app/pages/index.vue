@@ -56,7 +56,7 @@
                 <span class="text-sm tracking-wide">Prilagodljivi termini (tudi večeri in vikendi)</span>
               </li>
             </ul>
-             <NuxtLink to="/kontakt" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
+             <NuxtLink to="/kontakt" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
               Dogovorite se za obisk →
             </NuxtLink>
           </div>
@@ -120,10 +120,10 @@
     <section id="services" class="py-24 bg-cream">
       <div class="container mx-auto px-6">
         <div class="grid md:grid-cols-3 gap-12 text-center">
-          <div v-for="(service, index) in services" :key="index" class="p-8 border border-gray-200 hover:border-accent transition-colors bg-white">
+          <div v-for="(service, index) in services" :key="index" class="p-8 border border-gray-200 hover:border-accent transition-all duration-300 hover:-translate-y-1 bg-white">
              <h3 class="text-xl mb-4 font-serif">{{ service.title }}</h3>
              <p class="text-gray-500 text-sm leading-relaxed mb-4">{{ service.desc }}</p>
-             <NuxtLink :to="service.link" class="text-accent text-xs uppercase tracking-widest font-bold hover:underline">Več o tem</NuxtLink>
+             <NuxtLink :to="service.link" class="text-accent text-xs uppercase tracking-widest font-bold hover:underline focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">Več o tem</NuxtLink>
           </div>
         </div>
       </div>
