@@ -80,3 +80,7 @@
 ## 2026-08-20 - Focus States on Primary CTAs
 **Learning:** The primary calls-to-action (CTAs) across the application, including hero buttons, form submit buttons, and mobile sticky buttons, were missing explicit keyboard focus states, hindering accessibility for keyboard navigation users.
 **Action:** Standardize focus states on all interactive elements (buttons, links) by explicitly appending the `focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm` Tailwind pattern to ensure clear visibility without interfering with mouse usage.
+
+## 2024-05-23 - Link Keyboard Accessibility
+**Learning:** NuxtLink components often lack visual focus states by default, making them difficult or impossible to navigate via keyboard. This is a common accessibility issue for primary calls-to-action on landing pages. Adding hover translations without a focus equivalent also harms the experience for keyboard users.
+**Action:** Always add standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to `NuxtLink` elements. When using `hover:-translate-y-1` on containers, ensure the interaction is accessible or provides equivalent feedback.
