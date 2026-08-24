@@ -36,9 +36,18 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
               <div class="space-y-3">
-                <input v-model="form.os.power" placeholder="Dioptrija (SPH)" aria-label="Levo oko: Dioptrija (SPH)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
-                <input v-model="form.os.cyl" placeholder="Cilinder (CYL)" aria-label="Levo oko: Cilinder (CYL)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
-                <input v-model="form.os.axis" placeholder="Os (AX)" aria-label="Levo oko: Os (AX)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <div class="flex flex-col">
+                  <label for="os-power" class="text-xs text-gray-500 mb-1">Dioptrija (SPH)</label>
+                  <input id="os-power" v-model="form.os.power" placeholder="Npr. -2.00" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
+                <div class="flex flex-col">
+                  <label for="os-cyl" class="text-xs text-gray-500 mb-1">Cilinder (CYL)</label>
+                  <input id="os-cyl" v-model="form.os.cyl" placeholder="Npr. -0.75" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
+                <div class="flex flex-col">
+                  <label for="os-axis" class="text-xs text-gray-500 mb-1">Os (AX)</label>
+                  <input id="os-axis" v-model="form.os.axis" placeholder="Npr. 180" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
               </div>
             </div>
 
@@ -46,9 +55,18 @@
             <div class="bg-gray-50 p-4 rounded-sm">
               <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
               <div class="space-y-3">
-                <input v-model="form.od.power" placeholder="Dioptrija (SPH)" aria-label="Desno oko: Dioptrija (SPH)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
-                <input v-model="form.od.cyl" placeholder="Cilinder (CYL)" aria-label="Desno oko: Cilinder (CYL)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
-                <input v-model="form.od.axis" placeholder="Os (AX)" aria-label="Desno oko: Os (AX)" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                <div class="flex flex-col">
+                  <label for="od-power" class="text-xs text-gray-500 mb-1">Dioptrija (SPH)</label>
+                  <input id="od-power" v-model="form.od.power" placeholder="Npr. -2.00" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
+                <div class="flex flex-col">
+                  <label for="od-cyl" class="text-xs text-gray-500 mb-1">Cilinder (CYL)</label>
+                  <input id="od-cyl" v-model="form.od.cyl" placeholder="Npr. -0.75" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
+                <div class="flex flex-col">
+                  <label for="od-axis" class="text-xs text-gray-500 mb-1">Os (AX)</label>
+                  <input id="od-axis" v-model="form.od.axis" placeholder="Npr. 180" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+                </div>
               </div>
             </div>
           </div>
