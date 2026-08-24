@@ -84,3 +84,7 @@
 ## 2024-05-23 - Link Keyboard Accessibility
 **Learning:** NuxtLink components often lack visual focus states by default, making them difficult or impossible to navigate via keyboard. This is a common accessibility issue for primary calls-to-action on landing pages. Adding hover translations without a focus equivalent also harms the experience for keyboard users.
 **Action:** Always add standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to `NuxtLink` elements. When using `hover:-translate-y-1` on containers, ensure the interaction is accessible or provides equivalent feedback.
+
+## 2024-05-18 - Replacing Placeholders with Explicit Labels
+**Learning:** In forms like the lens ordering form, using only `placeholder` as a label is an accessibility and UX issue because the text disappears when the user starts typing, forcing them to guess or clear the input to remember what the field is for.
+**Action:** Always pair form inputs with explicit `<label>` elements linked via `id` and `for` attributes. Placeholders should be used exclusively for example data (e.g., "Npr. -2.00").
