@@ -9,7 +9,7 @@
       <!-- Desktop Links (Centered) -->
       <div class="hidden lg:flex space-x-8 items-center absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div v-for="link in links" :key="link.path" class="relative group h-20 flex items-center">
-          <NuxtLink :to="link.path" 
+          <NuxtLink :to="link.path"
             :aria-haspopup="link.children ? 'true' : undefined"
             class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent transition-colors font-medium h-full flex items-center">
             {{ link.name }}
@@ -25,7 +25,7 @@
 
       <!-- Right Side Actions -->
       <div class="flex items-center gap-4 z-50 relative">
-         <NuxtLink to="/kontakt" data-goal="nav-book" class="hidden lg:block bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest">
+         <NuxtLink to="/kontakt" data-goal="nav-book" class="hidden lg:block bg-primary text-white px-6 py-2 rounded-none hover:bg-primary-dark transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Naročite se
         </NuxtLink>
 
@@ -49,7 +49,7 @@
       <div class="flex flex-col p-4 space-y-4">
         <template v-for="link in links" :key="link.path">
            <div class="flex flex-col">
-                <NuxtLink :to="link.path" 
+                <NuxtLink :to="link.path"
                 @click="isOpen = false"
                 class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent mb-2">
                 {{ link.name }}
@@ -63,7 +63,7 @@
                 </div>
            </div>
         </template>
-         <NuxtLink to="/kontakt" data-goal="nav-book-mobile" @click="isOpen = false" class="text-primary font-bold uppercase text-sm tracking-widest mt-2 block">
+         <NuxtLink to="/kontakt" data-goal="nav-book-mobile" @click="isOpen = false" class="text-primary font-bold uppercase text-sm tracking-widest mt-2 block focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Naročite se
         </NuxtLink>
       </div>
@@ -81,8 +81,8 @@ const links = [
   { name: 'Sonce', path: '/soncna-ocala' },
   { name: 'Šport', path: '/sportna-ocala' },
   { name: 'Vožnja', path: '/ocala-za-voznjo' },
-  { 
-      name: 'Varnost', 
+  {
+      name: 'Varnost',
       path: '/varnostna-ocala',
       children: [
           { name: 'Industrija in rudarstvo', path: '/varnostna-ocala/industrija-in-rudarstvo' },
