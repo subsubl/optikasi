@@ -76,7 +76,7 @@
     <section class="py-20 px-4 bg-white">
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <NuxtLink v-for="(data, slug) in safetyData" :key="slug" :to="`/varnostna-ocala/${slug}`" class="group block bg-gray-50 hover:shadow-xl transition-shadow duration-300">
+          <NuxtLink v-for="(data, slug) in safetyData" :key="slug" :to="`/varnostna-ocala/${slug}`" class="group block bg-gray-50 hover:shadow-xl transition-shadow duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
             <div class="aspect-video overflow-hidden">
               <img :src="data.header_image" :alt="data.title" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
             </div>
