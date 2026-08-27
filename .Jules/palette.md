@@ -88,3 +88,6 @@
 ## 2024-05-18 - Replacing Placeholders with Explicit Labels
 **Learning:** In forms like the lens ordering form, using only `placeholder` as a label is an accessibility and UX issue because the text disappears when the user starts typing, forcing them to guess or clear the input to remember what the field is for.
 **Action:** Always pair form inputs with explicit `<label>` elements linked via `id` and `for` attributes. Placeholders should be used exclusively for example data (e.g., "Npr. -2.00").
+## 2024-05-19 - Keyboard Accessibility Focus States
+**Learning:** NuxtLink elements acting as interactive cards without explicit focus utilities rely solely on browser defaults, which are often overridden or insufficient.
+**Action:** Always add standard focus classes (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to interactive elements (especially `<NuxtLink>`) to ensure keyboard navigability.
