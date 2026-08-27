@@ -119,18 +119,21 @@ def create_placeholder(product_id, brand):
         pass
     return False
 
+async def process_product(product_id, config):
+    if await download_with_browser(product_id, config):
+        return True
+    else:
+        create_placeholder(product_id, config['brand'])
+        return False
+
 async def main():
     print("=" * 50)
     print("Eyewear Image Downloader (Browser Mode)")
     print("=" * 50)
     
-    success_count = 0
-    
-    for product_id, config in PRODUCTS.items():
-        if await download_with_browser(product_id, config):
-            success_count += 1
-        else:
-            create_placeholder(product_id, config['brand'])
+    tasks = [process_product(product_id, config) for product_id, config in PRODUCTS.items()]
+    results = await asyncio.gather(*tasks)
+    success_count = sum(1 for res in results if res)
     
     print()
     print("=" * 50)
