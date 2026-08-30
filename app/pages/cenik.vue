@@ -44,7 +44,7 @@
     
     <div class="text-center mt-16">
        <p class="text-xs text-gray-400 uppercase tracking-widest mb-4">Cene vključujejo DDV. Veljavnost cenika od 1. 1. 2026.</p>
-       <NuxtLink to="/kontakt" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1">Naročite se na pregled &rarr;</NuxtLink>
+       <NuxtLink to="/kontakt" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">Naročite se na pregled &rarr;</NuxtLink>
     </div>
 
   </div>
