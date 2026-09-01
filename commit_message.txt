@@ -1,0 +1,15 @@
+🎨 Palette: Dodani keyboard focus stili za povezave
+
+**💡 What:**
+Added missing Tailwind keyboard focus styles (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to several interactive NuxtLink elements.
+
+**🎯 Why:**
+Many informational and call-to-action links in `NewArrivals.vue` and `znamke/[slug].vue` relied exclusively on hover states (like underline changes or text color transitions) for feedback. While these are perceivable by mouse users, keyboard users tabbing through the page received no visual indication of their current focus, violating WCAG principles and making navigation difficult.
+
+**📸 Before/After:**
+*Before:* Pressing Tab would silently shift focus to "Oglejte si vse znamke →" or brand CTAs with no visual change.
+*After:* A clear, distinct accent-colored ring appears around the focused link, matching the established design system pattern for interactive elements.
+
+**♿ Accessibility:**
+* Fixed WCAG 2.4.7 Focus Visible issue on missing active/focus states.
+* Improves navigability for users who rely on keyboards or assistive switches.
