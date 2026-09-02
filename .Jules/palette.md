@@ -91,3 +91,6 @@
 ## 2024-05-19 - Keyboard Accessibility Focus States
 **Learning:** NuxtLink elements acting as interactive cards without explicit focus utilities rely solely on browser defaults, which are often overridden or insufficient.
 **Action:** Always add standard focus classes (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to interactive elements (especially `<NuxtLink>`) to ensure keyboard navigability.
+## 2026-11-01 - Focus Rings and Flex Layout Constraints
+**Learning:** When adding Tailwind's `focus-visible:ring-2` to items that perfectly fill their flex container's cross axis (like `h-full` navigation links), the external ring can artificially expand the layout box. This can break flex wrapping or cause visual clipping/overlapping with adjacent elements.
+**Action:** When adding focus rings to structural elements with rigid dimensional constraints, append `focus-visible:ring-inset` to draw the ring inside the element's border box, preserving the intended layout flow without sacrificing accessibility.
