@@ -2,7 +2,7 @@
   <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
     <div class="container mx-auto px-6 h-20 flex items-center justify-between gap-8 whitespace-nowrap relative">
       <!-- Logo -->
-      <NuxtLink to="/" class="text-2xl font-serif font-bold text-primary-dark tracking-widest z-50 relative">
+      <NuxtLink to="/" class="text-2xl font-serif font-bold text-primary-dark tracking-widest z-50 relative focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
         OPTIKASI
       </NuxtLink>
 
@@ -11,12 +11,12 @@
         <div v-for="link in links" :key="link.path" class="relative group h-20 flex items-center">
           <NuxtLink :to="link.path"
             :aria-haspopup="link.children ? 'true' : undefined"
-            class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent transition-colors font-medium h-full flex items-center">
+            class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent transition-colors font-medium h-full flex items-center focus-visible:ring-2 focus-visible:ring-accent focus:outline-none focus-visible:ring-inset">
             {{ link.name }}
           </NuxtLink>
            <!-- Dropdown -->
             <div v-if="link.children" class="absolute left-1/2 -translate-x-1/2 top-full w-72 bg-white shadow-lg py-2 border-t-2 border-primary opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-300 transform origin-top-left z-50">
-                <NuxtLink v-for="child in link.children" :key="child.path" :to="child.path" class="block px-6 py-3 text-xs text-gray-600 hover:text-primary hover:bg-gray-50 uppercase tracking-wider border-b border-gray-50 last:border-0 text-left">
+                <NuxtLink v-for="child in link.children" :key="child.path" :to="child.path" class="block px-6 py-3 text-xs text-gray-600 hover:text-primary hover:bg-gray-50 uppercase tracking-wider border-b border-gray-50 last:border-0 text-left focus-visible:ring-2 focus-visible:ring-accent focus:outline-none focus-visible:ring-inset">
                     {{ child.name }}
                 </NuxtLink>
             </div>
@@ -51,13 +51,13 @@
            <div class="flex flex-col">
                 <NuxtLink :to="link.path"
                 @click="isOpen = false"
-                class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent mb-2">
+                class="text-sm uppercase tracking-widest text-gray-600 hover:text-accent mb-2 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
                 {{ link.name }}
                 </NuxtLink>
                  <div v-if="link.children" class="pl-4 border-l-2 border-gray-100 space-y-3 mb-2">
                      <NuxtLink v-for="child in link.children" :key="child.path" :to="child.path"
                         @click="isOpen = false"
-                        class="block text-xs uppercase tracking-wide text-gray-500 hover:text-accent">
+                        class="block text-xs uppercase tracking-wide text-gray-500 hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
                         {{ child.name }}
                     </NuxtLink>
                 </div>
