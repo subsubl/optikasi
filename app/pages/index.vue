@@ -123,7 +123,7 @@
           <div v-for="(service, index) in services" :key="index" class="p-8 border border-gray-200 hover:border-accent transition-all duration-300 hover:-translate-y-1 bg-white">
              <h3 class="text-xl mb-4 font-serif">{{ service.title }}</h3>
              <p class="text-gray-500 text-sm leading-relaxed mb-4">{{ service.desc }}</p>
-             <NuxtLink :to="service.link" class="text-accent text-xs uppercase tracking-widest font-bold hover:underline focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">Več o tem</NuxtLink>
+             <NuxtLink :to="service.link" :aria-label="'Več o tem: ' + service.title" class="text-accent text-xs uppercase tracking-widest font-bold hover:underline focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">Več o tem</NuxtLink>
           </div>
         </div>
       </div>
