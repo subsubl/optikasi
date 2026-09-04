@@ -94,3 +94,6 @@
 ## 2026-11-01 - Focus Rings and Flex Layout Constraints
 **Learning:** When adding Tailwind's `focus-visible:ring-2` to items that perfectly fill their flex container's cross axis (like `h-full` navigation links), the external ring can artificially expand the layout box. This can break flex wrapping or cause visual clipping/overlapping with adjacent elements.
 **Action:** When adding focus rings to structural elements with rigid dimensional constraints, append `focus-visible:ring-inset` to draw the ring inside the element's border box, preserving the intended layout flow without sacrificing accessibility.
+## 2026-11-01 - Dynamic generic button labels
+**Learning:** E-commerce list pages or services lists often have generic repeating links (like "Več o tem") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
+**Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Več o tem: ' + service.title"`) to provide necessary context for assistive technologies.
