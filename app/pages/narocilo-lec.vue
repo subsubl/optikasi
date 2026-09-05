@@ -105,7 +105,7 @@
     </form>
 
     <div class="mt-16 text-center text-gray-500 text-sm">
-      <p>Še niste preizkusili kontaktnih leč? <NuxtLink to="/storitve" class="text-accent hover:underline">Rezervirajte termin</NuxtLink> za uvajanje in strokovni pregled.</p>
+      <p>Še niste preizkusili kontaktnih leč? <NuxtLink to="/storitve" class="text-accent hover:underline focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">Rezervirajte termin</NuxtLink> za uvajanje in strokovni pregled.</p>
     </div>
   </div>
 </template>
