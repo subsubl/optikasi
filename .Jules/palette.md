@@ -97,3 +97,6 @@
 ## 2026-11-01 - Dynamic generic button labels
 **Learning:** E-commerce list pages or services lists often have generic repeating links (like "Več o tem") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Več o tem: ' + service.title"`) to provide necessary context for assistive technologies.
+## 2026-09-05 - Focus Rings for Inline Links
+**Learning:** Standard interactive elements like inline NuxtLinks and social media links require explicit focus-visible rings (focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm) to ensure keyboard navigation accessibility is consistent with button elements.
+**Action:** Always verify keyboard accessibility on plain links and social icon links, not just buttons and navigation.
