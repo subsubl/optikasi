@@ -50,7 +50,7 @@
           {{ brand.name }} okvirji najbolj pristajajo ovalnim, okroglim in podolgovatim oblikam obraza.
           Pridite v Studio Optika SI na Vojkovi 58 in skupaj bova našla popoln okvir za vaš obraz.
         </p>
-        <NuxtLink to="/kontakt" data-goal="face-shape" class="inline-block text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
+        <NuxtLink to="/kontakt" data-goal="face-shape" class="inline-block text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Dogovorite se za svetovanje →
         </NuxtLink>
       </div>
@@ -109,7 +109,7 @@
       <div class="container mx-auto px-6 text-center">
         <h3 class="text-3xl font-serif mb-4">Želite preizkusiti {{ brand.name }}?</h3>
         <p class="text-gray-300 mb-8">Rezervirajte termin in odkrijte popoln okvir za vaš obraz.</p>
-        <NuxtLink to="/kontakt" data-goal="brand-book" class="inline-block border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-[0.2em] transition-all">
+        <NuxtLink to="/kontakt" data-goal="brand-book" class="inline-block border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 uppercase tracking-[0.2em] transition-all focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Termin
         </NuxtLink>
       </div>
@@ -117,7 +117,7 @@
 
     <!-- Back Link -->
     <div class="text-center py-12">
-      <NuxtLink to="/znamke" class="text-gray-500 hover:text-primary transition-colors text-sm uppercase tracking-widest">
+      <NuxtLink to="/znamke" class="text-gray-500 hover:text-primary transition-colors text-sm uppercase tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
         ← Nazaj na vse znamke
       </NuxtLink>
     </div>

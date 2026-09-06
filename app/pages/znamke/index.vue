@@ -19,7 +19,7 @@
             v-for="brand in brands"
             :key="brand.slug"
             :to="`/znamke/${brand.slug}`"
-            class="group bg-white p-8 border border-gray-100 hover:border-accent shadow-sm transition-all hover:shadow-md text-center"
+            class="group bg-white p-8 border border-gray-100 hover:border-accent shadow-sm transition-all hover:shadow-md text-center focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
           >
             <div v-if="brand.image" class="h-28 mb-6 flex items-center justify-center">
               <img :src="brand.image" :alt="brand.name" class="h-full max-w-full object-contain filter grayscale-0 opacity-90 transition-all duration-300" />
@@ -38,7 +38,7 @@
         <p class="text-gray-500 leading-relaxed max-w-2xl mx-auto mb-8">
           V Studio Optika SI naročamo tudi modele znamk, ki niso razstavljeni. Rezervirajte termin in z veseljem vam pomagamo najti popoln par.
         </p>
-        <NuxtLink to="/kontakt" data-goal="brands-list-book" class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors">
+        <NuxtLink to="/kontakt" data-goal="brands-list-book" class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Termin
         </NuxtLink>
       </div>
