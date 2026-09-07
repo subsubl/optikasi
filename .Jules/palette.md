@@ -97,3 +97,6 @@
 ## 2026-11-01 - Dynamic generic button labels
 **Learning:** E-commerce list pages or services lists often have generic repeating links (like "Več o tem") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Več o tem: ' + service.title"`) to provide necessary context for assistive technologies.
+## 2026-11-01 - Decorative SVGs inside Interactive Elements
+**Learning:** Placing unlabelled SVG icons inside buttons or links (like navigation arrows or hamburger menus) that already contain text or ARIA labels causes screen readers to redundantly announce the SVG element, leading to a confusing auditory experience.
+**Action:** Always add `aria-hidden="true"` to SVGs that are purely decorative, especially when they are nested within an interactive element that already provides sufficient accessible context.
