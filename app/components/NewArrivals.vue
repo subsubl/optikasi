@@ -16,7 +16,7 @@
           aria-controls="new-arrivals-scroll"
           class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 z-10 w-10 h-10 rounded-full bg-white shadow-md border border-gray-100 text-primary hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:opacity-100 focus-visible:opacity-100 hidden md:flex opacity-0 group-hover/scrollnav:opacity-100 group-focus-within/scrollnav:opacity-100"
         >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
         </button>
 
         <div
@@ -57,7 +57,7 @@
           aria-controls="new-arrivals-scroll"
           class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 z-10 w-10 h-10 rounded-full bg-white shadow-md border border-gray-100 text-primary hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:opacity-100 focus-visible:opacity-100 hidden md:flex opacity-0 group-hover/scrollnav:opacity-100 group-focus-within/scrollnav:opacity-100"
         >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </button>
       </div>
 
