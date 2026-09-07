@@ -1,7 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -14,7 +13,7 @@ export default defineNuxtConfig({
       ]
       for (const p of paths) {
         fs.mkdirSync(path.dirname(p), { recursive: true })
-        fs.writeFileSync(p, 'export default {};\n')
+        fs.writeFileSync(p, 'export default () => ({});\n')
       }
     }
   },
