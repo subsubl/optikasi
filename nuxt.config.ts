@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       ]
       for (const p of paths) {
         fs.mkdirSync(path.dirname(p), { recursive: true })
-        fs.writeFileSync(p, 'export default {};\n')
+        fs.writeFileSync(p, 'export default () => ({});\n')
       }
     }
   },
