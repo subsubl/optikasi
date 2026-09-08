@@ -11,11 +11,12 @@
       </p>
 
       <form @submit.prevent="subscribe" class="flex flex-col sm:flex-row gap-4">
+        <label for="newsletter-email" class="sr-only">Vaš e-naslov</label>
         <input
+          id="newsletter-email"
           v-model="email"
           type="email"
-          placeholder="Vaš e-naslov"
-          aria-label="Vaš e-naslov"
+          placeholder="Npr. janez@primer.si"
           required
           :disabled="isLoading"
           class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:border-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
