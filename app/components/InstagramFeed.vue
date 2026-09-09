@@ -9,7 +9,7 @@
           <circle cx="18.5" cy="5.5" r="1.5"/>
         </svg>
         <span class="uppercase text-sm tracking-widest font-medium">Sledite nam na Instagramu</span>
-        <span class="text-lg group-hover:translate-x-1 group-focus:translate-x-1 transition-transform">→</span>
+        <span class="text-lg group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform" aria-hidden="true">→</span>
       </a>
     </div>
   </section>

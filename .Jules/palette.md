@@ -100,3 +100,6 @@
 ## 2026-11-01 - Decorative SVGs inside Interactive Elements
 **Learning:** Placing unlabelled SVG icons inside buttons or links (like navigation arrows or hamburger menus) that already contain text or ARIA labels causes screen readers to redundantly announce the SVG element, leading to a confusing auditory experience.
 **Action:** Always add `aria-hidden="true"` to SVGs that are purely decorative, especially when they are nested within an interactive element that already provides sufficient accessible context.
+## 2026-11-01 - Hover animations for keyboard users
+**Learning:** Using `group-focus:translate-x-1` to mirror `group-hover` animations for keyboard users doesn't work for child elements because `group-focus` isn't a valid Tailwind modifier for styling children.
+**Action:** Always use `group-focus-within` on the child element (e.g., `group-focus-within:translate-x-1`) to correctly mirror the hover animation when the parent link/group receives keyboard focus.
