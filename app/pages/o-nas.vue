@@ -50,7 +50,7 @@
         </div>
         <div class="grid md:grid-cols-3 gap-12">
           <div v-for="value in values" :key="value.title" class="text-center p-8 border border-gray-100 bg-cream hover:border-accent transition-colors">
-            <div class="text-4xl text-accent mb-6">{{ value.icon }}</div>
+            <div class="text-4xl text-accent mb-6" aria-hidden="true">{{ value.icon }}</div>
             <h3 class="text-xl font-serif text-primary-dark mb-4">{{ value.title }}</h3>
             <p class="text-gray-500 text-sm leading-relaxed">{{ value.desc }}</p>
           </div>
@@ -72,11 +72,11 @@
             </p>
             <ul class="space-y-4 mb-8">
               <li v-for="point in approachPoints" :key="point" class="flex items-center space-x-3">
-                <span class="text-accent">✦</span>
+                <span class="text-accent" aria-hidden="true">✦</span>
                 <span class="text-sm tracking-wide">{{ point }}</span>
               </li>
             </ul>
-            <NuxtLink to="/kontakt" data-goal="about-book" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
+            <NuxtLink to="/kontakt" data-goal="about-book" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
               Rezervirajte svoj termin →
             </NuxtLink>
           </div>
@@ -136,7 +136,7 @@
             <NuxtLink
               to="/kontakt"
               data-goal="about-visit"
-              class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors text-center"
+              class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors text-center focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
             >
               Rezervirajte Termin
             </NuxtLink>
