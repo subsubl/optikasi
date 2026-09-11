@@ -39,7 +39,7 @@
               form.faceShape === shape.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
-            <span class="text-4xl block mb-2">{{ shape.icon }}</span>
+            <span class="text-4xl block mb-2" aria-hidden="true">{{ shape.icon }}</span>
             <span class="font-medium">{{ shape.name }}</span>
           </button>
         </div>
@@ -59,7 +59,7 @@
               form.style === style.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
-            <span class="text-3xl">{{ style.icon }}</span>
+            <span class="text-3xl" aria-hidden="true">{{ style.icon }}</span>
             <div>
               <span class="font-medium block">{{ style.name }}</span>
               <span class="text-sm text-gray-500">{{ style.desc }}</span>
@@ -90,13 +90,13 @@
 
       <!-- Results -->
       <div v-if="step === 4" class="text-center space-y-8">
-        <div class="text-accent text-6xl mb-4">✓</div>
+        <div class="text-accent text-6xl mb-4" aria-hidden="true">✓</div>
         <h2 class="text-2xl font-serif text-primary-dark">Vaše priporočilo</h2>
         <p class="text-gray-600">Na podlagi vaših odgovorov vam priporočamo:</p>
         <div class="bg-cream p-6 rounded-sm">
           <p class="font-serif text-xl text-primary-dark">{{ recommendation }}</p>
         </div>
-        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors">
+        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Posvet
         </NuxtLink>
       </div>
