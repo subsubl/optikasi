@@ -62,8 +62,8 @@
       </div>
 
       <div class="text-center mt-12">
-        <NuxtLink to="/znamke" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest">
-          Oglejte si vse znamke →
+        <NuxtLink to="/znamke" class="group inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 rounded-sm">
+          Oglejte si vse znamke <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1">→</span>
         </NuxtLink>
       </div>
     </div>
