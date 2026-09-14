@@ -19,7 +19,7 @@
             v-for="brand in brands"
             :key="brand.slug"
             :to="`/znamke/${brand.slug}`"
-            class="group bg-white p-8 border border-gray-100 hover:border-accent shadow-sm transition-all hover:shadow-md text-center"
+            class="group bg-white p-8 border border-gray-100 hover:border-accent shadow-sm transition-all hover:shadow-md text-center focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
           >
             <div v-if="brand.image" class="h-28 mb-6 flex items-center justify-center">
               <img :src="brand.image" :alt="brand.name" class="h-full max-w-full object-contain filter grayscale-0 opacity-90 transition-all duration-300" />

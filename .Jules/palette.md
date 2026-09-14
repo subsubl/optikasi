@@ -100,3 +100,6 @@
 ## 2026-11-01 - Decorative SVGs inside Interactive Elements
 **Learning:** Placing unlabelled SVG icons inside buttons or links (like navigation arrows or hamburger menus) that already contain text or ARIA labels causes screen readers to redundantly announce the SVG element, leading to a confusing auditory experience.
 **Action:** Always add `aria-hidden="true"` to SVGs that are purely decorative, especially when they are nested within an interactive element that already provides sufficient accessible context.
+## 2026-11-01 - Focus State Visualization for Review
+**Learning:** When using Playwright to verify keyboard accessibility or focus styling (e.g., `focus-visible` rings or `focus-within` transforms), the browser doesn't automatically display focus states unless simulated correctly.
+**Action:** Explicitly call `page.focus(selector)` on the target element before taking a screenshot to ensure the focus state is active and visible in the UI capture.
