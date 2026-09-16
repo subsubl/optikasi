@@ -468,7 +468,17 @@ const products = [
   }
 ]
 
-const vintageProducts = computed(() => products.filter(p => p.category === 'vintage'))
-const accessoryProducts = computed(() => products.filter(p => p.category === 'accessories'))
-const sportProducts = computed(() => products.filter(p => p.category === 'sport'))
+const groupedProducts = computed(() => {
+  return products.reduce((acc, p) => {
+    if (!acc[p.category]) {
+      acc[p.category] = []
+    }
+    acc[p.category].push(p)
+    return acc
+  }, { vintage: [], accessories: [], sport: [] })
+})
+
+const vintageProducts = computed(() => groupedProducts.value.vintage)
+const accessoryProducts = computed(() => groupedProducts.value.accessories)
+const sportProducts = computed(() => groupedProducts.value.sport)
 </script>
