@@ -103,3 +103,6 @@
 ## 2026-11-01 - Focus State Visualization for Review
 **Learning:** When using Playwright to verify keyboard accessibility or focus styling (e.g., `focus-visible` rings or `focus-within` transforms), the browser doesn't automatically display focus states unless simulated correctly.
 **Action:** Explicitly call `page.focus(selector)` on the target element before taking a screenshot to ensure the focus state is active and visible in the UI capture.
+## 2024-11-01 - Link Keyboard Accessibility
+**Learning:** NuxtLink components often lack visual focus states by default, making them difficult or impossible to navigate via keyboard. This is a common accessibility issue for primary calls-to-action on landing pages. Adding hover translations without a focus equivalent also harms the experience for keyboard users.
+**Action:** Always add standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to `NuxtLink` elements. When using `hover:-translate-y-1` on containers, ensure the interaction is accessible or provides equivalent feedback.

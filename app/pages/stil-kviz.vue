@@ -29,8 +29,8 @@
       <div v-if="step === 1" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšna je oblika vašega obraza?</h2>
         <div class="grid grid-cols-2 gap-4">
-          <button 
-            v-for="shape in faceShapes" 
+          <button
+            v-for="shape in faceShapes"
             :key="shape.id"
             @click="selectFaceShape(shape.id)"
             :aria-pressed="form.faceShape === shape.id"
@@ -49,8 +49,8 @@
       <div v-if="step === 2" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kateri stil vam je najbližji?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="style in styles" 
+          <button
+            v-for="style in styles"
             :key="style.id"
             @click="selectStyle(style.id)"
             :aria-pressed="form.style === style.id"
@@ -72,8 +72,8 @@
       <div v-if="step === 3" class="space-y-6">
         <h2 class="text-2xl font-serif text-primary-dark text-center mb-8">Kakšen je vaš proračun?</h2>
         <div class="grid grid-cols-1 gap-4">
-          <button 
-            v-for="budget in budgets" 
+          <button
+            v-for="budget in budgets"
             :key="budget.id"
             @click="selectBudget(budget.id)"
             :aria-pressed="form.budget === budget.id"
@@ -96,7 +96,7 @@
         <div class="bg-cream p-6 rounded-sm">
           <p class="font-serif text-xl text-primary-dark">{{ recommendation }}</p>
         </div>
-        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors">
+        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Posvet
         </NuxtLink>
       </div>
