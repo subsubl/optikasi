@@ -138,7 +138,8 @@ if (!brand) {
   throw createError({ statusCode: 404, statusMessage: 'Znamka ni bila najdena' })
 }
 
-const featuredFrames = framesData.filter(f => brand.featured?.includes(f.id))
+const featuredSet = new Set(brand.featured || [])
+const featuredFrames = framesData.filter(f => featuredSet.has(f.id))
 
 const openFaq = ref(null)
 const toggleFaq = (i) => {
