@@ -104,17 +104,19 @@ async def download_with_browser(product_id, config):
     
     return False
 
-def create_placeholder(product_id, brand):
+async def create_placeholder(product_id, brand):
     """Create a branded placeholder image"""
     filepath = os.path.join(OUTPUT_DIR, f"{product_id}.jpg")
     placeholder_url = f"https://placehold.co/400x300/f5f5f5/333333?text={brand.replace(' ', '+')}"
     try:
-        response = requests.get(placeholder_url, timeout=10)
-        if response.status_code == 200:
-            with open(filepath, 'wb') as f:
-                f.write(response.content)
-            print(f"  → Created placeholder for {product_id}")
-            return True
+        async with aiohttp.ClientSession() as session:
+            async with session.get(placeholder_url, timeout=10) as response:
+                if response.status == 200:
+                    content = await response.read()
+                    with open(filepath, 'wb') as f:
+                        f.write(content)
+                    print(f"  → Created placeholder for {product_id}")
+                    return True
     except:
         pass
     return False
@@ -123,7 +125,7 @@ async def process_product(product_id, config):
     if await download_with_browser(product_id, config):
         return True
     else:
-        create_placeholder(product_id, config['brand'])
+        await create_placeholder(product_id, config['brand'])
         return False
 
 async def main():
