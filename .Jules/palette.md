@@ -103,3 +103,7 @@
 ## 2026-11-01 - Focus State Visualization for Review
 **Learning:** When using Playwright to verify keyboard accessibility or focus styling (e.g., `focus-visible` rings or `focus-within` transforms), the browser doesn't automatically display focus states unless simulated correctly.
 **Action:** Explicitly call `page.focus(selector)` on the target element before taking a screenshot to ensure the focus state is active and visible in the UI capture.
+
+## 2026-11-01 - Focus States on NuxtLink CTAs
+**Learning:** NuxtLink elements used as prominent Calls to Action (CTAs) often lack default focus states, making them difficult or impossible to identify when navigating via keyboard. This affects primary user journeys on key pages.
+**Action:** Consistently apply the standard focus styling pattern (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to all interactive `NuxtLink` elements to ensure equitable accessibility without degrading the mouse/touch experience.
