@@ -103,3 +103,7 @@
 ## 2026-11-01 - Focus State Visualization for Review
 **Learning:** When using Playwright to verify keyboard accessibility or focus styling (e.g., `focus-visible` rings or `focus-within` transforms), the browser doesn't automatically display focus states unless simulated correctly.
 **Action:** Explicitly call `page.focus(selector)` on the target element before taking a screenshot to ensure the focus state is active and visible in the UI capture.
+
+## 2023-10-25 - Added Empty State for Unavailable Products
+**Learning:** Hardcoding a generic empty container (like a `<div class="grid">`) for dynamic list iterations leaves users confused when data is missing (e.g., if out of stock, backend fails, or filtered out). The lack of visual feedback breaks the flow.
+**Action:** Always wrap dynamically generated list/grid sections in a `v-if="items.length"` and provide a visually distinct `v-else` empty state containing a relevant icon, helpful message, and clear call-to-action (like "Contact us" or "Go back") to guide the user when no content is available.
