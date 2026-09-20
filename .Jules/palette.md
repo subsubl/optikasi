@@ -107,3 +107,6 @@
 ## 2023-10-25 - Added Empty State for Unavailable Products
 **Learning:** Hardcoding a generic empty container (like a `<div class="grid">`) for dynamic list iterations leaves users confused when data is missing (e.g., if out of stock, backend fails, or filtered out). The lack of visual feedback breaks the flow.
 **Action:** Always wrap dynamically generated list/grid sections in a `v-if="items.length"` and provide a visually distinct `v-else` empty state containing a relevant icon, helpful message, and clear call-to-action (like "Contact us" or "Go back") to guide the user when no content is available.
+## 2026-11-01 - Selective Application of Group Focus States
+**Learning:** When enhancing keyboard accessibility with `group-focus-within` to match `group-hover` styles, applying it globally via find-and-replace can add useless classes and duplicated logic to non-interactive HTML elements that can never receive focus (like static `div` containers).
+**Action:** Always apply `group-focus-within` selectively, only targeting interactive/focusable elements (e.g., `NuxtLink`, `a`, `button`) or containers that actually hold focusable children.

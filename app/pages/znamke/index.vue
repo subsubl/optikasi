@@ -24,7 +24,7 @@
             <div v-if="brand.image" class="h-28 mb-6 flex items-center justify-center">
               <img :src="brand.image" :alt="brand.name" class="h-full max-w-full object-contain filter grayscale-0 opacity-90 transition-all duration-300" />
             </div>
-            <h3 class="font-serif text-xl text-primary-dark mb-2 group-hover:text-accent transition-colors">{{ brand.name }}</h3>
+            <h3 class="font-serif text-xl text-primary-dark mb-2 group-hover:text-accent group-focus-within:text-accent transition-colors">{{ brand.name }}</h3>
             <p class="text-gray-500 text-sm">{{ brand.tagline }}</p>
           </NuxtLink>
         </div>
