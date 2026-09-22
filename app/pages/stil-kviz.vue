@@ -39,7 +39,7 @@
               form.faceShape === shape.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
-            <span class="text-4xl block mb-2">{{ shape.icon }}</span>
+            <span class="text-4xl block mb-2" aria-hidden="true">{{ shape.icon }}</span>
             <span class="font-medium">{{ shape.name }}</span>
           </button>
         </div>
@@ -59,7 +59,7 @@
               form.style === style.id ? 'border-accent bg-accent/5' : 'border-gray-200 hover:border-gray-300'
             ]"
           >
-            <span class="text-3xl">{{ style.icon }}</span>
+            <span class="text-3xl" aria-hidden="true">{{ style.icon }}</span>
             <div>
               <span class="font-medium block">{{ style.name }}</span>
               <span class="text-sm text-gray-500">{{ style.desc }}</span>
