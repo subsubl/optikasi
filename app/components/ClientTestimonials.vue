@@ -10,7 +10,7 @@
       <div class="grid md:grid-cols-3 gap-12">
         <div v-for="(review, index) in reviews" :key="index" class="bg-white p-8 border border-gray-100 shadow-sm relative">
           <!-- Quote Icon -->
-          <div class="absolute -top-4 -left-4 text-accent opacity-20 text-6xl font-serif">"</div>
+          <div class="absolute -top-4 -left-4 text-accent opacity-20 text-6xl font-serif" aria-hidden="true">"</div>
 
           <p class="text-gray-600 leading-relaxed mb-6 italic relative z-10">
             {{ review.text }}
