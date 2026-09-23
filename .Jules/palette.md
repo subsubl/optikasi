@@ -110,3 +110,6 @@
 ## 2026-11-01 - Selective Application of Group Focus States
 **Learning:** When enhancing keyboard accessibility with `group-focus-within` to match `group-hover` styles, applying it globally via find-and-replace can add useless classes and duplicated logic to non-interactive HTML elements that can never receive focus (like static `div` containers).
 **Action:** Always apply `group-focus-within` selectively, only targeting interactive/focusable elements (e.g., `NuxtLink`, `a`, `button`) or containers that actually hold focusable children.
+## 2026-11-01 - Dynamic generic button labels on internal components
+**Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
+**Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
