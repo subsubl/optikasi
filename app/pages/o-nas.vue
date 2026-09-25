@@ -136,7 +136,7 @@
             <NuxtLink
               to="/kontakt"
               data-goal="about-visit"
-              class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors text-center"
+              class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-accent transition-colors text-center focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
             >
               Rezervirajte Termin
             </NuxtLink>

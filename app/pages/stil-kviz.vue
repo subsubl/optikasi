@@ -96,7 +96,7 @@
         <div class="bg-cream p-6 rounded-sm">
           <p class="font-serif text-xl text-primary-dark">{{ recommendation }}</p>
         </div>
-        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors">
+        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Rezervirajte Posvet
         </NuxtLink>
       </div>
