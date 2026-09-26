@@ -113,3 +113,6 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+## 2024-11-01 - Redundant Links on Image Cards
+**Learning:** In card components (like blog post previews) where both the thumbnail image and the title link to the same destination, screen readers will announce the destination twice, and keyboard users are forced through redundant tab stops.
+**Action:** When an image and title both act as links to the same destination in a card, wrap the image link with `tabindex="-1"` and `aria-hidden="true"` to remove it from keyboard and screen reader navigation, while preserving the text link as the primary accessible and focusable control.
