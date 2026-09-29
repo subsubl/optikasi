@@ -13,11 +13,11 @@
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex flex-col">
             <label for="name" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Ime in Priimek<span aria-hidden="true" class="text-accent ml-1">*</span></label>
-            <input id="name" v-model="form.name" type="text" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+            <input id="name" v-model="form.name" type="text" required aria-required="true" :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
           <div class="flex flex-col">
             <label for="email" class="text-xs uppercase tracking-widest text-gray-500 mb-2">E-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
-            <input id="email" v-model="form.email" type="email" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+            <input id="email" v-model="form.email" type="email" required aria-required="true" :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
         <div class="space-y-6">
           <div class="flex flex-col">
             <label for="brand" class="text-xs uppercase tracking-widest text-gray-500 mb-2">Znamka Kontaktnih Leč (npr. Acuvue, Air Optix, Biofinity)<span aria-hidden="true" class="text-accent ml-1">*</span></label>
-            <input id="brand" v-model="form.brand" type="text" required :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
+            <input id="brand" v-model="form.brand" type="text" required aria-required="true" :disabled="isSubmitting" class="bg-cream border-none p-4 focus:ring-1 focus:ring-accent outline-none disabled:opacity-50 disabled:cursor-not-allowed">
           </div>
 
           <div class="grid md:grid-cols-2 gap-6">
