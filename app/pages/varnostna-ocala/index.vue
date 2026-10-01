@@ -78,10 +78,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <NuxtLink v-for="(data, slug) in safetyData" :key="slug" :to="`/varnostna-ocala/${slug}`" :aria-label="'Preberi več o ' + data.title" class="group block bg-gray-50 hover:shadow-xl transition-shadow duration-300 focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
             <div class="aspect-video overflow-hidden">
-              <img :src="data.header_image" :alt="data.title" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+              <img :src="data.header_image" :alt="data.title" class="w-full h-full object-cover transform group-hover:scale-105 group-focus-within:scale-105 transition-transform duration-700" />
             </div>
             <div class="p-8">
-              <h3 class="text-2xl font-serif mb-4 group-hover:text-primary transition-colors text-gray-900">{{ data.title }}</h3>
+              <h3 class="text-2xl font-serif mb-4 group-hover:text-primary group-focus-within:text-primary transition-colors text-gray-900">{{ data.title }}</h3>
               <p class="text-gray-600 line-clamp-3 mb-6">{{ getIntroText(data.intro) }}</p>
               <span class="inline-block border-b border-primary text-primary uppercase tracking-widest text-sm pb-1">Preberi več</span>
             </div>
