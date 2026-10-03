@@ -9,13 +9,13 @@
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
         <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">E-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
-        <input id="email" v-model="form.email" type="email" name="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
+        <input id="email" v-model="form.email" type="email" name="email" autocomplete="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
       </div>
     </div>
 
     <div class="space-y-2">
       <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka</label>
-      <input id="phone" v-model="form.phone" type="tel" name="phone" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
+      <input id="phone" v-model="form.phone" type="tel" name="phone" autocomplete="tel" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
     </div>
 
     <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
