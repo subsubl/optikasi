@@ -3,17 +3,25 @@
     <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-8">Blog</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="post in posts" :key="post.slug" class="bg-white rounded-lg shadow-md overflow-hidden">
-        <NuxtLink :to="post.slug">
-          <img :src="post.image" :alt="post.title" class="w-full h-48 object-cover">
+      <div v-for="post in posts" :key="post.slug" class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1 focus-within:-translate-y-1 group flex flex-col">
+        <NuxtLink :to="post.slug" tabindex="-1" aria-hidden="true">
+          <img :src="post.image" alt="" class="w-full h-48 object-cover">
         </NuxtLink>
-        <div class="p-6">
-          <span class="text-sm text-accent font-semibold">{{ post.category }}</span>
-          <NuxtLink :to="post.slug" class="block mt-2 text-primary-dark hover:text-accent font-serif text-xl">
-            {{ post.title }}
-          </NuxtLink>
-          <p class="mt-2 text-gray-600">{{ post.excerpt }}</p>
-          <p class="mt-4 text-sm text-gray-500">{{ formatDate(post.date) }}</p>
+        <div class="p-6 flex flex-col flex-grow">
+          <div>
+            <span class="text-sm text-accent font-semibold">{{ post.category }}</span>
+            <NuxtLink :to="post.slug" class="block mt-2 text-primary-dark hover:text-accent font-serif text-xl focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
+              {{ post.title }}
+            </NuxtLink>
+            <p class="mt-2 text-gray-600">{{ post.excerpt }}</p>
+          </div>
+          <div class="mt-auto pt-4 flex justify-between items-center">
+            <p class="text-sm text-gray-500">{{ formatDate(post.date) }}</p>
+            <NuxtLink :to="post.slug" :aria-label="'Preberi več o ' + post.title" class="text-accent text-sm font-bold uppercase tracking-widest hover:underline focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm inline-flex items-center space-x-1">
+              <span>Preberi več</span>
+              <span class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform" aria-hidden="true">→</span>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
