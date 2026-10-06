@@ -89,8 +89,8 @@
         <svg class="w-12 h-12 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
         <h3 class="text-xl font-serif text-primary-dark mb-2">Trenutno ni na voljo</h3>
         <p class="text-gray-500 mb-6">Športna očala Uvex so trenutno v celoti razprodana. Preverite zalogo kasneje ali nas kontaktirajte.</p>
-        <NuxtLink to="/kontakt" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
-          Pošljite povpraševanje →
+        <NuxtLink to="/kontakt" class="group inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
+          Pošljite povpraševanje <span aria-hidden="true" class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform inline-block">&rarr;</span>
         </NuxtLink>
       </div>
     </div>
