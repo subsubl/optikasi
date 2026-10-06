@@ -50,8 +50,8 @@
           {{ brand.name }} okvirji najbolj pristajajo ovalnim, okroglim in podolgovatim oblikam obraza.
           Pridite v Studio Optika SI na Vojkovi 58 in skupaj bova našla popoln okvir za vaš obraz.
         </p>
-        <NuxtLink to="/kontakt" data-goal="face-shape" class="inline-block text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest">
-          Dogovorite se za svetovanje →
+        <NuxtLink to="/kontakt" data-goal="face-shape" class="group inline-block text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
+          Dogovorite se za svetovanje <span aria-hidden="true" class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform inline-block">&rarr;</span>
         </NuxtLink>
       </div>
     </section>

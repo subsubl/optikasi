@@ -76,8 +76,8 @@
                 <span class="text-sm tracking-wide">{{ point }}</span>
               </li>
             </ul>
-            <NuxtLink to="/kontakt" data-goal="about-book" class="text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
-              Rezervirajte svoj termin →
+            <NuxtLink to="/kontakt" data-goal="about-book" class="group text-accent border-b border-accent pb-1 hover:text-white hover:border-white transition-colors uppercase text-xs tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
+              Rezervirajte svoj termin <span aria-hidden="true" class="group-hover:translate-x-1 group-focus-within:translate-x-1 transition-transform inline-block">&rarr;</span>
             </NuxtLink>
           </div>
           <div class="relative h-96 bg-gray-800 border border-gray-700 rounded-lg shadow-md overflow-hidden">
