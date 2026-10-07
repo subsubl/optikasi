@@ -50,7 +50,7 @@
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
+      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" placeholder="Npr. Imam vprašanje glede kontaktnih leč ali želim pregled za progresivna očala..." class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
     </div>
 
     <!-- Status Messages -->
