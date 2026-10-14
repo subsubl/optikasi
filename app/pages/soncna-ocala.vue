@@ -216,7 +216,7 @@
         </p>
         <NuxtLink 
           to="/kontakt" 
-          class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors"
+          class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
         >
           Rezerviraj Termin
         </NuxtLink>

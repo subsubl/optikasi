@@ -62,7 +62,7 @@
       </div>
 
       <div class="text-center mt-12">
-        <NuxtLink to="/znamke" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest">
+        <NuxtLink to="/znamke" class="inline-block border-b border-primary text-primary hover:text-accent hover:border-accent transition-colors pb-1 uppercase text-sm tracking-widest focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
           Oglejte si vse znamke →
         </NuxtLink>
       </div>
