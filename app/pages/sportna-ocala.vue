@@ -208,7 +208,7 @@
         </p>
         <NuxtLink 
           to="/kontakt" 
-          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors"
+          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
         >
           Rezerviraj Termin za Športna Očala
         </NuxtLink>
