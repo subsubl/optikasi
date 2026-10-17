@@ -27,16 +27,16 @@
     <section class="py-20 px-4 bg-gray-50">
       <div class="container mx-auto">
         <h2 class="text-3xl md:text-4xl font-serif text-center mb-16 text-gray-900">Priporočeni Okvirji</h2>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="product in pageData.products" :key="product.name" class="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="aspect-video mb-6 bg-gray-100 rounded-sm overflow-hidden flex items-center justify-center p-4">
               <img :src="product.image" :alt="product.name" class="w-full h-full object-contain mix-blend-multiply" />
             </div>
-            
+
             <h3 class="text-xl font-bold text-gray-900 mb-2">{{ product.name }}</h3>
             <p v-if="product.sku" class="text-sm text-gray-500 mb-4 font-mono">Art. {{ product.sku }}</p>
-            
+
             <div class="mt-auto space-y-2 border-t pt-4 border-gray-100">
               <h4 class="text-sm font-semibold uppercase tracking-wider text-gray-400">Lastnosti:</h4>
               <ul class="text-sm text-gray-600 space-y-1 list-disc pl-4">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CTA -->
      <section class="py-20 bg-primary text-white text-center">
       <div class="container mx-auto px-6">
@@ -55,7 +55,7 @@
         <p class="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
           Naši strokovnjaki vam bodo pomagali izbrati ustrezna varnostna očala za vaše specifične delovne pogoje.
         </p>
-        <NuxtLink to="/kontakt" class="inline-block bg-white text-primary px-10 py-4 font-bold uppercase tracking-widest hover:bg-accent hover:text-white transition-all transform hover:-translate-y-1">
+        <NuxtLink to="/kontakt" class="inline-block bg-white text-primary px-10 py-4 font-bold uppercase tracking-widest hover:bg-accent hover:text-white transition-all transform hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-white focus:outline-none focus-visible:ring-offset-2 focus-visible:ring-offset-primary rounded-sm">
           Kontaktirajte nas
         </NuxtLink>
       </div>
