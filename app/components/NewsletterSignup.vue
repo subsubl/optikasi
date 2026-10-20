@@ -16,6 +16,7 @@
           id="newsletter-email"
           v-model="email"
           type="email"
+          autocomplete="email"
           placeholder="Npr. janez@primer.si"
           required
           :disabled="isLoading"
