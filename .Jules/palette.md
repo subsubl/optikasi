@@ -113,3 +113,6 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+## 2024-11-01 - Phone and Email Link Accessibility
+**Learning:** Raw anchor tags used for phone (`tel:`) and email (`mailto:`) links, as well as standalone social media icons in contact sections, are frequently overlooked when applying interactive focus states, making them difficult to activate via keyboard navigation compared to primary buttons.
+**Action:** Always verify that every `<a>` tag, regardless of its `href` protocol (http, tel, mailto), explicitly includes the project's standard focus styling (`focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) to ensure complete keyboard accessibility across all contact methods.

@@ -110,8 +110,8 @@
               <div class="flex items-start space-x-3">
                 <span class="text-accent mt-1">📞</span>
                 <p>
-                  <a href="tel:041788516" class="hover:text-accent">041 788 516</a><br />
-                  <a href="mailto:info@optikasi.si" class="hover:text-accent">info@optikasi.si</a>
+                  <a href="tel:041788516" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">041 788 516</a><br />
+                  <a href="mailto:info@optikasi.si" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">info@optikasi.si</a>
                 </p>
               </div>
               <div class="flex items-start space-x-3">
