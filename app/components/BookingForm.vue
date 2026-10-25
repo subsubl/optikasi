@@ -9,13 +9,13 @@
     <div class="grid md:grid-cols-2 gap-6">
       <div class="space-y-2">
         <label for="email" class="text-xs uppercase tracking-widest text-gray-500 font-bold">E-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
-        <input id="email" v-model="form.email" type="email" name="email" autocomplete="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="janez@example.com" />
+        <input id="email" v-model="form.email" type="email" name="email" autocomplete="email" required :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Npr. janez@primer.si" />
       </div>
     </div>
 
     <div class="space-y-2">
       <label for="phone" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Telefonska Številka (Opcijsko)</label>
-      <input id="phone" v-model="form.phone" type="tel" name="phone" autocomplete="tel" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="041 123 456" />
+      <input id="phone" v-model="form.phone" type="tel" name="phone" autocomplete="tel" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Npr. 041 123 456" />
     </div>
 
     <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
@@ -50,7 +50,7 @@
 
     <div class="space-y-2">
       <label for="message" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Sporočilo (Opcijsko)</label>
-      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"></textarea>
+      <textarea id="message" v-model="form.message" name="message" rows="4" :disabled="isSubmitting" class="w-full border bg-gray-50 border-gray-200 focus:border-accent outline-none p-3 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Npr. Želim pregled vida in pomoč pri izbiri novih okvirjev..."></textarea>
     </div>
 
     <!-- Status Messages -->
