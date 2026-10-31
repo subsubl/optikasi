@@ -113,3 +113,7 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+
+## 2026-11-01 - Form Fieldset Grouping
+**Learning:** When forms have repeated sections with identically named labels (e.g. Left Eye / Right Eye with "Dioptrija", "Cilinder", etc), grouping them in `<div>` elements causes screen readers to only announce the generic label, leaving users without context of the group they are filling out.
+**Action:** Use `<fieldset>` for the grouping wrapper and `<legend>` instead of generic headers to give accessible group names to these clustered form fields.
