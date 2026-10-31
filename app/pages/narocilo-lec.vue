@@ -33,8 +33,8 @@
 
           <div class="grid md:grid-cols-2 gap-6">
             <!-- Left Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Levo Oko (OS)</span>
+            <fieldset class="bg-gray-50 p-4 rounded-sm border-none m-0">
+              <legend class="block text-center font-bold text-primary-dark mb-4 w-full">Levo Oko (OS)</legend>
               <div class="space-y-3">
                 <div class="flex flex-col">
                   <label for="os-power" class="text-xs text-gray-500 mb-1">Dioptrija (SPH)</label>
@@ -49,11 +49,11 @@
                   <input id="os-axis" v-model="form.os.axis" placeholder="Npr. 180" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
                 </div>
               </div>
-            </div>
+            </fieldset>
 
             <!-- Right Eye -->
-            <div class="bg-gray-50 p-4 rounded-sm">
-              <span class="block text-center font-bold text-primary-dark mb-4">Desno Oko (OD)</span>
+            <fieldset class="bg-gray-50 p-4 rounded-sm border-none m-0">
+              <legend class="block text-center font-bold text-primary-dark mb-4 w-full">Desno Oko (OD)</legend>
               <div class="space-y-3">
                 <div class="flex flex-col">
                   <label for="od-power" class="text-xs text-gray-500 mb-1">Dioptrija (SPH)</label>
@@ -68,7 +68,7 @@
                   <input id="od-axis" v-model="form.od.axis" placeholder="Npr. 180" :disabled="isSubmitting" class="w-full bg-white border border-gray-200 p-2 text-sm focus:ring-1 focus:ring-accent focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed">
                 </div>
               </div>
-            </div>
+            </fieldset>
           </div>
 
            <div class="flex flex-col">
