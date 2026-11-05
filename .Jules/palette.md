@@ -113,3 +113,6 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+## 2024-11-05 - Fieldsets for Repeated Form Sections
+**Learning:** Form sections with identical sets of inputs (like "Left Eye" and "Right Eye" having "Power", "Cylinder") are confusing for screen reader users when wrapped in generic `<div>` tags, as the inputs lose context of their overarching group.
+**Action:** Use semantic `<fieldset>` and `<legend>` elements to group repeated form sections, providing clear context for assistive technologies. Add `w-full` to the legend in flex/grid layouts to preserve intended centering.
