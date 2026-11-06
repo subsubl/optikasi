@@ -10,19 +10,21 @@
         Prijavite se na novičke in bodite prvi obveščeni o novih, ekskluzivnih kolekcijah ter dogodkih.
       </p>
 
-      <form @submit.prevent="subscribe" class="flex flex-col sm:flex-row gap-4">
-        <label for="newsletter-email" class="sr-only">Vaš e-naslov</label>
-        <input
-          id="newsletter-email"
-          v-model="email"
-          type="email"
-          autocomplete="email"
-          placeholder="Npr. janez@primer.si"
-          required
-          :disabled="isLoading"
-          class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:border-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-        <button
+      <form @submit.prevent="subscribe" class="flex flex-col gap-4">
+        <div class="flex flex-col text-left">
+          <label for="newsletter-email" class="text-xs uppercase tracking-widest text-gray-300 font-bold mb-2">Vaš e-naslov<span aria-hidden="true" class="text-accent ml-1">*</span></label>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input
+              id="newsletter-email"
+              v-model="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Npr. janez@primer.si"
+              required
+              :disabled="isLoading"
+              class="flex-grow bg-white/5 border border-white/20 text-white placeholder-gray-400 px-4 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus:border-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+            <button
           type="submit"
           :disabled="isLoading"
           class="bg-accent text-white px-8 py-3 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-primary-dark transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark focus-visible:ring-accent focus:outline-none rounded-sm"
@@ -36,6 +38,8 @@
           </span>
           <span v-else>Prijavi se</span>
         </button>
+          </div>
+        </div>
       </form>
       <p v-if="success" role="status" class="text-accent text-xs mt-4 tracking-wide">Hvala za prijavo! Dobrodošli v klubu.</p>
     </div>
