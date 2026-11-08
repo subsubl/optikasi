@@ -4,7 +4,7 @@
       Skoči na glavno vsebino
     </a>
     <AppNavbar />
-    <main id="main-content" tabindex="-1" class="flex-grow pt-20 focus:outline-none"> <!-- Padding top for fixed navbar -->
+    <main id="main-content" tabindex="-1" class="flex-grow pt-20 pb-20 md:pb-0 focus:outline-none"> <!-- Padding top for fixed navbar, bottom padding for mobile sticky CTA -->
       <slot />
       <InstagramFeed />
       <div class="container mx-auto px-6 mt-16 mb-12">
@@ -13,8 +13,26 @@
     </main>
     <footer class="bg-primary-dark text-white py-12">
       <div class="container mx-auto px-6 text-center">
-        <h3 class="font-serif text-2xl tracking-widest mb-6">OPTIKASI</h3>
-        <p class="text-sm tracking-wide opacity-80 mb-6">Vojkova cesta 58, Ljubljana<br>info@optikasi.si | 041 788 516</p>
+        <h3 class="font-serif text-2xl tracking-widest mb-4">OPTIKASI</h3>
+        <p class="text-xs uppercase tracking-widest text-accent mb-6 font-bold">Butična Optika Ljubljana &bull; Vojkova 58</p>
+
+        <!-- Quick Navigation Links -->
+        <nav class="flex flex-wrap justify-center gap-6 mb-8 text-xs uppercase tracking-wider text-gray-300" aria-label="Noga strani">
+          <NuxtLink to="/storitve" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Storitve</NuxtLink>
+          <NuxtLink to="/korekcijska-ocala" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Korekcijska očala</NuxtLink>
+          <NuxtLink to="/soncna-ocala" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Sončna očala</NuxtLink>
+          <NuxtLink to="/cenik" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Cenik</NuxtLink>
+          <NuxtLink to="/blog" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Blog</NuxtLink>
+          <NuxtLink to="/o-nas" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">O nas</NuxtLink>
+          <NuxtLink to="/kontakt" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">Kontakt</NuxtLink>
+        </nav>
+
+        <p class="text-sm tracking-wide opacity-80 mb-6">
+          Vojkova cesta 58, 1000 Ljubljana<br>
+          <a href="mailto:info@optikasi.si" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">info@optikasi.si</a>
+          <span class="mx-2" aria-hidden="true">|</span>
+          <a href="tel:+38641788516" class="hover:text-accent focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm transition-colors">041 788 516</a>
+        </p>
 
         <!-- Social Links -->
         <a href="https://www.instagram.com/optikasi/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Sledite nam na Instagramu" class="inline-block text-white hover:text-accent transition-colors mb-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark rounded-sm">
@@ -26,5 +44,6 @@
         <p class="text-xs text-gray-400">&copy; {{ new Date().getFullYear() }} OptikaSI. Vse pravice pridržane.</p>
       </div>
     </footer>
+    <MobileStickyCTA v-if="$route.path !== '/kontakt'" />
   </div>
 </template>

@@ -21,6 +21,18 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Blog o Vidnih Pripomočkih, Očalih in Zdravju Oči',
+  meta: [
+    { name: 'description', content: 'Strokovni nasveti o izbiri očal, kontaktnih lečah, zdravju oči, otroškem vidu, progresivnih steklih in trendih v optiki. Studio Optika Si Ljubljana.' },
+    { name: 'keywords', content: 'optika blog, očala nasveti, pregled vida, kontaktne leče vodic, progresivna stekla, optika ljubljana' },
+    { property: 'og:title', content: 'Blog o Vidnih Pripomočkih in Zdravju Oči | Optika Ljubljana' },
+    { property: 'og:description', content: 'Strokovni nasveti o izbiri očal, kontaktnih lečah, zdravju oči, otroškem vidu, progresivnih steklih in trendih v optiki.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://optikasi.si/blog' }
+  ]
+})
+
 const formatDate = (dateString: string) => {
   const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' }
   return new Date(dateString).toLocaleDateString('sl-SI', options)

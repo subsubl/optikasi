@@ -131,6 +131,22 @@
 
     <!-- New Arrivals -->
     <NewArrivals />
+
+    <!-- Client Testimonials -->
+    <ClientTestimonials />
+
+    <!-- Direct Booking Section -->
+    <section class="py-24 bg-white relative overflow-hidden">
+      <div class="container mx-auto px-6 relative z-10 max-w-4xl">
+        <div class="text-center mb-10">
+          <span class="text-accent uppercase tracking-widest text-sm font-bold mb-4 block">Rezervacija</span>
+          <h2 class="text-3xl md:text-4xl text-primary-dark mb-4 font-serif">Naročite se na Pregled</h2>
+          <p class="text-gray-500 max-w-xl mx-auto">Izpolnite spodnji obrazec in potrdili bomo vaš 1-na-1 termin v najkrajšem možnem času.</p>
+          <div class="w-16 h-1 bg-accent mx-auto mt-6"></div>
+        </div>
+        <BookingForm />
+      </div>
+    </section>
   </div>
 </template>
 

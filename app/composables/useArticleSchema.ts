@@ -45,6 +45,16 @@ export function useArticleSchema({
   }
 
   useHead({
+    title,
+    meta: [
+      { name: 'description', content: description },
+      { name: 'keywords', content: keywords.join(', ') },
+      { property: 'og:title', content: `${title} | Optika Ljubljana` },
+      { property: 'og:description', content: description },
+      { property: 'og:image', content: image },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:url', content: `https://optikasi.si${slug}` }
+    ],
     script: [
       {
         type: 'application/ld+json',
