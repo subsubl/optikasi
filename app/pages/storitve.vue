@@ -7,6 +7,10 @@
         <img
           src="/images/hero_services.png"
           alt="Pregled vida Ljubljana"
+          width="1200"
+          height="600"
+          fetchpriority="high"
+          decoding="async"
           class="w-full h-full object-cover opacity-60"
         />
       </div>

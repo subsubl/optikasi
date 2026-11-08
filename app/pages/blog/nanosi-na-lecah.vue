@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Nanosi na lečah: antirefleksni, oleo/hidrofobni, UV — kaj izbrati?</h1>
 
-      <img src="/images/blog/nanosi-na-lecah.jpg" alt="Nanosi na lečah" class="w-full h-96 object-cover rounded-lg mb-8" />
+      <img src="/images/blog/nanosi-na-lecah.jpg" alt="Nanosi na lečah" width="800" height="384" fetchpriority="high" decoding="async" class="w-full h-96 object-cover rounded-lg mb-8" />
 
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Nanosi na lečah so pomembni za izboljšanje kakovosti vida in dolgotrajnosti leč. Različni nanosi omogočajo različne koristi, kot so zmanjšanje odbojev, lažje čiščenje in zaščita pred škodljivo UV svetlobo. V tem članku bomo razložili različne vrste nanosov in kako izbrati najboljše za vaše potrebe.</p>
@@ -56,8 +56,8 @@
         <div class="bg-primary-dark text-white p-6 rounded-lg mt-8">
           <h3 class="text-xl font-bold mb-2">Potrebujete pomoč pri izbiri nanosov?</h3>
           <p class="mb-4">Pridite v Studio Optika Si v Ljubljani, kjer vam bodo pomagali izbrati najboljše nanose za vaše potrebe.</p>
-          <NuxtLink to="/kontakt" class="inline-block bg-accent text-primary-dark py-2 px-6 rounded hover:bg-opacity-90 transition-colors">
-            Kontaktirajte nas
+          <NuxtLink :to="{ path: '/kontakt', query: { service: 'korekcijska-ocala' } }" class="inline-block bg-accent text-primary-dark font-bold py-2 px-6 rounded hover:bg-opacity-90 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none">
+            Naročite se na posvet
           </NuxtLink>
         </div>
       </div>

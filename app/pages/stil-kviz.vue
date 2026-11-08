@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 container mx-auto px-6 max-w-2xl">
+  <div :data-hydrated="isMounted" class="py-24 container mx-auto px-6 max-w-2xl">
     <div class="text-center mb-12">
       <h1 class="text-4xl text-primary-dark mb-4">Stil Kviz</h1>
       <p class="text-gray-600">Odkrijte katera oblika okvirja vam najbolj pristaja.</p>
@@ -89,16 +89,43 @@
       </div>
 
       <!-- Results -->
-      <div v-if="step === 4" class="text-center space-y-8">
-        <div class="text-accent text-6xl mb-4">✓</div>
+      <div v-if="step === 4" class="text-center space-y-8" aria-live="polite">
+        <div class="text-accent text-6xl mb-4" aria-hidden="true">✓</div>
         <h2 class="text-2xl font-serif text-primary-dark">Vaše priporočilo</h2>
         <p class="text-gray-600">Na podlagi vaših odgovorov vam priporočamo:</p>
-        <div class="bg-cream p-6 rounded-sm">
-          <p class="font-serif text-xl text-primary-dark">{{ recommendation }}</p>
+        <div class="bg-cream p-6 rounded-sm border border-accent/20">
+          <p class="font-serif text-xl text-primary-dark font-bold">{{ recommendation }}</p>
         </div>
-        <NuxtLink to="/kontakt" class="inline-block bg-primary-dark text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
-          Rezervirajte Posvet
-        </NuxtLink>
+
+        <!-- Selections summary -->
+        <div class="flex flex-wrap justify-center gap-2 text-xs uppercase tracking-wider text-gray-600">
+          <span class="px-3 py-1 bg-gray-100 rounded-full">Obraz: {{ faceShapes.find(f => f.id === form.faceShape)?.name || form.faceShape }}</span>
+          <span class="px-3 py-1 bg-gray-100 rounded-full">Stil: {{ styles.find(s => s.id === form.style)?.name || form.style }}</span>
+          <span class="px-3 py-1 bg-gray-100 rounded-full">Proračun: {{ budgets.find(b => b.id === form.budget)?.name || form.budget }}</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+          <NuxtLink
+            :to="{
+              path: '/kontakt',
+              query: {
+                service: 'svetovanje-okvirji',
+                sporocilo: `Pozdravljeni, rešil/a sem stil kviz. Moje priporočilo: ${recommendation}. (Obraz: ${faceShapes.find(f => f.id === form.faceShape)?.name || ''}, Stil: ${styles.find(s => s.id === form.style)?.name || ''}, Proračun: ${budgets.find(b => b.id === form.budget)?.name || ''}). Želim se naročiti na osebno pomerjanje.`
+              }
+            }"
+            class="inline-block bg-primary text-white px-8 py-4 uppercase tracking-widest hover:bg-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm font-bold text-sm"
+          >
+            Rezervirajte Posvet za ta Stil
+          </NuxtLink>
+
+          <button
+            @click="resetQuiz"
+            type="button"
+            class="inline-block border border-gray-300 text-gray-700 px-6 py-4 uppercase tracking-widest text-sm font-bold hover:border-accent hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
+          >
+            Ponovno Reši Kviz
+          </button>
+        </div>
       </div>
 
       <!-- Navigation -->
@@ -118,6 +145,11 @@ useHead({
   meta: [
     { name: 'description', content: 'Odkrijte kateri okvirji očal vam najbolj pristajajo glede na obliko obraza in osebni stil.' }
   ]
+})
+
+const isMounted = ref(false)
+onMounted(() => {
+  isMounted.value = true
 })
 
 const step = ref(1)
@@ -179,5 +211,12 @@ const selectStyle = (id) => {
 const selectBudget = (id) => {
   form.budget = id
   step.value = 4
+}
+
+const resetQuiz = () => {
+  form.faceShape = ''
+  form.style = ''
+  form.budget = ''
+  step.value = 1
 }
 </script>

@@ -23,6 +23,16 @@
       <input id="phone" v-model="form.phone" type="tel" name="phone" autocomplete="tel" :disabled="isSubmitting" class="w-full border-b border-gray-300 focus:border-accent outline-none py-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" placeholder="Npr. 041 123 456" />
     </div>
 
+    <div class="space-y-2">
+      <label for="service" class="text-xs uppercase tracking-widest text-gray-500 font-bold">Izberite storitev (Opcijsko)</label>
+      <select id="service" v-model="form.service" name="service" :disabled="isSubmitting" class="w-full border-b border-gray-300 bg-white focus:border-accent outline-none py-2 text-sm text-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
+        <option value="">-- Izberite želeno storitev --</option>
+        <option v-for="item in services" :key="item.id" :value="item.id">
+          {{ item.name }}
+        </option>
+      </select>
+    </div>
+
     <fieldset class="space-y-4 pt-4 border-none p-0 m-0">
       <legend class="text-xs uppercase tracking-widest text-gray-500 font-bold block w-full">Želeni Termini (Izberite več možnosti)</legend>
 
@@ -86,17 +96,58 @@
 
 <script setup>
 const accessKey = '01ce0d78-40da-4e31-a46d-a26af4c4752a'
+const route = useRoute()
 
 const days = ['Ponedeljek', 'Torek', 'Sreda', 'Četrtek', 'Petek']
 const slots = ['Dopoldan (8:00 - 12:00)', 'Popoldan (12:00 - 16:00)', 'Po 16:00']
+
+const services = [
+  { id: 'pregled-vida', name: 'Osnovni pregled vida (35 € / Brezplačno ob nakupu)' },
+  { id: 'pregled-vozniski', name: 'Pregled vida za vozniški izpit (40 €)' },
+  { id: 'korekcijska-ocala', name: 'Izbira korekcijskih očal / posvet' },
+  { id: 'soncna-ocala', name: 'Sončna očala z dioptrijo ali brez' },
+  { id: 'svetovanje-okvirji', name: 'Stilsko svetovanje in izbira okvirjev' },
+  { id: 'progresivna-stekla', name: 'Progresivna stekla (posvet & meritev)' },
+  { id: 'sportna-ocala', name: 'Športna očala (kolesarska, tekaška, uvex)' },
+  { id: 'ocala-za-voznjo', name: 'Očala za vožnjo (DriveWear / kontrast)' },
+  { id: 'kontaktne-lece', name: 'Kontaktne leče (uvajanje ali naročilo)' },
+  { id: 'servis-popravilo', name: 'Servis in popravilo očal' },
+  { id: 'drugo', name: 'Drugo / Splošno povpraševanje' }
+]
 
 const form = reactive({
   name: '',
   email: '',
   phone: '',
+  service: '',
   preferredDays: [],
   preferredSlots: [],
   message: ''
+})
+
+const initFromRoute = () => {
+  if (route.query.service && typeof route.query.service === 'string') {
+    const q = route.query.service.toLowerCase()
+    const matched = services.find(s => s.id === q || s.name.toLowerCase().includes(q))
+    if (matched) {
+      form.service = matched.id
+    } else {
+      form.service = route.query.service
+    }
+  }
+  if (route.query.sporocilo && typeof route.query.sporocilo === 'string') {
+    form.message = route.query.sporocilo
+  } else if (route.query.message && typeof route.query.message === 'string') {
+    form.message = route.query.message
+  }
+}
+
+onMounted(() => {
+  initFromRoute()
+})
+
+watch(() => route.query, () => {
+  initFromRoute()
 })
 
 const isSubmitting = ref(false)
@@ -107,14 +158,20 @@ const submitForm = async () => {
   submitStatus.value = null
 
   try {
+    const selectedService = services.find(s => s.id === form.service)?.name || form.service || 'Ni izbrana'
+    const subject = form.service
+      ? `Nova rezervacija: ${selectedService} - ${form.name}`
+      : `Nova rezervacija termina - ${form.name}`
+
     // Build the form data for Web3Forms
     const formData = {
       access_key: accessKey,
-      subject: `Nova rezervacija termina - ${form.name}`,
+      subject,
       from_name: 'OptikaSI Spletna Stran',
       name: form.name,
       email: form.email,
       phone: form.phone || 'Ni naveden',
+      'Izbrana storitev': selectedService,
       'Želeni dnevi': form.preferredDays.length > 0 ? form.preferredDays.join(', ') : 'Ni izbrano',
       'Želeni termini': form.preferredSlots.length > 0 ? form.preferredSlots.join(', ') : 'Ni izbrano',
       message: form.message || 'Brez sporočila'
@@ -137,6 +194,7 @@ const submitForm = async () => {
       form.name = ''
       form.email = ''
       form.phone = ''
+      form.service = ''
       form.preferredDays = []
       form.preferredSlots = []
       form.message = ''

@@ -10,7 +10,7 @@
     <article>
       <h1 class="font-serif text-4xl md:text-5xl text-primary-dark mb-6">Progresivna stekla: za koga so in kako se nanje navaditi</h1>
 
-      <img src="/images/blog/progresivna-stekla.jpg" alt="Progresivna stekla" class="w-full h-96 object-cover rounded-lg mb-8" />
+      <img src="/images/blog/progresivna-stekla.jpg" alt="Progresivna stekla" width="800" height="384" fetchpriority="high" decoding="async" class="w-full h-96 object-cover rounded-lg mb-8" />
 
       <div class="prose prose-lg max-w-none">
         <p class="mb-4">Progresivna stekla so zelo pogosta rešitev za osebe, ki imajo presbiopijo – starostno slabovidnost. Te stekla omogočajo dobro videno na različnih razdaljah brez vidne linije, kar jih naredi zelo prijetne za uporabo. V tem članku bomo razložili, kaj je presbiopija, kako delujejo progresivna stekla in kako se nanje navaditi.</p>
@@ -64,8 +64,8 @@
         <div class="bg-primary-dark text-white p-6 rounded-lg mt-8">
           <h3 class="text-xl font-bold mb-2">Potrebujete pomoč pri izbiri progresivnih stekel?</h3>
           <p class="mb-4">Pridite v Studio Optika Si v Ljubljani, kjer vam bodo pomagali izbrati najboljše progresivne stekla za vaše potrebe.</p>
-          <NuxtLink to="/kontakt" class="inline-block bg-accent text-primary-dark py-2 px-6 rounded hover:bg-opacity-90 transition-colors">
-            Kontaktirajte nas
+          <NuxtLink :to="{ path: '/kontakt', query: { service: 'progresivna-stekla' } }" class="inline-block bg-accent text-primary-dark font-bold py-2 px-6 rounded hover:bg-opacity-90 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none">
+            Naročite se na posvet
           </NuxtLink>
         </div>
       </div>

@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="/images/sport/hero-general.jpg" alt="Športna Očala" class="w-full h-full object-cover" />
+        <img src="/images/sport/hero-general.jpg" alt="Športna Očala" width="1200" height="600" fetchpriority="high" decoding="async" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black/40"></div>
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
@@ -207,8 +207,8 @@
           kjer bomo našli idealno rešitev za vaš šport.
         </p>
         <NuxtLink 
-          to="/kontakt" 
-          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
+          :to="{ path: '/kontakt', query: { service: 'sportna-ocala' } }" 
+          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm font-bold"
         >
           Rezerviraj Termin za Športna Očala
         </NuxtLink>

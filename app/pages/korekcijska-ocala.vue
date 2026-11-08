@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-900 text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-         <img src="/images/hero_eyeglasses.png" alt="Korekcijska očala Ljubljana" class="w-full h-full object-cover opacity-60" />
+         <img src="/images/hero_eyeglasses.png" alt="Korekcijska očala Ljubljana" width="1200" height="600" fetchpriority="high" decoding="async" class="w-full h-full object-cover opacity-60" />
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <span class="text-accent uppercase tracking-widest text-sm font-bold mb-6 block">Optika Ljubljana - Bežigrad</span>
@@ -445,8 +445,8 @@
           Obiščite nas in skupaj izberimo okvirje in stekla, ki vam bodo služila vsak dan. Smo <strong>butična optika na Vojkovi 58</strong>.
         </p>
         <NuxtLink 
-          to="/kontakt" 
-          class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
+          :to="{ path: '/kontakt', query: { service: 'korekcijska-ocala' } }" 
+          class="inline-block bg-accent text-white px-10 py-4 uppercase tracking-widest hover:bg-accent-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm font-bold"
         >
           Rezerviraj Termin
         </NuxtLink>

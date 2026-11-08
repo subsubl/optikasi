@@ -4,7 +4,7 @@
     <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <!-- Using one of the ingested images as hero foundation, with overlay -->
-        <img src="/images/driving/drive_car.png" alt="Očala za vožnjo Ljubljana" class="w-full h-full object-cover blur-[2px]" />
+        <img src="/images/driving/drive_car.png" alt="Očala za vožnjo Ljubljana" width="1200" height="600" fetchpriority="high" decoding="async" class="w-full h-full object-cover blur-[2px]" />
         <div class="absolute inset-0 bg-black/60"></div>
       </div>
       <div class="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
@@ -106,10 +106,10 @@
           Naročite se na pregled ali obiščite našo optiko, da preizkusite Drivewear tehnologijo v živo. Vaš <strong>optik za Bežigradom</strong> vas pričakuje.
         </p>
         <NuxtLink 
-          to="/kontakt" 
-          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm"
+          :to="{ path: '/kontakt', query: { service: 'ocala-za-voznjo' } }" 
+          class="inline-block bg-primary text-white px-10 py-4 uppercase tracking-widest hover:bg-primary-light transition-colors focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm font-bold"
         >
-          Kontaktirajte Nas
+          Naroči se na posvet
         </NuxtLink>
       </div>
     </section>

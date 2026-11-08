@@ -6,6 +6,10 @@
         <img
           src="/images/shop/studio-optika-si.png"
           alt="Studio Optika Si - Butična optika Ljubljana Bežigrad"
+          width="1200"
+          height="600"
+          fetchpriority="high"
+          decoding="async"
           class="w-full h-full object-cover opacity-50"
         />
       </div>
@@ -81,7 +85,7 @@
             </NuxtLink>
           </div>
           <div class="relative h-96 bg-gray-800 border border-gray-700 rounded-lg shadow-md overflow-hidden">
-            <img src="/images/shop/studio-optika-si.png" alt="Interier Studio Optika SI" class="w-full h-full object-cover" />
+            <img src="/images/shop/studio-optika-si.png" alt="Interier Studio Optika SI" width="800" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>

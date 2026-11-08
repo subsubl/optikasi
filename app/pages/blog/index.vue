@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="post in posts" :key="post.slug" class="bg-white rounded-lg shadow-md overflow-hidden">
         <NuxtLink :to="post.slug" class="block focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm">
-          <img :src="post.image" :alt="post.title" class="w-full h-48 object-cover">
+          <img :src="post.image" :alt="post.title" width="400" height="192" loading="lazy" decoding="async" class="w-full h-48 object-cover">
         </NuxtLink>
         <div class="p-6">
           <span class="text-sm text-accent font-semibold">{{ post.category }}</span>

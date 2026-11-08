@@ -61,7 +61,7 @@
             </NuxtLink>
           </div>
           <div class="relative h-96 bg-gray-800 border border-gray-700 rounded-lg shadow-md overflow-hidden">
-             <img src="/images/shop/studio-optika-si.png" alt="Studio Optika Si Interior - Butična Optika Bežigrad" class="w-full h-full object-cover" />
+             <img src="/images/shop/studio-optika-si.png" alt="Studio Optika Si Interior - Butična Optika Bežigrad" width="800" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
