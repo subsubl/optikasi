@@ -1,10 +1,14 @@
 import servicesData from '~/data/services.json'
 
+const servicesMap = new Map(
+  servicesData.services.map(service => [service.route, service])
+)
+
 export function useSeoSchema() {
   const route = useRoute()
 
   // Find service data for the current route
-  const serviceData = servicesData.services.find(service => service.route === route.path)
+  const serviceData = servicesMap.get(route.path)
 
   // Generate Service schema (per-service page)
   if (serviceData) {
