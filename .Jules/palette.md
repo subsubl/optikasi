@@ -113,3 +113,6 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+## 2026-11-03 - Fieldsets for Identically Named Repeated Inputs
+**Learning:** When implementing forms with identically named repeated sections (e.g., Left/Right Eye with 'Dioptrija', 'Cilinder'), grouping them inside generic `<div>` wrappers with a `<span>` title causes screen readers to lose context, making it hard for users to differentiate which input belongs to which section.
+**Action:** Always group these sections using `<fieldset>` and `<legend>` instead. When replacing block-level elements (like generic `div` or `span` headers) with `<legend>` for accessibility in this Tailwind setup, apply `w-full` alongside standard layout classes (like `block text-center`) to prevent the native `<legend>` shrink-wrap behavior from breaking layout constraints.
