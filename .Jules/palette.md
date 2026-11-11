@@ -113,3 +113,6 @@
 ## 2026-11-01 - Dynamic generic button labels on internal components
 **Learning:** List pages often have generic repeating links (like "Preberi več" / "Read more") which are completely inaccessible to screen reader users scanning the page by buttons, as they lack context.
 **Action:** Always add a dynamic `aria-label` appending the item name (e.g., `:aria-label="'Preberi več o ' + data.title"`) to provide necessary context for assistive technologies.
+## $(date +%Y-%m-%d) - Added Focus Visible Styles
+**Learning:** Adding Tailwind focus rings (`focus-visible:ring-2`) to inline text elements or block links is straightforward. However, when dealing with nested structure or flex layouts where elements might have strict dimensions, it is vital to apply `focus-visible` states systematically to interactive components like `NuxtLink` while avoiding breaking existing hover styles. Keyboard accessibility is heavily dependent on the visibility of these focus states.
+**Action:** Consistently ensure that all interactive elements, particularly those that receive focus, include appropriate `focus-visible` styling (e.g. `focus-visible:ring-2 focus-visible:ring-accent focus:outline-none rounded-sm`) across the application to maintain accessibility standards.
